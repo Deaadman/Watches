@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Watches
+  m_EditorClassIdentifier: 
+  m_GroupName: Watches
+  m_Data:
+    m_SerializedData: []
+  m_GUID: a074397099563294e97360571ea12eff
+  m_SerializeEntries:
+  - m_GUID: 4f9c0c7a81cd9b8458970fea79fefae7
+    m_Address: GEAR_Sundial
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: f6842ab7ccfa20f44bbcd94e65422521, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 245c0184136cf5e44a75b846a020a16e, type: 2}

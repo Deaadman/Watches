@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 979bcfae80cf69f44b869e9c8c3392e5, type: 3}
+  m_Name: Watches
+  m_EditorClassIdentifier: 
+  Name: Watches
+  Author: Deadman
+  Version: 1.0.0-DeveloperBuild
+  RequiredMods: []
+  RequiresDLC: 0
+  modLocalization: {fileID: 11400000, guid: ac485635418ece9499c65216e253b12f, type: 2}
+  modGearSpawns: {fileID: 11400000, guid: 1289703b0dbf60a4ba0b3b59a11cd058, type: 2}
+  Items:
+  - {fileID: 2482022990122564257, guid: 4f9c0c7a81cd9b8458970fea79fefae7, type: 3}
+  Icons: []

@@ -45,18 +45,11 @@ internal class UserInterfaceUtilities
         label.capsLock = capsLock;
     }
 
-    internal static void SetupUISprite(UISprite sprite, string spriteName)
+    internal static void UISpriteAlphas(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppArrayBase<UISprite> sprites, float alphaAmount)
     {
-        UIAtlas baseAtlas = InterfaceManager.GetPanel<Panel_HUD>().m_AltFireGamepadButtonSprite.atlas;
-        UISpriteData spriteData = baseAtlas.GetSprite(spriteName);
-
-        sprite.atlas = baseAtlas;
-        sprite.spriteName = spriteName;
-        sprite.mSprite = spriteData;
-        sprite.mSpriteSet = true;
-        //sprite.alpha                = 1f;
-        //sprite.color                = Color.white;
-        //sprite.MakePixelPerfect();
-        //sprite.enabled              = true;
+        foreach (var sprite in sprites)
+        {
+            sprite.alpha = alphaAmount;
+        }
     }
 }
