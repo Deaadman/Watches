@@ -1,5 +1,5 @@
 {
-  "ModGenericComponent": {
+  "ModClothingComponent": {
     "DisplayNameLocalizationId": "GAMEPLAY_AnalogWatch",
     "DescriptionLocalizatonId": "GAMEPLAY_AnalogWatchDescription",
     "InventoryActionLocalizationId": "",
@@ -30,6 +30,28 @@
       1.0
     ],
     "NormalModel": "",
-    "InspectModel": ""
+    "InspectModel": "",
+    "Region": "Accessory",
+    "MinLayer": "Base",
+    "MaxLayer": "Mid",
+    "MovementSound": "None",
+    "Footwear": "None",
+    "DaysToDecayWornOutside": 0.0,
+    "DaysToDecayWornInside": 0.0,
+    "Warmth": 0.0,
+    "WarmthWhenWet": 0.0,
+    "Windproof": 0.0,
+    "Waterproofness": 0.0,
+    "Toughness": 0.0,
+    "SprintBarReduction": 0.0,
+    "DecreaseAttackChance": 0,
+    "IncreaseFleeChance": 0,
+    "HoursToDryNearFire": 0.0,
+    "HoursToDryWithoutFire": 0.0,
+    "HoursToFreeze": 0.0,
+    "MainTexture": "",
+    "BlendTexture": "",
+    "DrawLayer": 0,
+    "ImplementationType": ""
   }
 }

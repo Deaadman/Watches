@@ -45,14 +45,37 @@ internal class UserInterfaceUtilities
         label.capsLock = capsLock;
     }
 
-    // The alpha values for bg and glow are different to 1, will have to figure them out and set them manually.
-    internal static void UISpriteAlphas(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppArrayBase<UISprite> sprites, float alphaAmount)
+    internal static void UISpriteAlphas(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppArrayBase<UISprite> sprites, bool alphaVisibility)
     {
         foreach (var sprite in sprites)
         {
-            if (sprite.gameObject.name != "arrows" && sprite.gameObject.name != "bg" && sprite.gameObject.name != "glow")
-            {                
-                sprite.alpha = alphaAmount;
+            if (alphaVisibility)
+            {
+                switch (sprite.gameObject.name)
+                {
+                    case "horizon":
+                        sprite.alpha = 0.7843f;
+                        break;
+                    case "arrows":
+                        sprite.alpha = 0f;
+                        break;
+                    case "sun":
+                        sprite.alpha = 1f;
+                        break;
+                    case "moon":
+                        sprite.alpha = 1f;
+                        break;
+                    case "bg":
+                        sprite.alpha = 0.116f;
+                        break;
+                    case "glow":
+                        sprite.alpha = 0.078f;
+                        break;
+                }
+            }
+            else
+            {
+                sprite.alpha = 0f;
             }
         }
     }
