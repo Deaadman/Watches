@@ -33,6 +33,14 @@ MonoBehaviour:
     m_Address: GEAR_DigitalWatch
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 49b40e2fb648703449ec5bf07fb50cb5
+    m_Address: ico_GearItem__DigitalWatch
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 99907f700a6cc1544b5d158f36f6cff7
+    m_Address: ico_GearItem__Stopwatch
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f6842ab7ccfa20f44bbcd94e65422521, type: 2}
   m_SchemaSet:

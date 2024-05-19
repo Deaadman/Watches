@@ -38,35 +38,25 @@ public class DisplayTime : MonoBehaviour
     {
         int currentHour = m_TimeOfDay.GetHour();
         string currentMinutes = m_TimeOfDay.GetMinutes().ToString("D2");
+
         m_LabelDisplayTime.text = m_TimeDisplayState == TimeDisplayState.Full ? $"{currentHour}:{currentMinutes}" : $"{currentHour}:??";
 
-        // Changing the transform position of m_LabelDisplayTime can cause clipping depending on what time tools the player is using.
         if (m_PlayerManager.IsWearingClothingName("GEAR_DigitalWatch"))
         {
-            m_LabelDisplayTime.transform.localPosition = new Vector3(0, 20, 0);
             m_LabelDisplayTime.alpha = 1f;
             m_TimeDisplayState = TimeDisplayState.Full;
+            UserInterfaceUtilities.UISpriteAlphas(GetComponentsInChildren<UISprite>(), false);
         }
         else if (m_PlayerManager.IsWearingClothingName("GEAR_AnalogWatch"))
         {
             m_LabelDisplayTime.alpha = 1f;
             m_TimeDisplayState = TimeDisplayState.Partial;
-        }
-        else if (InventoryUtilities.IsInInventory("GEAR_Stopwatch"))
-        {
-            m_LabelDisplayTime.alpha = 1f;
-            m_TimeDisplayState = TimeDisplayState.Partial;
-        }
-        else if (InventoryUtilities.IsInInventory("GEAR_Sundial"))
-        {
-            m_LabelDisplayTime.transform.localPosition = new Vector3(0, -20, 0);
-            m_LabelDisplayTime.alpha = 0f;
-            UserInterfaceUtilities.UISpriteAlphas(GetComponentsInChildren<UISprite>(), true);
+            UserInterfaceUtilities.UISpriteAlphas(GetComponentsInChildren<UISprite>(), false);
         }
         else
         {
-            m_LabelDisplayTime.transform.localPosition = new Vector3(0, 20, 0);
             m_LabelDisplayTime.alpha = 0f;
+            m_TimeDisplayState = TimeDisplayState.Partial;
             UserInterfaceUtilities.UISpriteAlphas(GetComponentsInChildren<UISprite>(), false);
         }
     }
