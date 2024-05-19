@@ -45,12 +45,13 @@ internal class UserInterfaceUtilities
         label.capsLock = capsLock;
     }
 
+    // The alpha values for bg and glow are different to 1, will have to figure them out and set them manually.
     internal static void UISpriteAlphas(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppArrayBase<UISprite> sprites, float alphaAmount)
     {
         foreach (var sprite in sprites)
         {
-            if (sprite.gameObject.name != "arrows")
-            {
+            if (sprite.gameObject.name != "arrows" && sprite.gameObject.name != "bg" && sprite.gameObject.name != "glow")
+            {                
                 sprite.alpha = alphaAmount;
             }
         }

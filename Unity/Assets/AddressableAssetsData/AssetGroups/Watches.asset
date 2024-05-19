@@ -21,6 +21,18 @@ MonoBehaviour:
     m_Address: GEAR_Sundial
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 6d6c908846ca5b34ba4e119daecaac9c
+    m_Address: GEAR_Stopwatch
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c5d6910d5d146e341bbe709d89cdc9fb
+    m_Address: GEAR_AnalogWatch
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0757215faafdb1d489a246eec56618cb
+    m_Address: GEAR_DigitalWatch
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f6842ab7ccfa20f44bbcd94e65422521, type: 2}
   m_SchemaSet:

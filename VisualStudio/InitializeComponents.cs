@@ -25,9 +25,11 @@ internal class InitializeComponents
             float alphaAmount = InventoryUtilities.IsInInventory("GEAR_Sundial") ? 1f : 0f;
             UserInterfaceUtilities.UISpriteAlphas(__instance.gameObject.GetComponentsInChildren<UISprite>(), alphaAmount);
 
+            // Not displaying time when in inventory, my guess is it's something to do with formatting in DisplayTime.cs
             displayTimeComponent.m_LabelDisplayTime.alpha = InventoryUtilities.IsInInventory("GEAR_Stopwatch") ? 1f : 0f;
             displayTimeComponent.m_TimeDisplayState = InventoryUtilities.IsInInventory("GEAR_Stopwatch") ? DisplayTime.TimeDisplayState.Partial : DisplayTime.TimeDisplayState.Full;
 
+            // Not displaying time when in inventory, my guess is it's something to do with formatting in DisplayTime.cs
             displayTimeComponent.m_LabelDisplayTime.alpha = InventoryUtilities.IsInInventory("GEAR_AnalogWatch") ? 1f : 0f;
             displayTimeComponent.m_TimeDisplayState = InventoryUtilities.IsInInventory("GEAR_AnalogWatch") ? DisplayTime.TimeDisplayState.Partial : DisplayTime.TimeDisplayState.Full;
 

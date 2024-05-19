@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
-  - component: {fileID: -2804138913488676501}
+  - component: {fileID: 4182887796392992876}
   m_Layer: 0
-  m_Name: GEAR_Sundial
+  m_Name: GEAR_DigitalWatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,7 +47,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-2804138913488676501
+--- !u!114 &4182887796392992876
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59,9 +59,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b791cf8328f045d45bf04b4f116cb5bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisplayNameLocalizationId: GAMEPLAY_Sundial
-  DescriptionLocalizatonId: GAMEPLAY_SundialDescription
-  InventoryActionLocalizationId: GAMEPLAY_SundialAction
+  DisplayNameLocalizationId: GAMEPLAY_DigitalWatch
+  DescriptionLocalizatonId: GAMEPLAY_DigitalWatchDescription
+  InventoryActionLocalizationId: 
   WeightKG: 0.5
   DaysToDecay: 0
   MaxHP: 100
