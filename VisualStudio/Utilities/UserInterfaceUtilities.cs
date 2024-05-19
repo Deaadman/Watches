@@ -49,7 +49,10 @@ internal class UserInterfaceUtilities
     {
         foreach (var sprite in sprites)
         {
-            sprite.alpha = alphaAmount;
+            if (sprite.gameObject.name != "arrows")
+            {
+                sprite.alpha = alphaAmount;
+            }
         }
     }
 }

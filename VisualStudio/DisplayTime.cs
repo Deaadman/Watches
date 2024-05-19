@@ -7,9 +7,16 @@ public class DisplayTime : MonoBehaviour
 {
 
 #nullable disable
-    public UILabel m_LabelDisplayTime;
+    internal TimeDisplayState m_TimeDisplayState;
     TimeOfDay m_TimeOfDay;
+    internal UILabel m_LabelDisplayTime;
 #nullable enable
+
+    internal enum TimeDisplayState
+    {
+        Full,
+        Partial
+    }
 
     void Awake() => InitializeComponents();
 
@@ -28,6 +35,8 @@ public class DisplayTime : MonoBehaviour
 
     void Update()
     {
-        m_LabelDisplayTime.text = m_TimeOfDay.GetHour() + ":" + m_TimeOfDay.GetMinutes().ToString("D2");
+        int currentHour = m_TimeOfDay.GetHour();
+        string currentMinutes = m_TimeOfDay.GetMinutes().ToString("D2");
+        m_LabelDisplayTime.text = m_TimeDisplayState == TimeDisplayState.Full ? $"{currentHour}:{currentMinutes}" : $"{currentHour}:??";
     }
 }

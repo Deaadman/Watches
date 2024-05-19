@@ -19,14 +19,20 @@ internal class InitializeComponents
     internal class HideDigitalTime
     {
         static void Postfix(TimeWidget __instance)
-        {            
+        {
+            DisplayTime displayTimeComponent = __instance.GetComponent<DisplayTime>();
+
             float alphaAmount = InventoryUtilities.IsInInventory("GEAR_Sundial") ? 1f : 0f;
             UserInterfaceUtilities.UISpriteAlphas(__instance.gameObject.GetComponentsInChildren<UISprite>(), alphaAmount);
 
-            UILabel digitalTimeUILabel = __instance.GetComponent<DisplayTime>().m_LabelDisplayTime;
-            digitalTimeUILabel.alpha = InventoryUtilities.IsInInventory("GEAR_Stopwatch") ? 0f : 1f;
-            digitalTimeUILabel.alpha = InventoryUtilities.IsInInventory("GEAR_AnalogWatch") ? 0f : 1f;
-            digitalTimeUILabel.alpha = InventoryUtilities.IsInInventory("GEAR_DigitalWatch") ? 0f : 1f;
+            displayTimeComponent.m_LabelDisplayTime.alpha = InventoryUtilities.IsInInventory("GEAR_Stopwatch") ? 1f : 0f;
+            displayTimeComponent.m_TimeDisplayState = InventoryUtilities.IsInInventory("GEAR_Stopwatch") ? DisplayTime.TimeDisplayState.Partial : DisplayTime.TimeDisplayState.Full;
+
+            displayTimeComponent.m_LabelDisplayTime.alpha = InventoryUtilities.IsInInventory("GEAR_AnalogWatch") ? 1f : 0f;
+            displayTimeComponent.m_TimeDisplayState = InventoryUtilities.IsInInventory("GEAR_AnalogWatch") ? DisplayTime.TimeDisplayState.Partial : DisplayTime.TimeDisplayState.Full;
+
+            displayTimeComponent.m_LabelDisplayTime.alpha = InventoryUtilities.IsInInventory("GEAR_DigitalWatch") ? 1f : 0f;
+            displayTimeComponent.m_TimeDisplayState = InventoryUtilities.IsInInventory("GEAR_DigitalWatch") ? DisplayTime.TimeDisplayState.Full : DisplayTime.TimeDisplayState.Partial;
         }
     }
 }
