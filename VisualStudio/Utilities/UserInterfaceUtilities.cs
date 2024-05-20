@@ -79,4 +79,22 @@ internal class UserInterfaceUtilities
             }
         }
     }
+
+    internal static bool CheckUISpriteAlphas(Il2CppInterop.Runtime.InteropTypes.Arrays.Il2CppArrayBase<UISprite> sprites)
+    {
+        foreach (var sprite in sprites)
+        {
+            switch (sprite.gameObject.name)
+            {
+                case "sun":
+                    if (sprite.alpha == 1f)
+                    {
+                        return true;
+                    }
+                return false;
+            }
+        }
+
+        return false;
+    }
 }

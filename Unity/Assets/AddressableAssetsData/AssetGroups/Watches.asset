@@ -41,6 +41,14 @@ MonoBehaviour:
     m_Address: ico_GearItem__Stopwatch
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 56efc97d1110346498b47ae89bffdb7c
+    m_Address: ico_GearItem__Sundial
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 94187e5ddd88c4b42bf331c77a680c8e
+    m_Address: ico_GearItem__AnalogWatch
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f6842ab7ccfa20f44bbcd94e65422521, type: 2}
   m_SchemaSet:
