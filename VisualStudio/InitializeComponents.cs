@@ -41,4 +41,14 @@ internal class InitializeComponents
             _ = __instance.GetComponent<DisplayTime>() ?? __instance.gameObject.AddComponent<DisplayTime>();
         }
     }
+
+    // Messes up the entire radial sun and moon ui.
+    //[HarmonyPatch(typeof(InterfaceManager), nameof(InterfaceManager.InstantiateTimeWidget))]
+    //internal class AttachDigitalTimeComponent
+    //{
+    //    static void Postfix(InterfaceManager __instance)
+    //    {
+    //        _ = __instance.m_TimeWidgetPrefab.GetComponent<DisplayTime>() ?? __instance.m_TimeWidgetPrefab.AddComponent<DisplayTime>();
+    //    }
+    //}
 }
