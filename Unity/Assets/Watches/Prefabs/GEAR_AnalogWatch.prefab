@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
-  - component: {fileID: -7736892502490914205}
+  - component: {fileID: -3779208067790985217}
   m_Layer: 0
   m_Name: GEAR_AnalogWatch
   m_TagString: Untagged
@@ -132,7 +132,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.31688797, y: 0.24210137, z: 0.29209107}
   m_Center: {x: -0.0004453659, y: 0.112461954, z: -0.008856446}
---- !u!114 &-7736892502490914205
+--- !u!114 &-3779208067790985217
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,7 +154,7 @@ MonoBehaviour:
   InventoryCategory: 0
   PickUpAudio: {fileID: 0}
   PutBackAudio: {fileID: 0}
-  StowAudio: {fileID: 11400000, guid: 9a5da80d395be8247a892f802422de25, type: 2}
+  StowAudio: {fileID: 0}
   WornOutAudio: {fileID: 0}
   InspectOnPickup: 1
   InspectDistance: 1

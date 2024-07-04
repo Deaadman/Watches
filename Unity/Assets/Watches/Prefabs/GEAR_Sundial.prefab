@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
-  - component: {fileID: -419889345824718610}
+  - component: {fileID: 4530813473386696435}
   m_Layer: 0
   m_Name: GEAR_Sundial
   m_TagString: Untagged
@@ -47,7 +47,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.47227752, y: 0.18178496, z: 0.4762655}
   m_Center: {x: -0.00043824315, y: 0.08886598, z: 0.0009919107}
---- !u!114 &-419889345824718610
+--- !u!114 &4530813473386696435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -69,7 +69,7 @@ MonoBehaviour:
   InventoryCategory: 0
   PickUpAudio: {fileID: 0}
   PutBackAudio: {fileID: 0}
-  StowAudio: {fileID: 11400000, guid: 9a5da80d395be8247a892f802422de25, type: 2}
+  StowAudio: {fileID: 0}
   WornOutAudio: {fileID: 0}
   InspectOnPickup: 1
   InspectDistance: 1

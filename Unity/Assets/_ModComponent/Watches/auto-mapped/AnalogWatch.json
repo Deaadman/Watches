@@ -10,7 +10,7 @@
     "InventoryCategory": "Auto",
     "PickUpAudio": "",
     "PutBackAudio": "",
-    "StowAudio": "Play_InventoryStow",
+    "StowAudio": "",
     "WornOutAudio": "",
     "InspectOnPickup": true,
     "InspectDistance": 1.0,

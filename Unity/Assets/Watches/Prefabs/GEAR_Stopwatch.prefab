@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
-  - component: {fileID: 7316275905039754938}
+  - component: {fileID: 1122523007699777169}
   m_Layer: 0
   m_Name: GEAR_Stopwatch
   m_TagString: Untagged
@@ -132,7 +132,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.30638593, y: 0.045401797, z: 0.359821}
   m_Center: {x: 0.000043205917, y: 0.021491915, z: -0.027449831}
---- !u!114 &7316275905039754938
+--- !u!114 &1122523007699777169
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,7 +154,7 @@ MonoBehaviour:
   InventoryCategory: 0
   PickUpAudio: {fileID: 0}
   PutBackAudio: {fileID: 0}
-  StowAudio: {fileID: 11400000, guid: 9a5da80d395be8247a892f802422de25, type: 2}
+  StowAudio: {fileID: 0}
   WornOutAudio: {fileID: 0}
   InspectOnPickup: 1
   InspectDistance: 1
