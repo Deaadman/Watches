@@ -26,7 +26,7 @@ internal static class DisplayTimeUI
             FontStyle.Normal,
             UILabel.Crispness.Always,
             NGUIText.Alignment.Center,
-            UILabel.Overflow.ResizeHeight,
+            UILabel.Overflow.ResizeFreely,
             false,
             0,
             18,

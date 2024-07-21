@@ -15,6 +15,7 @@ internal static class InterfaceManagerPatches
             
             InterfaceManager.m_TimeWidget.SetActive(false);
             displayTime.m_DigitalTimeLabel.gameObject.SetActive(active);
+            displayTime.m_ObjectDuration.gameObject.SetActive(active);
             //displayTime.m_AnalogTime.SetActive(false);
             
             return false;
