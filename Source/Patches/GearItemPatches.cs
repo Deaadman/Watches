@@ -29,4 +29,24 @@ internal static class GearItemPatches
             }
         }
     }
+    
+    [HarmonyPatch(typeof(GearItem), nameof(GearItem.Deserialize))]
+    private static class DeserializeWatchItemData
+    {
+        private static void Postfix(GearItem __instance)
+        {
+            var watchItem = __instance.GetComponent<WatchItem>();
+            watchItem?.Deserialize();
+        }
+    }
+    
+    [HarmonyPatch(typeof(GearItem), nameof(GearItem.Serialize))]
+    private static class SerializeWatchItemData
+    {
+        private static void Postfix(GearItem __instance)
+        {
+            var watchItem = __instance.GetComponent<WatchItem>();
+            watchItem?.Serialize();
+        }
+    }
 }

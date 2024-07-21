@@ -1,5 +1,7 @@
 ﻿using Watches.Enums;
+using Watches.Managers;
 using Watches.Properties;
+using Watches.Utilities;
 
 namespace Watches.Components;
 
@@ -17,6 +19,20 @@ public class WatchItem : MonoBehaviour
         m_TimeOfDay = GameManager.GetTimeOfDayComponent();
 
         if (m_WatchType == WatchType.Digital) m_CurrentBatteryCharge = UnityEngine.Random.Range(0f, 1f);
+    }
+    
+    internal void Deserialize()
+    {
+        var loadedData = DataManager.LoadData<float>("DigitalWatchBattery");
+        if (loadedData.HasValue)
+        {
+            m_CurrentBatteryCharge = loadedData.Value;
+        }
+    }
+    
+    internal void Serialize()
+    {
+        DataManager.SaveData(m_CurrentBatteryCharge, "DigitalWatchBattery");
     }
     
     internal static void TimeChecked(bool arg1, bool arg2, float arg3) { }
@@ -42,23 +58,20 @@ public class WatchItem : MonoBehaviour
         var todHours = GameManager.GetTimeOfDayComponent().GetTODHours(Time.deltaTime);
         if (GameManager.GetAuroraManager().AuroraIsActive())
         {
-            m_CurrentBatteryCharge += todHours / 1.25f;
+            m_CurrentBatteryCharge += todHours / 5f;
         }
         else
         {
-            m_CurrentBatteryCharge -= todHours / 1.5f;   
+            m_CurrentBatteryCharge -= todHours / 10f;   
         }
 
         m_CurrentBatteryCharge = Mathf.Clamp(m_CurrentBatteryCharge, 0f, 1f);
 
         m_DisplayTime.m_ObjectDurationForegroundSprite.fillAmount = Mathf.Lerp(0.14f, 1f - 0.14f, m_CurrentBatteryCharge);
 
-        if (Settings.Instance.DigitalTimeFormat)
+        if (Settings.Instance.TwelveHourTime)
         {
-            var hour12 = m_TimeOfDay.GetHour() % 12;
-            hour12 = hour12 == 0 ? 12 : hour12;
-            var amPm = m_TimeOfDay.GetHour() < 12 ? "AM" : "PM";
-            m_DisplayTime.m_DigitalTimeLabel.text = m_CurrentBatteryCharge != 0f ? $"{hour12}:{m_TimeOfDay.GetMinutes():D2} {amPm}" : Localization.Get("GAMEPLAY_OutOfCharge");
+            m_DisplayTime.m_DigitalTimeLabel.text = m_CurrentBatteryCharge != 0f ? TimeUtilities.ConvertTo12HourFormat(m_TimeOfDay.GetHour(), m_TimeOfDay.GetMinutes()) : Localization.Get("GAMEPLAY_OutOfCharge");
         }
         else
         {

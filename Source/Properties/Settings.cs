@@ -6,8 +6,8 @@ internal class Settings : JsonModSettings
 {
     internal static Settings Instance { get; } = new();
 
-    [Name("Digital Time Format")] [Description("Placeholder.")]
-    public bool DigitalTimeFormat = false;
+    [Name("12-Hour Time")] [Description("Change the default time format from 24 to 12 hour time.")]
+    public bool TwelveHourTime = false;
     
     internal static void OnLoad()
     {
