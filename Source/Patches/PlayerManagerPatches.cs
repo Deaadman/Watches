@@ -13,7 +13,7 @@ internal static class PlayerManagerPatches
         private static void Postfix(PlayerManager __instance, GearItem gi, bool suppressWeaponsErrorMessage)
         {
             if (gi == null) return;
-            if (GearItemUtilities.GetWatchItem(gi) == true)
+            if (GearItemUtilities.GetSundialItem(gi) == true)
             {
                 TimeManager.UseSundialItem(gi);
             }

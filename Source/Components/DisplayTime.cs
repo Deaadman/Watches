@@ -1,4 +1,5 @@
-﻿using Watches.Utilities;
+﻿using Watches.Enums;
+using Watches.Utilities;
 
 namespace Watches.Components;
 
@@ -23,14 +24,25 @@ public class DisplayTime : MonoBehaviour
 
     internal static DisplayTime GetInstance() => InterfaceManager.m_TimeWidget.transform.parent.gameObject.GetComponent<DisplayTime>();
 
-    private void Update()
+    private void LateUpdate()
     {
         if (!m_DigitalTimeLabel.gameObject.active) return;
-        
-        var watchInSlot = GameManager.GetPlayerManagerComponent().GetClothingInSlot(ClothingRegion.Accessory, ClothingLayer.Base).GetComponent<WatchItem>();
-        if (watchInSlot is null)
+    
+        var accessoryGearItem = GameManager.GetPlayerManagerComponent().GetClothingInSlot(ClothingRegion.Accessory, ClothingLayer.Base);
+        if (accessoryGearItem?.GetComponent<WatchItem>() is null)
+        {
             m_DigitalTimeLabel.gameObject.SetActive(false);
+            return;
+        }
+        
+        var watchItem = accessoryGearItem.GetComponent<WatchItem>();
+        if (watchItem.m_WatchType == WatchType.Digital)
+        {
+            watchItem.UpdateDigitalTime();
+        }
         else
-            watchInSlot.Update();
+        {
+            watchItem.UpdateAnalogTime();
+        }
     }
 }

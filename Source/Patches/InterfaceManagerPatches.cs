@@ -1,4 +1,5 @@
 ﻿using Watches.Components;
+using Watches.Enums;
 using Watches.Utilities;
 using Object = UnityEngine.Object;
 
@@ -12,11 +13,17 @@ internal static class InterfaceManagerPatches
         private static bool Prefix(InterfaceManager __instance, bool active)
         {
             var displayTime = DisplayTime.GetInstance();
+            if (GearItemUtilities.GetCurrentlyWornWatchType() == WatchType.Digital)
+            {
+                displayTime.m_DigitalTimeLabel.gameObject.SetActive(active);
+                displayTime.m_ObjectDuration.gameObject.SetActive(active);
+            }
+            else if (GearItemUtilities.GetCurrentlyWornWatchType() == WatchType.Analog) // Need to add a check here that the Stopwatch was used as well.
+            {
+                displayTime.m_AnalogTime.SetActive(false);
+            }
             
-            InterfaceManager.m_TimeWidget.SetActive(false);
-            displayTime.m_DigitalTimeLabel.gameObject.SetActive(active);
-            displayTime.m_ObjectDuration.gameObject.SetActive(active);
-            //displayTime.m_AnalogTime.SetActive(false);
+            //InterfaceManager.m_TimeWidget.SetActive(false);
             
             return false;
         }

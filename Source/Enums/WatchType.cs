@@ -2,7 +2,8 @@
 
 internal enum WatchType
 {
+    None,
     Stopwatch,
     Analog,
-    Digital
+    Digital,
 }

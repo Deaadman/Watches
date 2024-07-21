@@ -9,6 +9,7 @@ namespace Watches.Components;
 public class WatchItem : MonoBehaviour
 {
     internal WatchType m_WatchType;
+    private GearItem m_GearItem;
     private DisplayTime m_DisplayTime;
     private TimeOfDay m_TimeOfDay;
     private float m_CurrentBatteryCharge;
@@ -17,8 +18,22 @@ public class WatchItem : MonoBehaviour
     {
         m_DisplayTime = DisplayTime.GetInstance();
         m_TimeOfDay = GameManager.GetTimeOfDayComponent();
-
+        m_GearItem = GetComponent<GearItem>();
+        
         if (m_WatchType == WatchType.Digital) m_CurrentBatteryCharge = UnityEngine.Random.Range(0f, 1f);
+    }
+
+    private string GetDigitalTimeDisplay()
+    {
+        if (m_CurrentBatteryCharge == 0f || m_GearItem.m_CurrentHP == 0f) return "??:??";
+        
+        var hour = m_TimeOfDay.GetHour();
+        var minutes = m_TimeOfDay.GetMinutes();
+        var isAuroraActive = GameManager.GetAuroraManager().AuroraIsActive();
+        
+        if (m_GearItem.m_CurrentHP <= 50f && !isAuroraActive) return Settings.Instance.TwelveHourTime ? TimeDisplayUtilities.ConvertTo12HourFormat(hour, -1) : $"{hour:D2}:??";
+        
+        return TimeDisplayUtilities.GetTimeDisplay(hour, minutes, Settings.Instance.TwelveHourTime, isAuroraActive);
     }
     
     internal void Deserialize()
@@ -37,25 +52,11 @@ public class WatchItem : MonoBehaviour
     
     internal static void TimeChecked(bool arg1, bool arg2, float arg3) { }
 
-    internal void Update()
-    {
-        switch (m_WatchType)
-        {
-            case WatchType.Digital:
-                UpdateDigitalTime();
-                break;
-            case WatchType.Analog:
-                UpdateAnalogTime();
-                break;
-        }
-    }
+    internal void UpdateAnalogTime() { }
 
-    private void UpdateAnalogTime() { }
-
-    // This works however it only recharges when the widget is active. We will need to change this, so it recharges anywhere.
-    private void UpdateDigitalTime()
+    private void UpdateBatteryCharge()
     {
-        var todHours = GameManager.GetTimeOfDayComponent().GetTODHours(Time.deltaTime);
+        var todHours = m_TimeOfDay.GetTODHours(Time.deltaTime);
         if (GameManager.GetAuroraManager().AuroraIsActive())
         {
             m_CurrentBatteryCharge += todHours / 5f;
@@ -64,18 +65,15 @@ public class WatchItem : MonoBehaviour
         {
             m_CurrentBatteryCharge -= todHours / 10f;   
         }
+    }
+    
+    // This works however it only recharges when the widget is active. We will need to change this, so it recharges anywhere.
+    internal void UpdateDigitalTime()
+    {
+        UpdateBatteryCharge();
 
         m_CurrentBatteryCharge = Mathf.Clamp(m_CurrentBatteryCharge, 0f, 1f);
-
         m_DisplayTime.m_ObjectDurationForegroundSprite.fillAmount = Mathf.Lerp(0.14f, 1f - 0.14f, m_CurrentBatteryCharge);
-
-        if (Settings.Instance.TwelveHourTime)
-        {
-            m_DisplayTime.m_DigitalTimeLabel.text = m_CurrentBatteryCharge != 0f ? TimeUtilities.ConvertTo12HourFormat(m_TimeOfDay.GetHour(), m_TimeOfDay.GetMinutes()) : Localization.Get("GAMEPLAY_OutOfCharge");
-        }
-        else
-        {
-            m_DisplayTime.m_DigitalTimeLabel.text = m_CurrentBatteryCharge != 0f ? $"{m_TimeOfDay.GetHour():D2}:{m_TimeOfDay.GetMinutes():D2}" : Localization.Get("GAMEPLAY_OutOfCharge");
-        }
+        m_DisplayTime.m_DigitalTimeLabel.text = GetDigitalTimeDisplay();
     }
 }
