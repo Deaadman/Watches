@@ -12,8 +12,11 @@ public class WatchItem : MonoBehaviour
     private GearItem m_GearItem;
     private DisplayTime m_DisplayTime;
     private TimeOfDay m_TimeOfDay;
+    
     private float m_CurrentBatteryCharge;
-
+    private const float BatteryDepletionRate = 6f;  // Higher number = slower depletion
+    private const float BatteryRechargeRate = 2f;   // Lower number = faster recharge
+    
     private void Awake()
     {
         m_DisplayTime = DisplayTime.GetInstance();
@@ -50,27 +53,20 @@ public class WatchItem : MonoBehaviour
         DataManager.SaveData(m_CurrentBatteryCharge, "DigitalWatchBattery");
     }
     
+    internal void Recharge()
+    {
+        var todHours = m_TimeOfDay.GetTODHours(Time.deltaTime);
+        if (GameManager.GetAuroraManager().AuroraIsActive()) m_CurrentBatteryCharge += todHours / BatteryRechargeRate;
+    }
+    
     internal static void TimeChecked(bool arg1, bool arg2, float arg3) { }
 
     internal void UpdateAnalogTime() { }
-
-    private void UpdateBatteryCharge()
-    {
-        var todHours = m_TimeOfDay.GetTODHours(Time.deltaTime);
-        if (GameManager.GetAuroraManager().AuroraIsActive())
-        {
-            m_CurrentBatteryCharge += todHours / 5f;
-        }
-        else
-        {
-            m_CurrentBatteryCharge -= todHours / 10f;   
-        }
-    }
     
-    // This works however it only recharges when the widget is active. We will need to change this, so it recharges anywhere.
     internal void UpdateDigitalTime()
     {
-        UpdateBatteryCharge();
+        var todHours = m_TimeOfDay.GetTODHours(Time.deltaTime);
+        if (!GameManager.GetAuroraManager().AuroraIsActive()) m_CurrentBatteryCharge -= todHours / BatteryDepletionRate;
 
         m_CurrentBatteryCharge = Mathf.Clamp(m_CurrentBatteryCharge, 0f, 1f);
         m_DisplayTime.m_ObjectDurationForegroundSprite.fillAmount = Mathf.Lerp(0.14f, 1f - 0.14f, m_CurrentBatteryCharge);

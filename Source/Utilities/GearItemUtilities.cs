@@ -5,9 +5,7 @@ namespace Watches.Utilities;
 
 internal static class GearItemUtilities
 {
-    internal static WatchItem GetWatchItem(GearItem gearItem) => gearItem.GetComponent<WatchItem>();
-
-    internal static SundialItem GetSundialItem(GearItem gearItem) => gearItem.GetComponent<SundialItem>();
+    internal static T GetGearItemComponent<T>(GearItem gearItem) where T : Component => gearItem.GetComponent<T>();
     
     internal static WatchType GetCurrentlyWornWatchType()
     {

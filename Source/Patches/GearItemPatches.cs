@@ -1,6 +1,7 @@
 ﻿using Watches.Components;
 using Watches.Enums;
 using Watches.Managers;
+using Watches.Utilities;
 
 namespace Watches.Patches;
 
@@ -35,8 +36,16 @@ internal static class GearItemPatches
     {
         private static void Postfix(GearItem __instance)
         {
-            var watchItem = __instance.GetComponent<WatchItem>();
-            watchItem?.Deserialize();
+            GearItemUtilities.GetGearItemComponent<WatchItem>(__instance)?.Deserialize();
+        }
+    }
+    
+    [HarmonyPatch(typeof(GearItem), nameof(GearItem.ManualUpdate))]
+    private static class RechargeDigitalWatchItem
+    {
+        private static void Postfix(GearItem __instance)
+        {
+            GearItemUtilities.GetGearItemComponent<WatchItem>(__instance)?.Recharge();
         }
     }
     
@@ -45,8 +54,7 @@ internal static class GearItemPatches
     {
         private static void Postfix(GearItem __instance)
         {
-            var watchItem = __instance.GetComponent<WatchItem>();
-            watchItem?.Serialize();
+            GearItemUtilities.GetGearItemComponent<WatchItem>(__instance)?.Serialize();
         }
     }
 }
