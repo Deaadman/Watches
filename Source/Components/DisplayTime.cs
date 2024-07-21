@@ -11,6 +11,8 @@ public class DisplayTime : MonoBehaviour
     internal GameObject m_AnalogTime;
     internal GameObject m_ObjectDuration;
     internal UISprite m_ObjectDurationForegroundSprite;
+    internal UISprite m_HourHandSprite;
+    internal UISprite m_MinuteHandSprite;
     //private GameObject m_TimeWidget = InterfaceManager.m_TimeWidget;
 
     private void Start()
@@ -19,20 +21,25 @@ public class DisplayTime : MonoBehaviour
         m_ObjectDuration = Instantiate(InterfaceManager.GetPanel<Panel_HUD>().m_EquipItemPopup.m_ObjectDuration, m_DigitalTimeLabel.transform);
         m_ObjectDuration.transform.localPosition = new Vector3(-65f, -20f, 0);
         m_ObjectDuration.SetActive(false);
+
+        m_AnalogTime = DisplayTimeUserInterface.SetupAnalogTime(transform, false);
         
         m_ObjectDurationForegroundSprite = m_ObjectDuration.transform.Find("Foreground").GetComponent<UISprite>();
+        m_HourHandSprite = m_AnalogTime.transform.Find("HourHand").GetComponent<UISprite>();
+        m_MinuteHandSprite = m_AnalogTime.transform.Find("MinuteHand").GetComponent<UISprite>();
     }
 
     internal static DisplayTime GetInstance() => InterfaceManager.m_TimeWidget.transform.parent.gameObject.GetComponent<DisplayTime>();
 
     private void LateUpdate()
     {
-        if (!m_DigitalTimeLabel.gameObject.active) return;
+        if (!m_DigitalTimeLabel.gameObject.active && !m_AnalogTime.gameObject.active) return;
     
         var accessoryGearItem = GameManager.GetPlayerManagerComponent().GetClothingInSlot(ClothingRegion.Accessory, ClothingLayer.Base);
         if (accessoryGearItem?.GetComponent<WatchItem>() is null)
         {
             m_DigitalTimeLabel.gameObject.SetActive(false);
+            m_AnalogTime.gameObject.SetActive(false);
             return;
         }
         
@@ -41,7 +48,7 @@ public class DisplayTime : MonoBehaviour
         {
             watchItem.UpdateDigitalTime();
         }
-        else
+        else if (watchItem.m_WatchType == WatchType.Analog)
         {
             watchItem.UpdateAnalogTime();
         }

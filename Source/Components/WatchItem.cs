@@ -65,7 +65,19 @@ public class WatchItem : MonoBehaviour
         WasTimeChecked = true;
     }
 
-    internal void UpdateAnalogTime() { }
+    internal void UpdateAnalogTime()
+    {
+        var hour = m_TimeOfDay.GetHour() + m_TimeOfDay.GetMinutes() / 60f;
+        var minute = m_TimeOfDay.GetMinutes();
+
+        var hourAngle = ((hour % 12 + minute / 60f) / 12f * 360f) - 90f;
+        var minuteAngle = (minute / 60f * 360f) - 90f;
+
+        m_DisplayTime.m_HourHandSprite.transform.localPosition = Vector3.zero;
+        m_DisplayTime.m_MinuteHandSprite.transform.localPosition = Vector3.zero;
+        m_DisplayTime.m_HourHandSprite.transform.localRotation = Quaternion.Euler(0, 0, -hourAngle);
+        m_DisplayTime.m_MinuteHandSprite.transform.localRotation = Quaternion.Euler(0, 0, -minuteAngle);
+    }
     
     internal void UpdateDigitalTime()
     {

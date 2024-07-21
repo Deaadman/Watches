@@ -73,6 +73,7 @@ internal static class InterfaceManagerPatches
 
             //displayTime.m_DigitalTimeLabel.gameObject.SetActive(true);
             displayTime.m_DigitalTimeLabel.transform.position = pos;
+            displayTime.m_AnalogTime.transform.position = pos;
             
             return false;
         }
@@ -92,6 +93,7 @@ internal static class InterfaceManagerPatches
             
             //displayTime.m_DigitalTimeLabel.gameObject.SetActive(true);
             displayTime.m_DigitalTimeLabel.transform.localPosition = Vector3.zero;
+            displayTime.m_AnalogTime.transform.position = Vector3.zero;
             
             return false;
         }
