@@ -1,4 +1,5 @@
 ﻿using Watches.Enums;
+using Watches.Properties;
 
 namespace Watches.Components;
 
@@ -41,16 +42,27 @@ public class WatchItem : MonoBehaviour
         var todHours = GameManager.GetTimeOfDayComponent().GetTODHours(Time.deltaTime);
         if (GameManager.GetAuroraManager().AuroraIsActive())
         {
-            m_CurrentBatteryCharge += todHours / 0.75f;
+            m_CurrentBatteryCharge += todHours / 1.25f;
         }
         else
         {
-            m_CurrentBatteryCharge -= todHours / 0.5f;   
+            m_CurrentBatteryCharge -= todHours / 1.5f;   
         }
 
         m_CurrentBatteryCharge = Mathf.Clamp(m_CurrentBatteryCharge, 0f, 1f);
 
         m_DisplayTime.m_ObjectDurationForegroundSprite.fillAmount = Mathf.Lerp(0.14f, 1f - 0.14f, m_CurrentBatteryCharge);
-        m_DisplayTime.m_DigitalTimeLabel.text = m_CurrentBatteryCharge != 0f ? $"{m_TimeOfDay.GetHour():D2}:{m_TimeOfDay.GetMinutes():D2}" : Localization.Get("GAMEPLAY_OutOfCharge");
+
+        if (Settings.Instance.DigitalTimeFormat)
+        {
+            var hour12 = m_TimeOfDay.GetHour() % 12;
+            hour12 = hour12 == 0 ? 12 : hour12;
+            var amPm = m_TimeOfDay.GetHour() < 12 ? "AM" : "PM";
+            m_DisplayTime.m_DigitalTimeLabel.text = m_CurrentBatteryCharge != 0f ? $"{hour12}:{m_TimeOfDay.GetMinutes():D2} {amPm}" : Localization.Get("GAMEPLAY_OutOfCharge");
+        }
+        else
+        {
+            m_DisplayTime.m_DigitalTimeLabel.text = m_CurrentBatteryCharge != 0f ? $"{m_TimeOfDay.GetHour():D2}:{m_TimeOfDay.GetMinutes():D2}" : Localization.Get("GAMEPLAY_OutOfCharge");
+        }
     }
 }

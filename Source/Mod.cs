@@ -1,31 +1,28 @@
+using LocalizationUtilities;
+using Watches.Properties;
+
 namespace Watches;
 
-// All these commented out methods were testing for pausing the TimeWidget, hasn't really worked so far...
 internal sealed class Mod : MelonMod
 {
-    //
-    // [HarmonyPatch(typeof(TimeWidget), nameof(TimeWidget.UpdateIconPositions))]
-    // private static class Test3
-    // {
-    //     private static bool firstRun = true;
-    //     private static bool toggle = false;
-    //
-    //     private static bool Prefix(TimeWidget __instance, float angleDegrees)
-    //     {
-    //         if (firstRun)
-    //         {
-    //             firstRun = false;
-    //             MelonCoroutines.Start(WaitOneFrameAndReturn());
-    //             return true;
-    //         }
-    //     
-    //         toggle = !toggle;
-    //         return toggle;
-    //     }
-    //
-    //     private static IEnumerator WaitOneFrameAndReturn()
-    //     {
-    //         yield return new WaitForEndOfFrame();
-    //     }
-    // }
+    public override void OnInitializeMelon()
+    {
+        RegisterLocalizationKeys("Watches.Resources.Localization.json");
+        Settings.OnLoad();
+    }
+    
+    private static void RegisterLocalizationKeys(string jsonFilePath)
+    {
+        if (string.IsNullOrWhiteSpace(jsonFilePath)) throw new ArgumentNullException(nameof(jsonFilePath));
+
+        using var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(jsonFilePath);
+        if (stream == null) throw new FileNotFoundException($"Resource not found: {jsonFilePath}");
+
+        using var reader = new StreamReader(stream);
+        var jsonText = reader.ReadToEnd();
+
+        if (string.IsNullOrWhiteSpace(jsonText)) throw new InvalidDataException("JSON content is empty or whitespace.");
+
+        LocalizationManager.LoadJsonLocalization(jsonText);
+    }
 }
