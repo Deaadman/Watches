@@ -13,6 +13,7 @@ public class WatchItem : MonoBehaviour
     private DisplayTime m_DisplayTime;
     private TimeOfDay m_TimeOfDay;
     
+    internal static bool WasTimeChecked;
     private float m_CurrentBatteryCharge;
     private const float BatteryDepletionRate = 6f;  // Higher number = slower depletion
     private const float BatteryRechargeRate = 2f;   // Lower number = faster recharge
@@ -58,8 +59,11 @@ public class WatchItem : MonoBehaviour
         var todHours = m_TimeOfDay.GetTODHours(Time.deltaTime);
         if (GameManager.GetAuroraManager().AuroraIsActive()) m_CurrentBatteryCharge += todHours / BatteryRechargeRate;
     }
-    
-    internal static void TimeChecked(bool arg1, bool arg2, float arg3) { }
+
+    internal static void TimeChecked(bool arg1, bool arg2, float arg3)
+    {
+        WasTimeChecked = true;
+    }
 
     internal void UpdateAnalogTime() { }
     

@@ -1,4 +1,5 @@
 ﻿using Watches.Enums;
+using Watches.UserInterface;
 using Watches.Utilities;
 
 namespace Watches.Components;
@@ -14,7 +15,7 @@ public class DisplayTime : MonoBehaviour
 
     private void Start()
     {
-        m_DigitalTimeLabel = DisplayTimeUI.SetupDigitalTime(transform,false);
+        m_DigitalTimeLabel = DisplayTimeUserInterface.SetupDigitalTime(transform,false);
         m_ObjectDuration = Instantiate(InterfaceManager.GetPanel<Panel_HUD>().m_EquipItemPopup.m_ObjectDuration, m_DigitalTimeLabel.transform);
         m_ObjectDuration.transform.localPosition = new Vector3(-65f, -20f, 0);
         m_ObjectDuration.SetActive(false);

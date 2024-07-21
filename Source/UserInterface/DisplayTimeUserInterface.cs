@@ -1,8 +1,8 @@
 ﻿using Watches.Components;
 
-namespace Watches.Utilities;
+namespace Watches.UserInterface;
 
-internal static class DisplayTimeUI
+internal static class DisplayTimeUserInterface
 {
     internal static GameObject SetupDisplayTimesGameObject(Transform parent, bool worldPositionStays)
     {
