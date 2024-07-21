@@ -1,14 +1,13 @@
 ﻿using Watches.Components;
+using Watches.Enums;
 
-namespace Watches;
+namespace Watches.Managers;
 
 internal static class ComponentManager
 {
-    internal static void SetupWatchItem(GearItem gearItem, WatchItem.WatchType watchType)
+    internal static void SetupWatchItem(GearItem gearItem, WatchType watchType)
     {
-        if (gearItem.GetComponent<WatchItem>() == null) return;
-            
-        var watchItemComponent = gearItem.gameObject.AddComponent<WatchItem>();
+        var watchItemComponent = gearItem.GetComponent<WatchItem>() ?? gearItem.gameObject.AddComponent<WatchItem>();
         watchItemComponent.m_WatchType = watchType;
     }
 

@@ -1,19 +1,29 @@
-﻿namespace Watches.Components;
+﻿using Watches.Utilities;
+
+namespace Watches.Components;
 
 [RegisterTypeInIl2Cpp(false)]
 public class DisplayTime : MonoBehaviour
 {
-    private TimeWidget m_TimeWidget;
-    
-    private void Awake()
+    internal UILabel m_DigitalTimeLabel;
+    internal GameObject m_AnalogTime;
+    //private GameObject m_TimeWidget = InterfaceManager.m_TimeWidget;
+
+    private void Start()
     {
-        m_TimeWidget = transform.GetComponent<TimeWidget>();
+        m_DigitalTimeLabel = DisplayTimeUI.SetupDigitalTime(gameObject.transform,false);
     }
 
-    // This might be the key to hide the TimeWidget.
-    // Not sure how to stop it from updating though without a harmony patch.
-    private void LateUpdate()
-    { 
-        if (!SundialItem.IsVisible) m_TimeWidget.gameObject.SetActive(false);
+    internal static DisplayTime GetInstance() => InterfaceManager.m_TimeWidget.transform.parent.gameObject.GetComponent<DisplayTime>();
+
+    private void Update()
+    {
+        if (!m_DigitalTimeLabel.gameObject.active) return;
+        
+        var watchInSlot = GameManager.GetPlayerManagerComponent().GetClothingInSlot(ClothingRegion.Accessory, ClothingLayer.Base).GetComponent<WatchItem>();
+        if (watchInSlot is null)
+            m_DigitalTimeLabel.gameObject.SetActive(false);
+        else
+            watchInSlot.Update();
     }
 }

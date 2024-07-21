@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Watches
   Author: Deadman
-  Version: 1.0.0-DeveloperBuild
+  Version: 1.0.0
   RequiredMods: []
   RequiresDLC: 0
   modLocalization: {fileID: 11400000, guid: ac485635418ece9499c65216e253b12f, type: 2}
   modGearSpawns: {fileID: 11400000, guid: 1289703b0dbf60a4ba0b3b59a11cd058, type: 2}
+  modItemRarities: {fileID: 11400000, guid: 4ee86cb184c5ee7479b8cc4e571b17cc, type: 2}
   Items:
   - {fileID: 2482022990122564257, guid: 4f9c0c7a81cd9b8458970fea79fefae7, type: 3}
   - {fileID: 2482022990122564257, guid: 6d6c908846ca5b34ba4e119daecaac9c, type: 3}

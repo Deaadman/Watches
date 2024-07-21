@@ -93,7 +93,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
-  - component: {fileID: 1122523007699777169}
   m_Layer: 0
   m_Name: GEAR_Stopwatch
   m_TagString: Untagged
@@ -132,37 +131,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.30638593, y: 0.045401797, z: 0.359821}
   m_Center: {x: 0.000043205917, y: 0.021491915, z: -0.027449831}
---- !u!114 &1122523007699777169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2482022990122564257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b791cf8328f045d45bf04b4f116cb5bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayNameLocalizationId: GAMEPLAY_Stopwatch
-  DescriptionLocalizatonId: GAMEPLAY_StopwatchDescription
-  InventoryActionLocalizationId: GAMEPLAY_StopwatchAction
-  WeightKG: 0.5
-  DaysToDecay: 20
-  MaxHP: 100
-  InitialCondition: 0
-  InventoryCategory: 0
-  PickUpAudio: {fileID: 0}
-  PutBackAudio: {fileID: 0}
-  StowAudio: {fileID: 0}
-  WornOutAudio: {fileID: 0}
-  InspectOnPickup: 1
-  InspectDistance: 1
-  InspectAngles: {x: 0, y: 0, z: 0}
-  InspectOffset: {x: 0, y: 0, z: 0}
-  InspectScale: {x: 1, y: 1, z: 1}
-  NormalModel: {fileID: 0}
-  InspectModel: {fileID: 0}
 --- !u!1 &5242072816422485273
 GameObject:
   m_ObjectHideFlags: 0

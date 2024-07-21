@@ -93,7 +93,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
-  - component: {fileID: -5841037354305496721}
   m_Layer: 0
   m_Name: GEAR_DigitalWatch
   m_TagString: Untagged
@@ -130,56 +129,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3017234, y: 0.22558938, z: 0.26506203}
   m_Center: {x: -0.00095663965, y: 0.10650209, z: 0.004696995}
---- !u!114 &-5841037354305496721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2482022990122564257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 776f32fbd4217924a828b6bb17679dcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayNameLocalizationId: GAMEPLAY_DigitalWatch
-  DescriptionLocalizatonId: GAMEPLAY_DigitalWatchDescription
-  InventoryActionLocalizationId: 
-  WeightKG: 0.4
-  DaysToDecay: 100
-  MaxHP: 100
-  InitialCondition: 0
-  InventoryCategory: 0
-  PickUpAudio: {fileID: 0}
-  PutBackAudio: {fileID: 0}
-  StowAudio: {fileID: 0}
-  WornOutAudio: {fileID: 0}
-  InspectOnPickup: 1
-  InspectDistance: 1
-  InspectAngles: {x: 0, y: 0, z: 0}
-  InspectOffset: {x: 0, y: 0, z: 0}
-  InspectScale: {x: 1, y: 1, z: 1}
-  NormalModel: {fileID: 0}
-  InspectModel: {fileID: 0}
-  Region: 0
-  MinLayer: 0
-  MaxLayer: 1
-  MovementSound: 0
-  Footwear: 2
-  DaysToDecayWornOutside: 0
-  DaysToDecayWornInside: 0
-  Warmth: 0.5
-  WarmthWhenWet: 0
-  Windproof: 0
-  Waterproofness: 0
-  Toughness: 0
-  SprintBarReduction: 0
-  DecreaseAttackChance: 0
-  IncreaseFleeChance: 0
-  HoursToDryNearFire: 1
-  HoursToDryWithoutFire: 3
-  HoursToFreeze: 1.5
-  MainTexture: {fileID: 0}
-  BlendTexture: {fileID: 0}
-  DrawLayer: 0
-  ImplementationType: 

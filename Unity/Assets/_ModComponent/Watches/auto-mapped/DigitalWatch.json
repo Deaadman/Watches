@@ -33,7 +33,7 @@
     "InspectModel": "",
     "Region": "Accessory",
     "MinLayer": "Base",
-    "MaxLayer": "Mid",
+    "MaxLayer": "Base",
     "MovementSound": "None",
     "Footwear": "None",
     "DaysToDecayWornOutside": 0.0,
