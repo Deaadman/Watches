@@ -1,4 +1,5 @@
 ﻿using Watches.Components;
+using Watches.Utilities;
 
 namespace Watches.Managers;
 
@@ -26,12 +27,12 @@ internal static class TimeManager
         }
         else
         {
-            ComponentManager.UseTimeItem(1, gearItem, SundialItem.TimeChecked);
+            ComponentManager.UseTimeItem(2, gearItem, SundialItem.TimeChecked);
         }
     }
 
     internal static void UseWatchItem(GearItem gearItem)
     {
-        ComponentManager.UseTimeItem(1, gearItem, WatchItem.TimeChecked);
+        ComponentManager.UseTimeItem(1, gearItem, GearItemUtilities.GetGearItemComponent<WatchItem>(gearItem).TimeChecked);
     }
 }

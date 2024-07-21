@@ -1,19 +1,19 @@
 ﻿using Watches.Enums;
 using Watches.UserInterface;
-using Watches.Utilities;
 
 namespace Watches.Components;
 
 [RegisterTypeInIl2Cpp(false)]
 public class DisplayTime : MonoBehaviour
 {
-    internal UILabel m_DigitalTimeLabel;
     internal GameObject m_AnalogTime;
     internal GameObject m_ObjectDuration;
+    
+    internal UILabel m_DigitalTimeLabel;
+    
     internal UISprite m_ObjectDurationForegroundSprite;
     internal UISprite m_HourHandSprite;
     internal UISprite m_MinuteHandSprite;
-    //private GameObject m_TimeWidget = InterfaceManager.m_TimeWidget;
 
     private void Start()
     {
@@ -39,18 +39,19 @@ public class DisplayTime : MonoBehaviour
         if (accessoryGearItem?.GetComponent<WatchItem>() is null)
         {
             m_DigitalTimeLabel.gameObject.SetActive(false);
-            m_AnalogTime.gameObject.SetActive(false);
+            if (!WatchItem.WasTimeChecked) m_AnalogTime.gameObject.SetActive(false);
             return;
         }
         
         var watchItem = accessoryGearItem.GetComponent<WatchItem>();
-        if (watchItem.m_WatchType == WatchType.Digital)
+        switch (watchItem.m_WatchType)
         {
-            watchItem.UpdateDigitalTime();
-        }
-        else if (watchItem.m_WatchType == WatchType.Analog)
-        {
-            watchItem.UpdateAnalogTime();
+            case WatchType.Digital:
+                watchItem.UpdateDigitalTime();
+                break;
+            case WatchType.Analog:
+                watchItem.UpdateAnalogTime();
+                break;
         }
     }
 }

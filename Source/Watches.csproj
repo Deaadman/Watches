@@ -27,7 +27,6 @@
 	<!-- List of used references -->
 	<ItemGroup>
 		<PackageReference Include="STBlade.Modding.TLD.Il2CppAssemblies.Windows" Version="2.30.0" />
-		<PackageReference Include="STBlade.Modding.TLD.LocalizationUtilities" Version="2.0.0" />
 		<PackageReference Include="stblade.Modding.TLD.ModData" Version="1.5.1" />
 		<PackageReference Include="STBlade.Modding.TLD.ModSettings" Version="1.9.0" />
 	</ItemGroup>
@@ -40,10 +39,6 @@
 		<Using Include="HarmonyLib" />
 		<Using Include="MelonLoader" />
 		<Using Include="UnityEngine" />
-	</ItemGroup>
-	<ItemGroup>
-	  <None Remove="Resources\Localization.json" />
-	  <EmbeddedResource Include="Resources\Localization.json" />
 	</ItemGroup>
 
 	<!-- This is a build event. It will copy your dll to the currently defined TheLongDarkPath's Mods folder -->

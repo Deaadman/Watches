@@ -1,5 +1,5 @@
-﻿using System.Text;
-using Random = UnityEngine.Random;
+﻿using Random = UnityEngine.Random;
+using System.Text;
 
 namespace Watches.Utilities;
 
@@ -16,7 +16,7 @@ internal static class TimeDisplayUtilities
         hour12 = hour12 == 0 ? 12 : hour12;
         var amPm = hour24 < 12 ? "AM" : "PM";
         
-        return minutes == -1 ? $"{hour12}:?? {amPm}" : $"{hour12}:{minutes:D2} {amPm}";
+        return hour24 == -1 ? $"??:{minutes:D2} {amPm}" : $"{hour12}:{minutes:D2} {amPm}";
     }
 
     internal static string GetTimeDisplay(int hour, int minutes, bool is12HourFormat, bool isAuroraActive)

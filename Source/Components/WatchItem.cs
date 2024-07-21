@@ -2,6 +2,7 @@
 using Watches.Managers;
 using Watches.Properties;
 using Watches.Utilities;
+using Random = UnityEngine.Random;
 
 namespace Watches.Components;
 
@@ -17,6 +18,7 @@ public class WatchItem : MonoBehaviour
     private float m_CurrentBatteryCharge;
     private const float BatteryDepletionRate = 6f;  // Higher number = slower depletion
     private const float BatteryRechargeRate = 2f;   // Lower number = faster recharge
+    private const float ConditionThresholdForSemiBrokenState = 20f;
     
     private void Awake()
     {
@@ -24,9 +26,9 @@ public class WatchItem : MonoBehaviour
         m_TimeOfDay = GameManager.GetTimeOfDayComponent();
         m_GearItem = GetComponent<GearItem>();
         
-        if (m_WatchType == WatchType.Digital) m_CurrentBatteryCharge = UnityEngine.Random.Range(0f, 1f);
+        if (m_WatchType == WatchType.Digital) m_CurrentBatteryCharge = Random.Range(0f, 1f);
     }
-
+    
     private string GetDigitalTimeDisplay()
     {
         if (m_CurrentBatteryCharge == 0f || m_GearItem.m_CurrentHP == 0f) return "??:??";
@@ -35,7 +37,7 @@ public class WatchItem : MonoBehaviour
         var minutes = m_TimeOfDay.GetMinutes();
         var isAuroraActive = GameManager.GetAuroraManager().AuroraIsActive();
         
-        if (m_GearItem.m_CurrentHP <= 50f && !isAuroraActive) return Settings.Instance.TwelveHourTime ? TimeDisplayUtilities.ConvertTo12HourFormat(hour, -1) : $"{hour:D2}:??";
+        if (m_GearItem.m_CurrentHP <= ConditionThresholdForSemiBrokenState && !isAuroraActive) return Settings.Instance.TwelveHourTime ? TimeDisplayUtilities.ConvertTo12HourFormat(-1, minutes) : $"??:{minutes:D2}";
         
         return TimeDisplayUtilities.GetTimeDisplay(hour, minutes, Settings.Instance.TwelveHourTime, isAuroraActive);
     }
@@ -60,23 +62,26 @@ public class WatchItem : MonoBehaviour
         if (GameManager.GetAuroraManager().AuroraIsActive()) m_CurrentBatteryCharge += todHours / BatteryRechargeRate;
     }
 
-    internal static void TimeChecked(bool arg1, bool arg2, float arg3)
+    internal void TimeChecked(bool arg1, bool arg2, float arg3)
     {
+        UpdateAnalogTime();
         WasTimeChecked = true;
     }
 
     internal void UpdateAnalogTime()
     {
-        var hour = m_TimeOfDay.GetHour() + m_TimeOfDay.GetMinutes() / 60f;
-        var minute = m_TimeOfDay.GetMinutes();
-
-        var hourAngle = ((hour % 12 + minute / 60f) / 12f * 360f) - 90f;
-        var minuteAngle = (minute / 60f * 360f) - 90f;
-
         m_DisplayTime.m_HourHandSprite.transform.localPosition = Vector3.zero;
         m_DisplayTime.m_MinuteHandSprite.transform.localPosition = Vector3.zero;
-        m_DisplayTime.m_HourHandSprite.transform.localRotation = Quaternion.Euler(0, 0, -hourAngle);
+
+        var minute = m_TimeOfDay.GetMinutes();
+        var minuteAngle = (minute / 60f * 360f) - 90f;
         m_DisplayTime.m_MinuteHandSprite.transform.localRotation = Quaternion.Euler(0, 0, -minuteAngle);
+
+        if (!(m_GearItem.m_CurrentHP > ConditionThresholdForSemiBrokenState)) return;
+        
+        var hour = m_TimeOfDay.GetHour() + minute / 60f;
+        var hourAngle = ((hour % 12) / 12f * 360f) - 90f;
+        m_DisplayTime.m_HourHandSprite.transform.localRotation = Quaternion.Euler(0, 0, -hourAngle);
     }
     
     internal void UpdateDigitalTime()

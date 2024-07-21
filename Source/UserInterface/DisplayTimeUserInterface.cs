@@ -4,37 +4,34 @@ namespace Watches.UserInterface;
 
 internal static class DisplayTimeUserInterface
 {
-    internal static GameObject SetupDisplayTimesGameObject(Transform parent, bool worldPositionStays)
+    private static void AddHourMarkers(GameObject clockObject)
     {
-        GameObject gameObject = new("DisplayTimes");
-        gameObject.AddComponent<DisplayTime>();
-        gameObject.transform.SetParent(parent, worldPositionStays);
-        
-        return gameObject;
-    }
+        const float radius = 30f;
+        for (var i = 1; i <= 12; i++)
+        {
+            GameObject hourMarker = new($"HourMarker{i}");
+            hourMarker.transform.SetParent(clockObject.transform, false);
 
-    internal static UILabel SetupDigitalTime(Transform parent, bool worldPositionStays)
-    {
-        GameObject gameObject = new("DigitalTime");
-        gameObject.transform.SetParent(parent, worldPositionStays);
-        gameObject.SetActive(false);
-        
-        var uiLabel = gameObject.AddComponent<UILabel>();
-        SetupUILabel(
-            uiLabel,
-            string.Empty,
-            FontStyle.Normal,
-            UILabel.Crispness.Always,
-            NGUIText.Alignment.Center,
-            UILabel.Overflow.ResizeFreely,
-            false,
-            0,
-            18,
-            Color.white,
-            true
-        );
-
-        return uiLabel;
+            var label = hourMarker.AddComponent<UILabel>();
+            SetupUILabel(
+                label,
+                i.ToString(),
+                FontStyle.Normal,
+                UILabel.Crispness.Always,
+                NGUIText.Alignment.Center,
+                UILabel.Overflow.ResizeFreely,
+                false,
+                1,
+                14,
+                Color.white,
+                false
+            );
+            
+            var angle = (90 - i * 30) * Mathf.Deg2Rad;
+            var x = Mathf.Cos(angle) * radius;
+            var y = Mathf.Sin(angle) * radius - 2f;
+            hourMarker.transform.localPosition = new Vector3(x, y, 0);
+        }
     }
     
     internal static GameObject SetupAnalogTime(Transform parent, bool worldPositionStays)
@@ -84,6 +81,39 @@ internal static class DisplayTimeUserInterface
         return gameObject;
     }
     
+    internal static UILabel SetupDigitalTime(Transform parent, bool worldPositionStays)
+    {
+        GameObject gameObject = new("DigitalTime");
+        gameObject.transform.SetParent(parent, worldPositionStays);
+        gameObject.SetActive(false);
+        
+        var uiLabel = gameObject.AddComponent<UILabel>();
+        SetupUILabel(
+            uiLabel,
+            string.Empty,
+            FontStyle.Normal,
+            UILabel.Crispness.Always,
+            NGUIText.Alignment.Center,
+            UILabel.Overflow.ResizeFreely,
+            false,
+            0,
+            18,
+            Color.white,
+            true
+        );
+
+        return uiLabel;
+    }
+    
+    internal static GameObject SetupDisplayTimesGameObject(Transform parent, bool worldPositionStays)
+    {
+        GameObject gameObject = new("DisplayTimes");
+        gameObject.AddComponent<DisplayTime>();
+        gameObject.transform.SetParent(parent, worldPositionStays);
+        
+        return gameObject;
+    }
+
     private static void SetupUILabel(
             UILabel label,
             string text,
@@ -121,35 +151,5 @@ internal static class DisplayTimeUserInterface
         sprite.spriteName = spriteName;
         sprite.mSprite = spriteData;
         sprite.mSpriteSet = true;
-    }
-    
-    private static void AddHourMarkers(GameObject clockObject)
-    {
-        const float radius = 30f;
-        for (var i = 1; i <= 12; i++)
-        {
-            GameObject hourMarker = new($"HourMarker{i}");
-            hourMarker.transform.SetParent(clockObject.transform, false);
-
-            var label = hourMarker.AddComponent<UILabel>();
-            SetupUILabel(
-                label,
-                i.ToString(),
-                FontStyle.Normal,
-                UILabel.Crispness.Always,
-                NGUIText.Alignment.Center,
-                UILabel.Overflow.ResizeFreely,
-                false,
-                1,
-                14,
-                Color.white,
-                false
-            );
-            
-            var angle = (90 - i * 30) * Mathf.Deg2Rad;
-            var x = Mathf.Cos(angle) * radius;
-            var y = Mathf.Sin(angle) * radius - 2f;
-            hourMarker.transform.localPosition = new Vector3(x, y, 0);
-        }
     }
 }
