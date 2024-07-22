@@ -18,7 +18,10 @@ public class WatchItem : MonoBehaviour
     private float m_CurrentBatteryCharge;
     private const float BatteryDepletionRate = 6f;  // Higher number = slower depletion
     private const float BatteryRechargeRate = 2f;   // Lower number = faster recharge
-    private const float ConditionThresholdForSemiBrokenState = 20f;
+    private const float ConditionThreshold = 20f;
+    private const float FrozenThreshold = 80f;
+
+    private readonly Color FrozenColour = new(0f, 0.844f, 1f, 1f);
     
     private void Awake()
     {
@@ -37,7 +40,7 @@ public class WatchItem : MonoBehaviour
         var minutes = m_TimeOfDay.GetMinutes();
         var isAuroraActive = GameManager.GetAuroraManager().AuroraIsActive();
         
-        if (m_GearItem.m_CurrentHP <= ConditionThresholdForSemiBrokenState && !isAuroraActive) return Settings.Instance.TwelveHourTime ? TimeDisplayUtilities.ConvertTo12HourFormat(-1, minutes) : $"??:{minutes:D2}";
+        if (m_GearItem.m_CurrentHP <= ConditionThreshold && !isAuroraActive) return Settings.Instance.TwelveHourTime ? TimeDisplayUtilities.ConvertTo12HourFormat(-1, minutes) : $"??:{minutes:D2}";
         
         return TimeDisplayUtilities.GetTimeDisplay(hour, minutes, Settings.Instance.TwelveHourTime, isAuroraActive);
     }
@@ -70,6 +73,16 @@ public class WatchItem : MonoBehaviour
 
     internal void UpdateAnalogTime()
     {
+        if (m_GearItem.m_ClothingItem.m_PercentFrozen >= FrozenThreshold)
+        {
+            m_DisplayTime.m_HourHandSprite.color = FrozenColour;
+            m_DisplayTime.m_MinuteHandSprite.color = FrozenColour;
+            return;
+        }
+
+        m_DisplayTime.m_HourHandSprite.color = Color.white;
+        m_DisplayTime.m_MinuteHandSprite.color = Color.white;
+
         m_DisplayTime.m_HourHandSprite.transform.localPosition = Vector3.zero;
         m_DisplayTime.m_MinuteHandSprite.transform.localPosition = Vector3.zero;
 
@@ -78,7 +91,7 @@ public class WatchItem : MonoBehaviour
         m_DisplayTime.m_MinuteHandSprite.transform.localRotation = Quaternion.Euler(0, 0, -minuteAngle);
         m_DisplayTime.m_HourHandSprite.color = Color.red;
 
-        if (!(m_GearItem.m_CurrentHP > ConditionThresholdForSemiBrokenState)) return;
+        if (!(m_GearItem.m_CurrentHP > ConditionThreshold)) return;
         
         var hour = m_TimeOfDay.GetHour() + minute / 60f;
         var hourAngle = ((hour % 12) / 12f * 360f) - 90f;
@@ -88,9 +101,21 @@ public class WatchItem : MonoBehaviour
     
     internal void UpdateDigitalTime()
     {
+        if (m_GearItem.m_ClothingItem.m_PercentFrozen >= FrozenThreshold)
+        {
+            m_DisplayTime.m_DigitalTimeLabel.color = FrozenColour;
+            m_DisplayTime.m_ObjectDurationForegroundSprite.color = FrozenColour;
+            m_DisplayTime.m_BatterySprite.color = FrozenColour;
+            return;
+        }
+        
+        m_DisplayTime.m_DigitalTimeLabel.color = Color.white;
+        m_DisplayTime.m_ObjectDurationForegroundSprite.color = Color.white;
+        m_DisplayTime.m_BatterySprite.color = Color.white;
+        
         var todHours = m_TimeOfDay.GetTODHours(Time.deltaTime);
         if (!GameManager.GetAuroraManager().AuroraIsActive()) m_CurrentBatteryCharge -= todHours / BatteryDepletionRate;
-
+        
         m_CurrentBatteryCharge = Mathf.Clamp(m_CurrentBatteryCharge, 0f, 1f);
         m_DisplayTime.m_ObjectDurationForegroundSprite.fillAmount = Mathf.Lerp(0.14f, 1f - 0.14f, m_CurrentBatteryCharge);
         m_DisplayTime.m_DigitalTimeLabel.text = GetDigitalTimeDisplay();

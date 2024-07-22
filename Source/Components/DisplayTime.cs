@@ -10,8 +10,9 @@ public class DisplayTime : MonoBehaviour
     internal GameObject m_ObjectDuration;
     
     internal UILabel m_DigitalTimeLabel;
-    
     internal UISprite m_ObjectDurationForegroundSprite;
+    internal UISprite m_BatterySprite;
+    
     internal UISprite m_HourHandSprite;
     internal UISprite m_MinuteHandSprite;
 
@@ -25,6 +26,7 @@ public class DisplayTime : MonoBehaviour
         m_AnalogTime = DisplayTimeUserInterface.SetupAnalogTime(transform, false);
         
         m_ObjectDurationForegroundSprite = m_ObjectDuration.transform.Find("Foreground").GetComponent<UISprite>();
+        m_BatterySprite = m_DigitalTimeLabel.transform.Find("BatterySprite").GetComponent<UISprite>();
         m_HourHandSprite = m_AnalogTime.transform.Find("HourHand").GetComponent<UISprite>();
         m_MinuteHandSprite = m_AnalogTime.transform.Find("MinuteHand").GetComponent<UISprite>();
     }
