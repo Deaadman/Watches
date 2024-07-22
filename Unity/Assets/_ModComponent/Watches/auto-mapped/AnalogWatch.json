@@ -3,25 +3,25 @@
     "DisplayNameLocalizationId": "GAMEPLAY_AnalogWatch",
     "DescriptionLocalizatonId": "GAMEPLAY_AnalogWatchDescription",
     "InventoryActionLocalizationId": "",
-    "WeightKG": 0.3,
-    "DaysToDecay": 100,
+    "WeightKG": 0.2,
+    "DaysToDecay": 0,
     "MaxHP": 100.0,
     "InitialCondition": "Random",
-    "InventoryCategory": "Auto",
-    "PickUpAudio": "",
-    "PutBackAudio": "",
-    "StowAudio": "",
-    "WornOutAudio": "",
+    "InventoryCategory": "Clothing",
+    "PickUpAudio": "Play_SndInvMetalSmall",
+    "PutBackAudio": "Play_SndInvMetalSmall",
+    "StowAudio": "Play_InventoryStow",
+    "WornOutAudio": "Play_SndInvMetalSmallBreak1",
     "InspectOnPickup": true,
-    "InspectDistance": 1.0,
+    "InspectDistance": 0.3,
     "InspectAngles": [
       0.0,
-      0.0,
-      0.0
+      -150.0,
+      90.0
     ],
     "InspectOffset": [
       0.0,
-      0.0,
+      -0.02,
       0.0
     ],
     "InspectScale": [
@@ -38,7 +38,7 @@
     "Footwear": "None",
     "DaysToDecayWornOutside": 0.0,
     "DaysToDecayWornInside": 0.0,
-    "Warmth": 0.5,
+    "Warmth": 0.0,
     "WarmthWhenWet": 0.0,
     "Windproof": 0.0,
     "Waterproofness": 0.0,
@@ -49,9 +49,41 @@
     "HoursToDryNearFire": 0.5,
     "HoursToDryWithoutFire": 2.0,
     "HoursToFreeze": 1.0,
-    "MainTexture": "",
+    "MainTexture": "CLTH_ACC_AnalogWatch_HMM_",
     "BlendTexture": "",
-    "DrawLayer": 0,
+    "DrawLayer": 1,
     "ImplementationType": ""
+  },
+  "ModRepairableBehaviour": {
+    "Audio": "",
+    "Minutes": 60,
+    "Condition": 20,
+    "RequiredTools": [
+      "GEAR_SewingKit",
+      "GEAR_SimpleTools"
+    ],
+    "MaterialNames": [
+      "GEAR_ScrapMetal",
+      "GEAR_LeatherDried"
+    ],
+    "MaterialCounts": [
+      1,
+      1
+    ]
+  },
+  "ModHarvestableBehaviour": {
+    "Audio": "",
+    "Minutes": 30,
+    "YieldCounts": [
+      1,
+      1
+    ],
+    "YieldNames": [
+      "GEAR_ScrapMetal",
+      "GEAR_LeatherDried"
+    ],
+    "RequiredToolNames": [
+      "GEAR_SimpleTools"
+    ]
   }
 }

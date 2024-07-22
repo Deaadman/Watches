@@ -3,20 +3,20 @@
     "DisplayNameLocalizationId": "GAMEPLAY_Stopwatch",
     "DescriptionLocalizatonId": "GAMEPLAY_StopwatchDescription",
     "InventoryActionLocalizationId": "GAMEPLAY_StopwatchAction",
-    "WeightKG": 0.5,
-    "DaysToDecay": 20,
+    "WeightKG": 0.2,
+    "DaysToDecay": 0,
     "MaxHP": 100.0,
     "InitialCondition": "Random",
-    "InventoryCategory": "Auto",
-    "PickUpAudio": "",
-    "PutBackAudio": "",
-    "StowAudio": "",
-    "WornOutAudio": "",
+    "InventoryCategory": "Tool",
+    "PickUpAudio": "Play_SndInvMetalSmall",
+    "PutBackAudio": "Play_SndInvMetalSmall",
+    "StowAudio": "Play_InventoryStow",
+    "WornOutAudio": "Play_SndInvMetalSmallBreak2",
     "InspectOnPickup": true,
-    "InspectDistance": 1.0,
+    "InspectDistance": 0.5,
     "InspectAngles": [
-      0.0,
-      0.0,
+      90.0,
+      180.0,
       0.0
     ],
     "InspectOffset": [
@@ -31,5 +31,32 @@
     ],
     "NormalModel": "",
     "InspectModel": ""
+  },
+  "ModRepairableBehaviour": {
+    "Audio": "",
+    "Minutes": 45,
+    "Condition": 20,
+    "RequiredTools": [
+      "GEAR_SimpleTools"
+    ],
+    "MaterialNames": [
+      "GEAR_ScrapMetal"
+    ],
+    "MaterialCounts": [
+      1
+    ]
+  },
+  "ModHarvestableBehaviour": {
+    "Audio": "",
+    "Minutes": 20,
+    "YieldCounts": [
+      1
+    ],
+    "YieldNames": [
+      "GEAR_ScrapMetal"
+    ],
+    "RequiredToolNames": [
+      "GEAR_SimpleTools"
+    ]
   }
 }

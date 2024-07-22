@@ -27,9 +27,11 @@ Transform:
   m_GameObject: {fileID: 344286499308663052}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 40, y: 40, z: 40}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8717236762591669319}
+  - {fileID: 4896615520937682851}
   m_Father: {fileID: 8290909207173746470}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -93,7 +95,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
-  - component: {fileID: -4511834506940684835}
+  - component: {fileID: 608861557288090859}
+  - component: {fileID: -2198732125910025995}
+  - component: {fileID: -5579993470551849381}
   m_Layer: 0
   m_Name: GEAR_Stopwatch
   m_TagString: Untagged
@@ -114,8 +118,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1120540971574045622}
-  - {fileID: 8717236762591669319}
-  - {fileID: 4896615520937682851}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -130,9 +132,9 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.30638593, y: 0.045401797, z: 0.359821}
-  m_Center: {x: 0.000043205917, y: 0.021491915, z: -0.027449831}
---- !u!114 &-4511834506940684835
+  m_Size: {x: 0.12151576, y: 0.019084165, z: 0.1215578}
+  m_Center: {x: 0.000043209642, y: 0.008333103, z: 0.00016278774}
+--- !u!114 &608861557288090859
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,22 +149,61 @@ MonoBehaviour:
   DisplayNameLocalizationId: GAMEPLAY_Stopwatch
   DescriptionLocalizatonId: GAMEPLAY_StopwatchDescription
   InventoryActionLocalizationId: GAMEPLAY_StopwatchAction
-  WeightKG: 0.5
-  DaysToDecay: 20
+  WeightKG: 0.2
+  DaysToDecay: 0
   MaxHP: 100
   InitialCondition: 0
-  InventoryCategory: 0
-  PickUpAudio: {fileID: 0}
-  PutBackAudio: {fileID: 0}
-  StowAudio: {fileID: 0}
-  WornOutAudio: {fileID: 0}
+  InventoryCategory: 6
+  PickUpAudio: {fileID: 11400000, guid: 0bc001e9e10281544902e476259eaaef, type: 2}
+  PutBackAudio: {fileID: 11400000, guid: 0bc001e9e10281544902e476259eaaef, type: 2}
+  StowAudio: {fileID: 11400000, guid: 9a5da80d395be8247a892f802422de25, type: 2}
+  WornOutAudio: {fileID: 11400000, guid: ae0d59a154dcebe4ca6a0737e91e9c81, type: 2}
   InspectOnPickup: 1
-  InspectDistance: 1
-  InspectAngles: {x: 0, y: 0, z: 0}
+  InspectDistance: 0.5
+  InspectAngles: {x: 90, y: 180, z: 0}
   InspectOffset: {x: 0, y: 0, z: 0}
   InspectScale: {x: 1, y: 1, z: 1}
   NormalModel: {fileID: 0}
   InspectModel: {fileID: 0}
+--- !u!114 &-2198732125910025995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482022990122564257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c0a89c087614a43873429595698ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Audio: {fileID: 0}
+  Minutes: 45
+  Condition: 20
+  RequiredTools:
+  - {fileID: 11400000, guid: 2e4c550915f480443b84eced703d5c8e, type: 2}
+  Materials:
+  - MaterialNames: {fileID: 11400000, guid: 976187b6a5913ae4c92c7a7ea830330c, type: 2}
+    MaterialCounts: 1
+--- !u!114 &-5579993470551849381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482022990122564257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef1a33782359ad459a4abd90c908127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Audio: {fileID: 0}
+  Minutes: 20
+  Yields:
+  - YieldCounts: 1
+    YieldNames: {fileID: 11400000, guid: 976187b6a5913ae4c92c7a7ea830330c, type: 2}
+  RequiredToolNames:
+  - {fileID: 11400000, guid: 2e4c550915f480443b84eced703d5c8e, type: 2}
 --- !u!1 &5242072816422485273
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,13 +229,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5242072816422485273}
-  m_LocalRotation: {x: -0.65328145, y: 0.27059823, z: 0.27059823, w: 0.6532814}
-  m_LocalPosition: {x: -0, y: 0.0335, z: -0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: 0.000000029802322, y: -0.000000029802322, z: 0.3826837, w: 0.92387944}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00033499996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8290909207173746470}
-  m_RootOrder: 2
+  m_Father: {fileID: 1120540971574045622}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 45}
 --- !u!33 &8384469172769826822
 MeshFilter:
@@ -271,13 +312,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8336734702680471293}
-  m_LocalRotation: {x: -0.6532818, y: -0.27059776, z: -0.27059767, w: 0.6532815}
-  m_LocalPosition: {x: -1.3118662e-10, y: 0.03350001, z: -0.0000000037252903}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: -0.00000014901161, y: -0.000000029802322, z: -0.38268295, w: 0.92387974}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00033500005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8290909207173746470}
-  m_RootOrder: 1
+  m_Father: {fileID: 1120540971574045622}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -45}
 --- !u!33 &5716760294962734050
 MeshFilter:

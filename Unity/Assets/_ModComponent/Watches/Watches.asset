@@ -15,7 +15,8 @@ MonoBehaviour:
   Name: Watches
   Author: Deadman
   Version: 1.0.0
-  RequiredMods: []
+  RequiredMods:
+  - AHandyToolbox
   RequiresDLC: 0
   modLocalization: {fileID: 11400000, guid: ac485635418ece9499c65216e253b12f, type: 2}
   modGearSpawns: {fileID: 11400000, guid: 1289703b0dbf60a4ba0b3b59a11cd058, type: 2}
@@ -30,3 +31,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 99907f700a6cc1544b5d158f36f6cff7, type: 3}
   - {fileID: 2800000, guid: 94187e5ddd88c4b42bf331c77a680c8e, type: 3}
   - {fileID: 2800000, guid: 49b40e2fb648703449ec5bf07fb50cb5, type: 3}
+  - {fileID: 2800000, guid: db28263fa330add4eb48496ccfa1f673, type: 3}
+  - {fileID: 2800000, guid: 597d139742e4fdd45b709b9a344f4e7a, type: 3}
+  - {fileID: 2800000, guid: c29cc735f4d05f24e8fdaae44f30ac82, type: 3}
+  - {fileID: 2800000, guid: c90b032e2cb4390499910a4b7b68fb06, type: 3}

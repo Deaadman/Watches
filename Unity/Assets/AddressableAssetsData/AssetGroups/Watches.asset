@@ -49,6 +49,22 @@ MonoBehaviour:
     m_Address: ico_GearItem__AnalogWatch
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: db28263fa330add4eb48496ccfa1f673
+    m_Address: CLTH_ACC_AnalogWatch_HMM_
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c90b032e2cb4390499910a4b7b68fb06
+    m_Address: CLTH_ACC_DigitalWatch_HMF_
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 597d139742e4fdd45b709b9a344f4e7a
+    m_Address: CLTH_ACC_AnalogWatch_HMF_
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c29cc735f4d05f24e8fdaae44f30ac82
+    m_Address: CLTH_ACC_DigitalWatch_HMM_
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f6842ab7ccfa20f44bbcd94e65422521, type: 2}
   m_SchemaSet:

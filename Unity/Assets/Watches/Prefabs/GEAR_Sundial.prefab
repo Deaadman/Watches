@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
-  - component: {fileID: -7540754691471658170}
+  - component: {fileID: 7096391098271595007}
   m_Layer: 0
   m_Name: GEAR_Sundial
   m_TagString: Untagged
@@ -45,9 +45,9 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.47227752, y: 0.18178496, z: 0.4762655}
-  m_Center: {x: -0.00043824315, y: 0.08886598, z: 0.0009919107}
---- !u!114 &-7540754691471658170
+  m_Size: {x: 0.11939216, y: 0.022388756, z: 0.12065078}
+  m_Center: {x: 0.0002258718, y: 0.00916788, z: 0.00028070062}
+--- !u!114 &7096391098271595007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,18 +62,18 @@ MonoBehaviour:
   DisplayNameLocalizationId: GAMEPLAY_Sundial
   DescriptionLocalizatonId: GAMEPLAY_SundialDescription
   InventoryActionLocalizationId: GAMEPLAY_SundialAction
-  WeightKG: 0.2
-  DaysToDecay: 20
+  WeightKG: 0.5
+  DaysToDecay: 0
   MaxHP: 100
   InitialCondition: 0
-  InventoryCategory: 0
-  PickUpAudio: {fileID: 0}
-  PutBackAudio: {fileID: 0}
-  StowAudio: {fileID: 0}
+  InventoryCategory: 6
+  PickUpAudio: {fileID: 11400000, guid: a97554dd6fdf4da4594efb534f6a0523, type: 2}
+  PutBackAudio: {fileID: 11400000, guid: 3908f4447b3483849a76103d14d07671, type: 2}
+  StowAudio: {fileID: 11400000, guid: 9a5da80d395be8247a892f802422de25, type: 2}
   WornOutAudio: {fileID: 0}
   InspectOnPickup: 1
-  InspectDistance: 1
-  InspectAngles: {x: 0, y: 0, z: 0}
+  InspectDistance: 0.5
+  InspectAngles: {x: 0, y: 90, z: -45}
   InspectOffset: {x: 0, y: 0, z: 0}
   InspectScale: {x: 1, y: 1, z: 1}
   NormalModel: {fileID: 0}
@@ -105,7 +105,7 @@ Transform:
   m_GameObject: {fileID: 3107634738649087342}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 25, y: 25, z: 25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8290909207173746470}

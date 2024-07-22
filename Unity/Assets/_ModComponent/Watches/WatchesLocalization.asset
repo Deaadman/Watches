@@ -36,7 +36,7 @@ MonoBehaviour:
       Ukrainian: 
   - localizationKey: GAMEPLAY_SundialDescription
     languages:
-      English: Work In Progress...
+      English: A simple sundial. Useful during the day... that's about it.
       German: 
       Russian: 
       French: 
@@ -99,7 +99,7 @@ MonoBehaviour:
       Ukrainian: 
   - localizationKey: GAMEPLAY_StopwatchDescription
     languages:
-      English: Work In Progress...
+      English: A sturdy stopwatch. Will face the fiercest conditions alongside you.
       German: 
       Russian: 
       French: 
@@ -162,7 +162,7 @@ MonoBehaviour:
       Ukrainian: 
   - localizationKey: GAMEPLAY_AnalogWatchDescription
     languages:
-      English: Work In Progress...
+      English: An classic analog wristwatch. Perfect for the apocalypse.
       German: 
       Russian: 
       French: 
@@ -204,7 +204,8 @@ MonoBehaviour:
       Ukrainian: 
   - localizationKey: GAMEPLAY_DigitalWatchDescription
     languages:
-      English: Work In Progress...
+      English: An average-looking digital wristwatch. Precisely tells the time to
+        the exact minute.
       German: 
       Russian: 
       French: 

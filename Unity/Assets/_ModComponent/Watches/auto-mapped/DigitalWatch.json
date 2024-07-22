@@ -3,25 +3,25 @@
     "DisplayNameLocalizationId": "GAMEPLAY_DigitalWatch",
     "DescriptionLocalizatonId": "GAMEPLAY_DigitalWatchDescription",
     "InventoryActionLocalizationId": "",
-    "WeightKG": 0.4,
-    "DaysToDecay": 100,
+    "WeightKG": 0.1,
+    "DaysToDecay": 0,
     "MaxHP": 100.0,
     "InitialCondition": "Random",
     "InventoryCategory": "Auto",
-    "PickUpAudio": "",
-    "PutBackAudio": "",
-    "StowAudio": "",
-    "WornOutAudio": "",
+    "PickUpAudio": "Play_DrawRifle",
+    "PutBackAudio": "Play_DrawRifle",
+    "StowAudio": "Play_InventoryStow",
+    "WornOutAudio": "Play_RespiratorCanister_GearItem_WornOut",
     "InspectOnPickup": true,
-    "InspectDistance": 1.0,
+    "InspectDistance": 0.3,
     "InspectAngles": [
       0.0,
-      0.0,
-      0.0
+      -150.0,
+      90.0
     ],
     "InspectOffset": [
       0.0,
-      0.0,
+      -0.02,
       0.0
     ],
     "InspectScale": [
@@ -38,20 +38,51 @@
     "Footwear": "None",
     "DaysToDecayWornOutside": 0.0,
     "DaysToDecayWornInside": 0.0,
-    "Warmth": 0.5,
+    "Warmth": 0.0,
     "WarmthWhenWet": 0.0,
     "Windproof": 0.0,
-    "Waterproofness": 0.0,
+    "Waterproofness": 5.0,
     "Toughness": 0.0,
     "SprintBarReduction": 0.0,
     "DecreaseAttackChance": 0,
     "IncreaseFleeChance": 0,
     "HoursToDryNearFire": 1.0,
     "HoursToDryWithoutFire": 3.0,
-    "HoursToFreeze": 1.5,
-    "MainTexture": "",
+    "HoursToFreeze": 2.0,
+    "MainTexture": "CLTH_ACC_DigitalWatch_HMM_",
     "BlendTexture": "",
-    "DrawLayer": 0,
+    "DrawLayer": 1,
     "ImplementationType": ""
+  },
+  "ModRepairableBehaviour": {
+    "Audio": "",
+    "Minutes": 90,
+    "Condition": 30,
+    "RequiredTools": [
+      "GEAR_HighQualityTools"
+    ],
+    "MaterialNames": [
+      "GEAR_ScrapMetal",
+      "GEAR_ElectronicParts"
+    ],
+    "MaterialCounts": [
+      1,
+      1
+    ]
+  },
+  "ModHarvestableBehaviour": {
+    "Audio": "",
+    "Minutes": 45,
+    "YieldCounts": [
+      1,
+      1
+    ],
+    "YieldNames": [
+      "GEAR_ScrapMetal",
+      "GEAR_ElectronicParts"
+    ],
+    "RequiredToolNames": [
+      "GEAR_HighQualityTools"
+    ]
   }
 }
