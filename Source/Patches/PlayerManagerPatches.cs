@@ -1,7 +1,4 @@
-﻿using Watches.Components;
-using Watches.Enums;
-using Watches.Managers;
-using Watches.Utilities;
+﻿using Watches.Managers;
 
 namespace Watches.Patches;
 
@@ -12,15 +9,7 @@ internal static class PlayerManagerPatches
     {
         private static void Postfix(PlayerManager __instance, GearItem gi, bool suppressWeaponsErrorMessage)
         {
-            if (gi == null) return;
-            if (GearItemUtilities.GetGearItemComponent<SundialItem>(gi) == true)
-            {
-                TimeManager.UseSundialItem(gi);
-            }
-            else if (GearItemUtilities.GetGearItemComponent<WatchItem>(gi) == true && GearItemUtilities.GetGearItemComponent<WatchItem>(gi).m_WatchType == WatchType.Stopwatch)
-            {
-                TimeManager.UseWatchItem(gi);
-            }
+            TimeManager.UseAndGetItems(gi);
         }
     }
 }

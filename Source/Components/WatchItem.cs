@@ -2,45 +2,44 @@
 using Watches.Managers;
 using Watches.Properties;
 using Watches.Utilities;
-using Random = UnityEngine.Random;
 
 namespace Watches.Components;
 
 [RegisterTypeInIl2Cpp(false)]
 public class WatchItem : MonoBehaviour
 {
-    internal WatchType m_WatchType;
-    private GearItem m_GearItem;
-    private DisplayTime m_DisplayTime;
-    private TimeOfDay m_TimeOfDay;
-    
     internal static bool WasTimeChecked;
-    private float m_CurrentBatteryCharge;
-    private const float BatteryDepletionRate = 6f;  // Higher number = slower depletion
-    private const float BatteryRechargeRate = 2f;   // Lower number = faster recharge
+    private const float BatteryDepletionRate = 6f; // Higher number = slower depletion
+    private const float BatteryRechargeRate = 2f; // Lower number = faster recharge
     private const float ConditionThreshold = 20f;
     private const float FrozenThreshold = 80f;
-
-    private readonly Color FrozenColour = new(0f, 0.844f, 1f, 1f);
+    private float CurrentBatteryCharge;
+    
+    private Color FrozenColour;
+    private DisplayTime DisplayTime;
+    private GearItem GearItem;
+    private TimeOfDay TimeOfDay;
+    internal WatchType WatchType;
     
     private void Awake()
     {
-        m_DisplayTime = DisplayTime.GetInstance();
-        m_TimeOfDay = GameManager.GetTimeOfDayComponent();
-        m_GearItem = GetComponent<GearItem>();
+        DisplayTime = DisplayTime.GetInstance();
+        TimeOfDay = GameManager.GetTimeOfDayComponent();
+        GearItem = GetComponent<GearItem>();
+        FrozenColour = InterfaceManager.GetPanel<Panel_Clothing>().m_ItemDescriptionPage.m_FrozenStatusColor;
         
-        if (m_WatchType == WatchType.Digital) m_CurrentBatteryCharge = Random.Range(0f, 1f);
+        if (WatchType == WatchType.Digital) CurrentBatteryCharge = UnityEngine.Random.Range(0f, 1f);
     }
     
     private string GetDigitalTimeDisplay()
     {
-        if (m_CurrentBatteryCharge == 0f || m_GearItem.m_CurrentHP == 0f) return "??:??";
+        if (CurrentBatteryCharge == 0f || GearItem.m_CurrentHP == 0f) return "??:??";
         
-        var hour = m_TimeOfDay.GetHour();
-        var minutes = m_TimeOfDay.GetMinutes();
+        var hour = TimeOfDay.GetHour();
+        var minutes = TimeOfDay.GetMinutes();
         var isAuroraActive = GameManager.GetAuroraManager().AuroraIsActive();
         
-        if (m_GearItem.m_CurrentHP <= ConditionThreshold && !isAuroraActive) return Settings.Instance.TwelveHourTime ? TimeDisplayUtilities.ConvertTo12HourFormat(-1, minutes) : $"??:{minutes:D2}";
+        if (GearItem.m_CurrentHP <= ConditionThreshold && !isAuroraActive) return Settings.Instance.TwelveHourTime ? TimeDisplayUtilities.ConvertTo12HourFormat(-1, minutes) : $"??:{minutes:D2}";
         
         return TimeDisplayUtilities.GetTimeDisplay(hour, minutes, Settings.Instance.TwelveHourTime, isAuroraActive);
     }
@@ -50,19 +49,16 @@ public class WatchItem : MonoBehaviour
         var loadedData = DataManager.LoadData<float>("DigitalWatchBattery");
         if (loadedData.HasValue)
         {
-            m_CurrentBatteryCharge = loadedData.Value;
+            CurrentBatteryCharge = loadedData.Value;
         }
     }
     
-    internal void Serialize()
-    {
-        DataManager.SaveData(m_CurrentBatteryCharge, "DigitalWatchBattery");
-    }
+    internal void Serialize() => DataManager.SaveData(CurrentBatteryCharge, "DigitalWatchBattery");
     
     internal void Recharge()
     {
-        var todHours = m_TimeOfDay.GetTODHours(Time.deltaTime);
-        if (GameManager.GetAuroraManager().AuroraIsActive()) m_CurrentBatteryCharge += todHours / BatteryRechargeRate;
+        var todHours = TimeOfDay.GetTODHours(Time.deltaTime);
+        if (GameManager.GetAuroraManager().AuroraIsActive()) CurrentBatteryCharge += todHours / BatteryRechargeRate;
     }
 
     internal void TimeChecked(bool arg1, bool arg2, float arg3)
@@ -73,51 +69,47 @@ public class WatchItem : MonoBehaviour
 
     internal void UpdateAnalogTime()
     {
-        if (m_GearItem.m_ClothingItem.m_PercentFrozen >= FrozenThreshold)
+        if (GearItem.m_ClothingItem is not null && GearItem.m_ClothingItem.m_PercentFrozen >= FrozenThreshold)
         {
-            m_DisplayTime.m_HourHandSprite.color = FrozenColour;
-            m_DisplayTime.m_MinuteHandSprite.color = FrozenColour;
+            DisplayTime.HourHandSprite.color = FrozenColour;
+            DisplayTime.MinuteHandSprite.color = FrozenColour;
             return;
         }
-
-        m_DisplayTime.m_HourHandSprite.color = Color.white;
-        m_DisplayTime.m_MinuteHandSprite.color = Color.white;
-
-        m_DisplayTime.m_HourHandSprite.transform.localPosition = Vector3.zero;
-        m_DisplayTime.m_MinuteHandSprite.transform.localPosition = Vector3.zero;
-
-        var minute = m_TimeOfDay.GetMinutes();
-        var minuteAngle = (minute / 60f * 360f) - 90f;
-        m_DisplayTime.m_MinuteHandSprite.transform.localRotation = Quaternion.Euler(0, 0, -minuteAngle);
-        m_DisplayTime.m_HourHandSprite.color = Color.red;
-
-        if (!(m_GearItem.m_CurrentHP > ConditionThreshold)) return;
         
-        var hour = m_TimeOfDay.GetHour() + minute / 60f;
-        var hourAngle = ((hour % 12) / 12f * 360f) - 90f;
-        m_DisplayTime.m_HourHandSprite.transform.localRotation = Quaternion.Euler(0, 0, -hourAngle);
-        m_DisplayTime.m_HourHandSprite.color = Color.white;
+        DisplayTime.MinuteHandSprite.color = Color.white;
+
+        var minute = TimeOfDay.GetMinutes();
+        var minuteAngle = minute / 60f * 360f - 90f;
+        DisplayTime.MinuteHandSprite.transform.localRotation = Quaternion.Euler(0, 0, -minuteAngle);
+        DisplayTime.HourHandSprite.color = Color.red;
+
+        if (!(GearItem.m_CurrentHP > ConditionThreshold)) return;
+        
+        var hour = TimeOfDay.GetHour() + minute / 60f;
+        var hourAngle = hour % 12 / 12f * 360f - 90f;
+        DisplayTime.HourHandSprite.transform.localRotation = Quaternion.Euler(0, 0, -hourAngle);
+        DisplayTime.HourHandSprite.color = Color.white;
     }
     
     internal void UpdateDigitalTime()
     {
-        if (m_GearItem.m_ClothingItem.m_PercentFrozen >= FrozenThreshold)
+        if (GearItem.m_ClothingItem.m_PercentFrozen >= FrozenThreshold)
         {
-            m_DisplayTime.m_DigitalTimeLabel.color = FrozenColour;
-            m_DisplayTime.m_ObjectDurationForegroundSprite.color = FrozenColour;
-            m_DisplayTime.m_BatterySprite.color = FrozenColour;
+            DisplayTime.DigitalTimeLabel.color = FrozenColour;
+            DisplayTime.DurationObjectForegroundSprite.color = FrozenColour;
+            DisplayTime.BatterySprite.color = FrozenColour;
             return;
         }
         
-        m_DisplayTime.m_DigitalTimeLabel.color = Color.white;
-        m_DisplayTime.m_ObjectDurationForegroundSprite.color = Color.white;
-        m_DisplayTime.m_BatterySprite.color = Color.white;
+        DisplayTime.DigitalTimeLabel.color = Color.white;
+        DisplayTime.DurationObjectForegroundSprite.color = Color.white;
+        DisplayTime.BatterySprite.color = Color.white;
         
-        var todHours = m_TimeOfDay.GetTODHours(Time.deltaTime);
-        if (!GameManager.GetAuroraManager().AuroraIsActive()) m_CurrentBatteryCharge -= todHours / BatteryDepletionRate;
+        var todHours = TimeOfDay.GetTODHours(Time.deltaTime);
+        if (!GameManager.GetAuroraManager().AuroraIsActive()) CurrentBatteryCharge -= todHours / BatteryDepletionRate;
         
-        m_CurrentBatteryCharge = Mathf.Clamp(m_CurrentBatteryCharge, 0f, 1f);
-        m_DisplayTime.m_ObjectDurationForegroundSprite.fillAmount = Mathf.Lerp(0.14f, 1f - 0.14f, m_CurrentBatteryCharge);
-        m_DisplayTime.m_DigitalTimeLabel.text = GetDigitalTimeDisplay();
+        CurrentBatteryCharge = Mathf.Clamp(CurrentBatteryCharge, 0f, 1f);
+        DisplayTime.DurationObjectForegroundSprite.fillAmount = Mathf.Lerp(0.14f, 1f - 0.14f, CurrentBatteryCharge);
+        DisplayTime.DigitalTimeLabel.text = GetDigitalTimeDisplay();
     }
 }

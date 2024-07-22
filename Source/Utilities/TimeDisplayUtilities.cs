@@ -1,14 +1,13 @@
-﻿using Random = UnityEngine.Random;
-using System.Text;
+﻿using System.Text;
 
 namespace Watches.Utilities;
 
 internal static class TimeDisplayUtilities
 {
     private const string GlitchDigits = "0123456789?";
-    private static float s_GlitchTimer = 0f;
     private const float GlitchInterval = 0.1f;
-    private static string s_CurrentGlitchDisplay = "00:00";
+    private static string CurrentGlitchDisplay = "00:00";
+    private static float GlitchTimer;
     
     internal static string ConvertTo12HourFormat(int hour24, int minutes)
     {
@@ -27,13 +26,13 @@ internal static class TimeDisplayUtilities
 
     private static string GetGlitchyTimeDisplay(bool is12HourFormat)
     {
-        s_GlitchTimer += Time.deltaTime;
-        if (s_GlitchTimer >= GlitchInterval)
+        GlitchTimer += Time.deltaTime;
+        if (GlitchTimer >= GlitchInterval)
         {
-            s_GlitchTimer = 0f;
-            s_CurrentGlitchDisplay = GenerateGlitchyTime(is12HourFormat);
+            GlitchTimer = 0f;
+            CurrentGlitchDisplay = GenerateGlitchyTime(is12HourFormat);
         }
-        return s_CurrentGlitchDisplay;
+        return CurrentGlitchDisplay;
     }
 
     private static string GenerateGlitchyTime(bool is12HourFormat)
@@ -42,10 +41,10 @@ internal static class TimeDisplayUtilities
         
         for (var i = 0; i < 5; i++)
         {
-            sb.Append(i == 2 ? ':' : GlitchDigits[Random.Range(0, GlitchDigits.Length)]);
+            sb.Append(i == 2 ? ':' : GlitchDigits[UnityEngine.Random.Range(0, GlitchDigits.Length)]);
         }
 
-        if (is12HourFormat) sb.Append(Random.value > 0.5f ? " AM" : " PM");
+        if (is12HourFormat) sb.Append(UnityEngine.Random.value > 0.5f ? " AM" : " PM");
 
         return sb.ToString();
     }

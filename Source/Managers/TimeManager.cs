@@ -1,4 +1,5 @@
 ﻿using Watches.Components;
+using Watches.Enums;
 using Watches.Utilities;
 
 namespace Watches.Managers;
@@ -11,7 +12,21 @@ internal static class TimeManager
         HUDMessage.AddMessage(Localization.Get(localizationKey), true, true);
     }
     
-    internal static void UseSundialItem(GearItem gearItem)
+    internal static void UseAndGetItems(GearItem gearItem)
+    {
+        if (gearItem == null) return;
+        if (GearItemUtilities.GetGearItemComponent<SundialItem>(gearItem)) UseSundialItem(gearItem);
+        if (GearItemUtilities.GetGearItemComponent<WatchItem>(gearItem) && GearItemUtilities.GetGearItemComponent<WatchItem>(gearItem).WatchType == WatchType.Stopwatch) UseWatchItem(gearItem);
+    }
+    
+    private static void UseTimeItem(int seconds, GearItem gearItem, Action<bool, bool, float> completedMethod)
+    {
+        InterfaceManager.GetPanel<Panel_GenericProgressBar>().Launch(Localization.Get("GAMEPLAY_CheckingTime"), seconds,
+            0, 0, "", "", false, false, completedMethod);
+        gearItem.Degrade(1);
+    }
+    
+    private static void UseSundialItem(GearItem gearItem)
     {
         if (GameManager.GetWeatherComponent().IsIndoorEnvironment())
         {
@@ -28,13 +43,13 @@ internal static class TimeManager
         else
         {
             WatchItem.WasTimeChecked = false;
-            ComponentManager.UseTimeItem(2, gearItem, SundialItem.TimeChecked);
+            UseTimeItem(2, gearItem, SundialItem.TimeChecked);
         }
     }
 
-    internal static void UseWatchItem(GearItem gearItem)
+    private static void UseWatchItem(GearItem gearItem)
     {
         SundialItem.WasTimeChecked = false;
-        ComponentManager.UseTimeItem(1, gearItem, GearItemUtilities.GetGearItemComponent<WatchItem>(gearItem).TimeChecked);
+        UseTimeItem(1, gearItem, GearItemUtilities.GetGearItemComponent<WatchItem>(gearItem).TimeChecked);
     }
 }

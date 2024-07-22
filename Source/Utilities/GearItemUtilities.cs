@@ -12,11 +12,11 @@ internal static class GearItemUtilities
         var accessoryGearItem = GameManager.GetPlayerManagerComponent().GetClothingInSlot(ClothingRegion.Accessory, ClothingLayer.Base);
         if (accessoryGearItem?.GetComponent<WatchItem>() is null)
         {
-            DisplayTime.GetInstance().m_DigitalTimeLabel.gameObject.SetActive(false);
+            DisplayTime.GetInstance().DigitalTimeLabel.gameObject.SetActive(false);
             return WatchType.None;
         }
         
         var watchItem = accessoryGearItem.GetComponent<WatchItem>();
-        return watchItem.m_WatchType;
+        return watchItem.WatchType;
     }
 }
