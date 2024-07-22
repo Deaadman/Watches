@@ -162,7 +162,7 @@ MonoBehaviour:
       Ukrainian: 
   - localizationKey: GAMEPLAY_AnalogWatchDescription
     languages:
-      English: An classic analog wristwatch. Perfect for the apocalypse.
+      English: A classic analog wristwatch. Perfect for the apocalypse.
       German: 
       Russian: 
       French: 
@@ -204,8 +204,8 @@ MonoBehaviour:
       Ukrainian: 
   - localizationKey: GAMEPLAY_DigitalWatchDescription
     languages:
-      English: An average-looking digital wristwatch. Precisely tells the time to
-        the exact minute.
+      English: An average-looking digital wristwatch. Tells the time to the exact
+        minute.
       German: 
       Russian: 
       French: 

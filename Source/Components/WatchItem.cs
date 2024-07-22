@@ -27,8 +27,6 @@ public class WatchItem : MonoBehaviour
         TimeOfDay = GameManager.GetTimeOfDayComponent();
         GearItem = GetComponent<GearItem>();
         FrozenColour = InterfaceManager.GetPanel<Panel_Clothing>().m_ItemDescriptionPage.m_FrozenStatusColor;
-        
-        if (WatchType == WatchType.Digital) CurrentBatteryCharge = UnityEngine.Random.Range(0f, 1f);
     }
     
     private string GetDigitalTimeDisplay()
@@ -44,12 +42,19 @@ public class WatchItem : MonoBehaviour
         return TimeDisplayUtilities.GetTimeDisplay(hour, minutes, Settings.Instance.TwelveHourTime, isAuroraActive);
     }
     
+    // Moving the randomise battery charge to here prevent it from overriding the loaded battery charge.
+    // However, whenever a new digital watch is found - it always starts with a dead battery.
+    // Need to find a way around this.
     internal void Deserialize()
     {
         var loadedData = DataManager.LoadData<float>("DigitalWatchBattery");
         if (loadedData.HasValue)
         {
             CurrentBatteryCharge = loadedData.Value;
+        }
+        else
+        {
+            if (WatchType == WatchType.Digital) CurrentBatteryCharge = UnityEngine.Random.Range(0f, 1f);
         }
     }
     
