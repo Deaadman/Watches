@@ -17,7 +17,7 @@ internal static class TimeManager
         {
             StopWatchUnusableError("GAMEPLAY_CheckingSundialIndoors");
         }
-        if (GameManager.GetWeatherComponent().GetWeatherStage() is WeatherStage.Blizzard or WeatherStage.HeavySnow or WeatherStage.DenseFog)
+        else if (GameManager.GetWeatherComponent().GetWeatherStage() is WeatherStage.Blizzard or WeatherStage.HeavySnow or WeatherStage.DenseFog)
         {
             StopWatchUnusableError("GAMEPLAY_CheckingSundialWeather");
         }
@@ -27,12 +27,14 @@ internal static class TimeManager
         }
         else
         {
+            WatchItem.WasTimeChecked = false;
             ComponentManager.UseTimeItem(2, gearItem, SundialItem.TimeChecked);
         }
     }
 
     internal static void UseWatchItem(GearItem gearItem)
     {
+        SundialItem.WasTimeChecked = false;
         ComponentManager.UseTimeItem(1, gearItem, GearItemUtilities.GetGearItemComponent<WatchItem>(gearItem).TimeChecked);
     }
 }

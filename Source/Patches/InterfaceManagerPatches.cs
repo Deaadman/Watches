@@ -29,12 +29,10 @@ internal static class InterfaceManagerPatches
             }
             else if (WatchItem.WasTimeChecked)
             {
-                SundialItem.WasTimeChecked = false;
                 displayTime.m_AnalogTime.SetActive(active);
             }
             else if (SundialItem.WasTimeChecked)
             {
-                WatchItem.WasTimeChecked = false;
                 InterfaceManager.m_TimeWidget.SetActive(active);
             }
             return false;
