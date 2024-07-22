@@ -93,9 +93,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
-  - component: {fileID: 7609260919063759162}
-  - component: {fileID: 8499893617573088782}
-  - component: {fileID: 6399760341464592710}
+  - component: {fileID: -3630639084378721086}
+  - component: {fileID: 2758159358105682578}
+  - component: {fileID: -160316835870735113}
   m_Layer: 0
   m_Name: GEAR_DigitalWatch
   m_TagString: Untagged
@@ -132,7 +132,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0744758, y: 0.05646548, z: 0.06590419}
   m_Center: {x: -0.000009518117, y: 0.026963947, z: 0.0012880005}
---- !u!114 &7609260919063759162
+--- !u!114 &-3630639084378721086
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,14 +178,14 @@ MonoBehaviour:
   SprintBarReduction: 0
   DecreaseAttackChance: 0
   IncreaseFleeChance: 0
-  HoursToDryNearFire: 1
-  HoursToDryWithoutFire: 3
-  HoursToFreeze: 2
+  HoursToDryNearFire: 1.5
+  HoursToDryWithoutFire: 8
+  HoursToFreeze: 4
   MainTexture: {fileID: 2800000, guid: c29cc735f4d05f24e8fdaae44f30ac82, type: 3}
   BlendTexture: {fileID: 0}
   DrawLayer: 1
   ImplementationType: 
---- !u!114 &8499893617573088782
+--- !u!114 &2758159358105682578
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -207,7 +207,7 @@ MonoBehaviour:
     MaterialCounts: 1
   - MaterialNames: {fileID: 11400000, guid: 382f6545e72560e47b0bd6792cba79fd, type: 2}
     MaterialCounts: 1
---- !u!114 &6399760341464592710
+--- !u!114 &-160316835870735113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

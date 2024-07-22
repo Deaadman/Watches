@@ -9,8 +9,8 @@ namespace Watches.Components;
 public class WatchItem : MonoBehaviour
 {
     internal static bool WasTimeChecked;
-    private const float BatteryDepletionRate = 6f; // Higher number = slower depletion
-    private const float BatteryRechargeRate = 2f; // Lower number = faster recharge
+    private const float BatteryDepletionRate = 10f; // Higher number = slower depletion
+    private const float BatteryRechargeRate = 1f; // Lower number = faster recharge
     private const float ConditionThreshold = 20f;
     private const float FrozenThreshold = 80f;
     private float CurrentBatteryCharge;

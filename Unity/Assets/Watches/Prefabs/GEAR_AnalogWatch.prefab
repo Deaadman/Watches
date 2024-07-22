@@ -95,9 +95,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
-  - component: {fileID: 3964687842482284600}
-  - component: {fileID: 4882328732348236053}
-  - component: {fileID: -8011301737016801760}
+  - component: {fileID: 289810716018091494}
+  - component: {fileID: -6684143726008842899}
+  - component: {fileID: 2133741760950793932}
   m_Layer: 0
   m_Name: GEAR_AnalogWatch
   m_TagString: Untagged
@@ -134,7 +134,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.080405325, y: 0.06245754, z: 0.075107865}
   m_Center: {x: -0.000030487776, y: 0.027618613, z: -0.0024257712}
---- !u!114 &3964687842482284600
+--- !u!114 &289810716018091494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,14 +180,14 @@ MonoBehaviour:
   SprintBarReduction: 0
   DecreaseAttackChance: 0
   IncreaseFleeChance: 0
-  HoursToDryNearFire: 0.5
-  HoursToDryWithoutFire: 2
-  HoursToFreeze: 1
+  HoursToDryNearFire: 1
+  HoursToDryWithoutFire: 6
+  HoursToFreeze: 3
   MainTexture: {fileID: 2800000, guid: db28263fa330add4eb48496ccfa1f673, type: 3}
   BlendTexture: {fileID: 0}
   DrawLayer: 1
   ImplementationType: 
---- !u!114 &4882328732348236053
+--- !u!114 &-6684143726008842899
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -210,7 +210,7 @@ MonoBehaviour:
     MaterialCounts: 1
   - MaterialNames: {fileID: 11400000, guid: 0577e16999b040a4bace7014962bf3ba, type: 2}
     MaterialCounts: 1
---- !u!114 &-8011301737016801760
+--- !u!114 &2133741760950793932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
