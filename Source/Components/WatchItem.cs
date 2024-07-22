@@ -76,12 +76,14 @@ public class WatchItem : MonoBehaviour
         var minute = m_TimeOfDay.GetMinutes();
         var minuteAngle = (minute / 60f * 360f) - 90f;
         m_DisplayTime.m_MinuteHandSprite.transform.localRotation = Quaternion.Euler(0, 0, -minuteAngle);
+        m_DisplayTime.m_HourHandSprite.color = Color.red;
 
         if (!(m_GearItem.m_CurrentHP > ConditionThresholdForSemiBrokenState)) return;
         
         var hour = m_TimeOfDay.GetHour() + minute / 60f;
         var hourAngle = ((hour % 12) / 12f * 360f) - 90f;
         m_DisplayTime.m_HourHandSprite.transform.localRotation = Quaternion.Euler(0, 0, -hourAngle);
+        m_DisplayTime.m_HourHandSprite.color = Color.white;
     }
     
     internal void UpdateDigitalTime()

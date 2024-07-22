@@ -6,7 +6,7 @@ internal static class DisplayTimeUserInterface
 {
     private static void AddHourMarkers(GameObject clockObject)
     {
-        const float radius = 30f;
+        const float radius = 35f;
         for (var i = 1; i <= 12; i++)
         {
             GameObject hourMarker = new($"HourMarker{i}");
@@ -47,7 +47,7 @@ internal static class DisplayTimeUserInterface
         var clockSprite = clockCircle.AddComponent<UISprite>();
         SetupUISprite(
             clockSprite,
-            "crosshair_interactive"
+            "featSlot"
         );
 
         AddHourMarkers(gameObject);
@@ -58,8 +58,8 @@ internal static class DisplayTimeUserInterface
         
         var hourHandSprite = hourHand.AddComponent<UISprite>();
         hourHandSprite.pivot = UIWidget.Pivot.Left;
-        hourHandSprite.width = 10;
-        hourHandSprite.height = 5;
+        hourHandSprite.width = 18;
+        hourHandSprite.height = 10;
         SetupUISprite(
             hourHandSprite,
             "ico_almanac_arrow"
@@ -71,8 +71,8 @@ internal static class DisplayTimeUserInterface
         
         var minuteHandSprite = minuteHand.AddComponent<UISprite>();
         minuteHandSprite.pivot = UIWidget.Pivot.Left;
-        minuteHandSprite.width = 15;
-        minuteHandSprite.height = 5;
+        minuteHandSprite.width = 25;
+        minuteHandSprite.height = 10;
         SetupUISprite(
             minuteHandSprite,
             "ico_almanac_arrow"
@@ -102,6 +102,19 @@ internal static class DisplayTimeUserInterface
             true
         );
 
+        GameObject batteryIcon = new("BatterySprite");
+        batteryIcon.transform.SetParent(gameObject.transform, worldPositionStays);
+        batteryIcon.transform.localScale = Vector3.one;
+        batteryIcon.transform.localPosition = new Vector3(85f, -20f, 0f);
+        
+        var batterySprite = batteryIcon.AddComponent<UISprite>();
+        batterySprite.width = 42;
+        batterySprite.height = 42;
+        SetupUISprite(
+            batterySprite,
+            "ico_lightSource_flashlight"
+        );
+        
         return uiLabel;
     }
     
