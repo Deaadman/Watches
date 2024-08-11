@@ -54,7 +54,7 @@ public class WatchItem : MonoBehaviour
         }
         else
         {
-            if (WatchType == WatchType.Digital) CurrentBatteryCharge = UnityEngine.Random.Range(0f, 1f);
+            if (WatchType == WatchType.Digital) CurrentBatteryCharge = UnityEngine.Random.Range(0.1f, 1f);
         }
     }
     

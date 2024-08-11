@@ -95,6 +95,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
+  - component: {fileID: -4888314278578082521}
+  - component: {fileID: 8796671021329479582}
+  - component: {fileID: -2208275249515318834}
   m_Layer: 0
   m_Name: GEAR_AnalogWatch
   m_TagString: Untagged
@@ -131,6 +134,106 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.080405325, y: 0.06245754, z: 0.075107865}
   m_Center: {x: -0.000030487776, y: 0.027618613, z: -0.0024257712}
+--- !u!114 &-4888314278578082521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482022990122564257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 776f32fbd4217924a828b6bb17679dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayNameLocalizationId: GAMEPLAY_AnalogWatch
+  DescriptionLocalizatonId: GAMEPLAY_AnalogWatchDescription
+  InventoryActionLocalizationId: 
+  WeightKG: 0.2
+  DaysToDecay: 120
+  MaxHP: 100
+  InitialCondition: 0
+  InventoryCategory: 1
+  PickUpAudio: {fileID: 11400000, guid: 0bc001e9e10281544902e476259eaaef, type: 2}
+  PutBackAudio: {fileID: 11400000, guid: 0bc001e9e10281544902e476259eaaef, type: 2}
+  StowAudio: {fileID: 11400000, guid: 9a5da80d395be8247a892f802422de25, type: 2}
+  WornOutAudio: {fileID: 11400000, guid: 36660fcef5f04594bb15b8995080878f, type: 2}
+  InspectOnPickup: 1
+  InspectDistance: 0.3
+  InspectAngles: {x: 0, y: -150, z: 90}
+  InspectOffset: {x: 0, y: -0.02, z: 0}
+  InspectScale: {x: 1, y: 1, z: 1}
+  NormalModel: {fileID: 0}
+  InspectModel: {fileID: 0}
+  Region: 0
+  MinLayer: 0
+  MaxLayer: 0
+  MovementSound: 0
+  Footwear: 2
+  DaysToDecayWornOutside: 60
+  DaysToDecayWornInside: 90
+  Warmth: 0
+  WarmthWhenWet: 0
+  Windproof: 0
+  Waterproofness: 0
+  Toughness: 0
+  SprintBarReduction: 0
+  DecreaseAttackChance: 0
+  IncreaseFleeChance: 0
+  HoursToDryNearFire: 1
+  HoursToDryWithoutFire: 6
+  HoursToFreeze: 3
+  MainTexture: {fileID: 2800000, guid: db28263fa330add4eb48496ccfa1f673, type: 3}
+  BlendTexture: {fileID: 0}
+  DrawLayer: 1
+  ImplementationType: 
+  PreventAllDamageFromSource: 0
+  FirstPersonPrefabMale: 
+  FirstPersonPrefabFemale: 
+--- !u!114 &8796671021329479582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482022990122564257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c0a89c087614a43873429595698ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Audio: {fileID: 0}
+  Minutes: 60
+  Condition: 20
+  RequiredTools:
+  - {fileID: 11400000, guid: 4b67ccbff6603674693e87ac9f446507, type: 2}
+  - {fileID: 11400000, guid: 2e4c550915f480443b84eced703d5c8e, type: 2}
+  Materials:
+  - MaterialNames: {fileID: 11400000, guid: 976187b6a5913ae4c92c7a7ea830330c, type: 2}
+    MaterialCounts: 1
+  - MaterialNames: {fileID: 11400000, guid: 0577e16999b040a4bace7014962bf3ba, type: 2}
+    MaterialCounts: 1
+--- !u!114 &-2208275249515318834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482022990122564257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef1a33782359ad459a4abd90c908127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Audio: {fileID: 0}
+  Minutes: 30
+  Yields:
+  - YieldCounts: 1
+    YieldNames: {fileID: 11400000, guid: 976187b6a5913ae4c92c7a7ea830330c, type: 2}
+  - YieldCounts: 1
+    YieldNames: {fileID: 11400000, guid: 0577e16999b040a4bace7014962bf3ba, type: 2}
+  RequiredToolNames:
+  - {fileID: 11400000, guid: 2e4c550915f480443b84eced703d5c8e, type: 2}
 --- !u!1 &3870967946087396408
 GameObject:
   m_ObjectHideFlags: 0

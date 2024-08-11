@@ -34,27 +34,18 @@ internal static class GearItemPatches
     [HarmonyPatch(typeof(GearItem), nameof(GearItem.Deserialize))]
     private static class DeserializeWatchItemData
     {
-        private static void Postfix(GearItem __instance)
-        {
-            GearItemUtilities.GetGearItemComponent<WatchItem>(__instance)?.Deserialize();
-        }
+        private static void Postfix(GearItem __instance) => GearItemUtilities.GetGearItemComponent<WatchItem>(__instance)?.Deserialize();
     }
     
     [HarmonyPatch(typeof(GearItem), nameof(GearItem.ManualUpdate))]
     private static class RechargeDigitalWatchItem
     {
-        private static void Postfix(GearItem __instance)
-        {
-            GearItemUtilities.GetGearItemComponent<WatchItem>(__instance)?.Recharge();
-        }
+        private static void Postfix(GearItem __instance) => GearItemUtilities.GetGearItemComponent<WatchItem>(__instance)?.Recharge();
     }
     
     [HarmonyPatch(typeof(GearItem), nameof(GearItem.Serialize))]
     private static class SerializeWatchItemData
     {
-        private static void Postfix(GearItem __instance)
-        {
-            GearItemUtilities.GetGearItemComponent<WatchItem>(__instance)?.Serialize();
-        }
+        private static void Postfix(GearItem __instance) => GearItemUtilities.GetGearItemComponent<WatchItem>(__instance)?.Serialize();
     }
 }

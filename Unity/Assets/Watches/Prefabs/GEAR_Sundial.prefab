@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
+  - component: {fileID: 7008090725311094122}
   m_Layer: 0
   m_Name: GEAR_Sundial
   m_TagString: Untagged
@@ -46,6 +47,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.11939216, y: 0.022388756, z: 0.12065078}
   m_Center: {x: 0.0002258718, y: 0.00916788, z: 0.00028070062}
+--- !u!114 &7008090725311094122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482022990122564257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b791cf8328f045d45bf04b4f116cb5bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayNameLocalizationId: GAMEPLAY_Sundial
+  DescriptionLocalizatonId: GAMEPLAY_SundialDescription
+  InventoryActionLocalizationId: GAMEPLAY_SundialAction
+  WeightKG: 0.5
+  DaysToDecay: 0
+  MaxHP: 100
+  InitialCondition: 0
+  InventoryCategory: 6
+  PickUpAudio: {fileID: 11400000, guid: a97554dd6fdf4da4594efb534f6a0523, type: 2}
+  PutBackAudio: {fileID: 11400000, guid: 3908f4447b3483849a76103d14d07671, type: 2}
+  StowAudio: {fileID: 11400000, guid: 9a5da80d395be8247a892f802422de25, type: 2}
+  WornOutAudio: {fileID: 0}
+  InspectOnPickup: 1
+  InspectDistance: 0.5
+  InspectAngles: {x: 0, y: 90, z: -45}
+  InspectOffset: {x: 0, y: 0, z: 0}
+  InspectScale: {x: 1, y: 1, z: 1}
+  NormalModel: {fileID: 0}
+  InspectModel: {fileID: 0}
 --- !u!1 &3107634738649087342
 GameObject:
   m_ObjectHideFlags: 0

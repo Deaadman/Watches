@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3df780f930e2cf047af3a2ca3a2c1731, type: 3}
-  m_Name: GEAR_RevolverFancy_0
+  m_Script: {fileID: 11500000, guid: 655c56a6779577a419ef7cc2cd388ae7, type: 3}
+  m_Name: Play_musicScene_Hub_Exploration
   m_EditorClassIdentifier: 
-  Name: ico_GearItem__RevolverFancy_0
-  Icon: {fileID: 0}
+  Name: 

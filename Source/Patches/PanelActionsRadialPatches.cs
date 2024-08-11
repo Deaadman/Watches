@@ -28,9 +28,6 @@ internal static class PanelActionsRadialPatches
     [HarmonyPatch(typeof(Panel_ActionsRadial), nameof(Panel_ActionsRadial.UseItem))]
     public class UseCustomNavigationalItems
     {
-        public static void Postfix(Panel_ActionsRadial __instance, GearItem gi)
-        {
-            TimeManager.UseAndGetItems(gi);
-        }
+        public static void Postfix(Panel_ActionsRadial __instance, GearItem gi) => TimeManager.UseAndGetItems(gi);
     }
 }
