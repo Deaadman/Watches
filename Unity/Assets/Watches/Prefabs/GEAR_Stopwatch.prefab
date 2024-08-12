@@ -95,6 +95,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
+  - component: {fileID: -1415684022074088458}
+  - component: {fileID: -8298599234376182330}
+  - component: {fileID: 352959618463446433}
   m_Layer: 0
   m_Name: GEAR_Stopwatch
   m_TagString: Untagged
@@ -131,6 +134,76 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.12151576, y: 0.019084165, z: 0.1215578}
   m_Center: {x: 0.000043209642, y: 0.008333103, z: 0.00016278774}
+--- !u!114 &-1415684022074088458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482022990122564257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b791cf8328f045d45bf04b4f116cb5bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayNameLocalizationId: GAMEPLAY_Stopwatch
+  DescriptionLocalizatonId: GAMEPLAY_StopwatchDescription
+  InventoryActionLocalizationId: GAMEPLAY_StopwatchAction
+  WeightKG: 0.2
+  DaysToDecay: 0
+  MaxHP: 100
+  InitialCondition: 0
+  InventoryCategory: 6
+  PickUpAudio: {fileID: 11400000, guid: 0bc001e9e10281544902e476259eaaef, type: 2}
+  PutBackAudio: {fileID: 11400000, guid: 0bc001e9e10281544902e476259eaaef, type: 2}
+  StowAudio: {fileID: 11400000, guid: 9a5da80d395be8247a892f802422de25, type: 2}
+  WornOutAudio: {fileID: 11400000, guid: ae0d59a154dcebe4ca6a0737e91e9c81, type: 2}
+  InspectOnPickup: 1
+  InspectDistance: 0.5
+  InspectAngles: {x: 90, y: 180, z: 0}
+  InspectOffset: {x: 0, y: 0, z: 0}
+  InspectScale: {x: 1, y: 1, z: 1}
+  NormalModel: {fileID: 0}
+  InspectModel: {fileID: 0}
+--- !u!114 &-8298599234376182330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482022990122564257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c0a89c087614a43873429595698ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Audio: {fileID: 0}
+  Minutes: 45
+  Condition: 20
+  RequiredTools:
+  - {fileID: 11400000, guid: 2e4c550915f480443b84eced703d5c8e, type: 2}
+  Materials:
+  - MaterialNames: {fileID: 11400000, guid: 976187b6a5913ae4c92c7a7ea830330c, type: 2}
+    MaterialCounts: 1
+--- !u!114 &352959618463446433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482022990122564257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ef1a33782359ad459a4abd90c908127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Audio: {fileID: 0}
+  Minutes: 20
+  Yields:
+  - YieldCounts: 1
+    YieldNames: {fileID: 11400000, guid: 976187b6a5913ae4c92c7a7ea830330c, type: 2}
+  RequiredToolNames:
+  - {fileID: 11400000, guid: 2e4c550915f480443b84eced703d5c8e, type: 2}
 --- !u!1 &5242072816422485273
 GameObject:
   m_ObjectHideFlags: 0

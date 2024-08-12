@@ -13,7 +13,7 @@
 	<PropertyGroup>
 		<!-- This should point to wherever your games primary EXE is -->
 		<TheLongDarkPath>C:\Program Files (x86)\Steam\steamapps\common\TheLongDark</TheLongDarkPath>
-		<ReleaseFolderPath>D:\Personal Projects\The Long Dark\Mods\Maintained\Watches\Release</ReleaseFolderPath>
+		<ReleaseFolderPath>D:\The Long Dark\Projects\Maintained\Watches\Release</ReleaseFolderPath>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

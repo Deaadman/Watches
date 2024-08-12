@@ -7,7 +7,7 @@ internal static class BuildInfo
     public const string Description = null!;
     public const string Author = "Deadman";
     public const string Copyright = "Copyright © 2024";
-    public const string Version = "1.0.0-DeveloperBuild";
+    public const string Version = "1.0.0";
     public const string AssemblyVersion = "1.0.0.0";
     public const string MelonLoaderVersion = "0.6.1";
     public const string GUIName = "Watches";
