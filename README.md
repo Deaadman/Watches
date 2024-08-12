@@ -50,6 +50,7 @@ For optimal functionality of this modification, ensure you have the following ve
 - [**The Long Dark**](https://store.steampowered.com/news/app/305620) - Version: **v2.32**
 - [**MelonLoader**](https://github.com/LavaGang/MelonLoader/releases) - Version: **v0.6.1**
 - [**ModComponent**](https://github.com/dommrogers/ModComponent) - Version: **v6.3.1**
+- [**ModData**](https://github.com/dommrogers/ModData) - Version: **v1.5.4**
 - [**Modders' Gear Toolbox**](https://github.com/Jods-Its/Modders-Gear-Toolbox) - Version: **v1.0.3**
 
 ### Incompatible Mods:
