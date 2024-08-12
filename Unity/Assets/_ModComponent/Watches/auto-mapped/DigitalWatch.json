@@ -52,7 +52,10 @@
     "MainTexture": "CLTH_ACC_DigitalWatch_HMM_",
     "BlendTexture": "",
     "DrawLayer": 1,
-    "ImplementationType": ""
+    "ImplementationType": "",
+    "DamageSource": "Unspecified",
+    "FirstPersonPrefabMale": "",
+    "FirstPersonPrefabFemale": ""
   },
   "ModRepairableBehaviour": {
     "Audio": "",

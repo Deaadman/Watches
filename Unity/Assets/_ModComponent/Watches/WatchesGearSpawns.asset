@@ -13,4 +13,86 @@ MonoBehaviour:
   m_Name: WatchesGearSpawns
   m_EditorClassIdentifier: 
   sceneGearSpawnEntries: []
-  lootTableGearSpawnEntries: []
+  lootTableGearSpawnEntries:
+  - lootTableName: {fileID: 11400000, guid: 509f06a9cf0c0cb42a12d4400d163566, type: 2}
+    lootTableSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      weight: 3
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      weight: 3
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      weight: 5
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      weight: 10
+  - lootTableName: {fileID: 11400000, guid: 84b9e69e5b9405143a172d373f14e407, type: 2}
+    lootTableSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      weight: 5
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      weight: 5
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      weight: 10
+  - lootTableName: {fileID: 11400000, guid: 2b535b1dddb7e9e40981f75e77896482, type: 2}
+    lootTableSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      weight: 1
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      weight: 1
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      weight: 3
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      weight: 5
+  - lootTableName: {fileID: 11400000, guid: 567e083cf6b375a4ca1b6c45223ee8f9, type: 2}
+    lootTableSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      weight: 1
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      weight: 1
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      weight: 3
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      weight: 5
+  - lootTableName: {fileID: 11400000, guid: 5bab8d0a8d1655546aa30262194effd0, type: 2}
+    lootTableSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      weight: 5
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      weight: 5
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      weight: 10
+  - lootTableName: {fileID: 11400000, guid: d3ee90212ead0de4e96b85c2bb5ab8cc, type: 2}
+    lootTableSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      weight: 10
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      weight: 10
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      weight: 20
+  - lootTableName: {fileID: 11400000, guid: 162f140e33fdadb478fbbef54759289d, type: 2}
+    lootTableSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      weight: 2
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      weight: 1
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      weight: 5
+  - lootTableName: {fileID: 11400000, guid: 6da2df5798bcd7444bcb72c3ab9bbb8c, type: 2}
+    lootTableSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      weight: 1
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      weight: 1
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      weight: 3
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      weight: 5
+  - lootTableName: {fileID: 11400000, guid: f05404a861e7598408f4469732df55b6, type: 2}
+    lootTableSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      weight: 5
+  - lootTableName: {fileID: 11400000, guid: 370013644ec14fc4898089d51cdc5368, type: 2}
+    lootTableSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      weight: 1
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      weight: 3

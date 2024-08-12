@@ -1,1 +1,42 @@
 
+loottable=LootTableLocker
+item=GEAR_AnalogWatch w=3
+item=GEAR_DigitalWatch w=3
+item=GEAR_Stopwatch w=5
+item=GEAR_Sundial w=10
+loottable=LootTableLockerLocked
+item=GEAR_AnalogWatch w=5
+item=GEAR_DigitalWatch w=5
+item=GEAR_Stopwatch w=10
+loottable=LootTableWardrobe_outer
+item=GEAR_AnalogWatch w=1
+item=GEAR_DigitalWatch w=1
+item=GEAR_Stopwatch w=3
+item=GEAR_Sundial w=5
+loottable=LootTableEndTable
+item=GEAR_AnalogWatch w=1
+item=GEAR_DigitalWatch w=1
+item=GEAR_Stopwatch w=3
+item=GEAR_Sundial w=5
+loottable=LootTableDepositBox
+item=GEAR_AnalogWatch w=5
+item=GEAR_DigitalWatch w=5
+item=GEAR_Stopwatch w=10
+loottable=LootTableDepositBoxLocked
+item=GEAR_AnalogWatch w=10
+item=GEAR_DigitalWatch w=10
+item=GEAR_Stopwatch w=20
+loottable=LootTableSafe
+item=GEAR_AnalogWatch w=2
+item=GEAR_DigitalWatch w=1
+item=GEAR_Stopwatch w=5
+loottable=LootTableDresser
+item=GEAR_AnalogWatch w=1
+item=GEAR_DigitalWatch w=1
+item=GEAR_Stopwatch w=3
+item=GEAR_Sundial w=5
+loottable=LootTableTrash
+item=GEAR_Sundial w=5
+loottable=LootTableBackPack
+item=GEAR_Stopwatch w=1
+item=GEAR_Sundial w=3
