@@ -2,7 +2,7 @@
   "GAMEPLAY_Sundial": {
     "English": "Sundial",
     "German": "",
-    "Russian": "",
+    "Russian": "Солнечные часы",
     "French (France)": "",
     "Japanese": "",
     "Korean": "",
@@ -23,7 +23,7 @@
   "GAMEPLAY_SundialDescription": {
     "English": "A simple sundial. Useful during the day... that's about it.",
     "German": "",
-    "Russian": "",
+    "Russian": "Простые солнечные часы. Полезны, пока светит солнце.",
     "French (France)": "",
     "Japanese": "",
     "Korean": "",
@@ -44,7 +44,7 @@
   "GAMEPLAY_SundialAction": {
     "English": "Check Time",
     "German": "",
-    "Russian": "",
+    "Russian": "Проверить время",
     "French (France)": "",
     "Japanese": "",
     "Korean": "",
@@ -65,7 +65,7 @@
   "GAMEPLAY_Stopwatch": {
     "English": "Stopwatch",
     "German": "",
-    "Russian": "",
+    "Russian": "Секундомер",
     "French (France)": "",
     "Japanese": "",
     "Korean": "",
@@ -86,7 +86,7 @@
   "GAMEPLAY_StopwatchDescription": {
     "English": "A sturdy stopwatch. Will face the fiercest conditions alongside you.",
     "German": "",
-    "Russian": "",
+    "Russian": "Прочный секундомер. Выдержит с вами самые жесткие условия.",
     "French (France)": "",
     "Japanese": "",
     "Korean": "",
@@ -107,7 +107,7 @@
   "GAMEPLAY_StopwatchAction": {
     "English": "Check Time",
     "German": "",
-    "Russian": "",
+    "Russian": "Проверить время",
     "French (France)": "",
     "Japanese": "",
     "Korean": "",
@@ -128,7 +128,7 @@
   "GAMEPLAY_AnalogWatch": {
     "English": "Analog Watch",
     "German": "",
-    "Russian": "",
+    "Russian": "Механические часы",
     "French (France)": "",
     "Japanese": "",
     "Korean": "",
@@ -149,7 +149,7 @@
   "GAMEPLAY_AnalogWatchDescription": {
     "English": "A classic analog wristwatch. Perfect for the apocalypse.",
     "German": "",
-    "Russian": "",
+    "Russian": "Классические наручные часы. Идеальны для апокалипсиса.",
     "French (France)": "",
     "Japanese": "",
     "Korean": "",
@@ -170,7 +170,7 @@
   "GAMEPLAY_DigitalWatch": {
     "English": "Digital Watch",
     "German": "",
-    "Russian": "",
+    "Russian": "Электронные часы",
     "French (France)": "",
     "Japanese": "",
     "Korean": "",
@@ -191,7 +191,7 @@
   "GAMEPLAY_DigitalWatchDescription": {
     "English": "An average-looking digital wristwatch. Tells the time to the exact minute.",
     "German": "",
-    "Russian": "",
+    "Russian": "Обычные цифровые наручные часы. Показывают время с точностью до минуты.",
     "French (France)": "",
     "Japanese": "",
     "Korean": "",
@@ -212,7 +212,7 @@
   "GAMEPLAY_CheckingTime": {
     "English": "Checking the time...",
     "German": "",
-    "Russian": "",
+    "Russian": "Проверяю время...",
     "French (France)": "",
     "Japanese": "",
     "Korean": "",
@@ -233,7 +233,7 @@
   "GAMEPLAY_CheckingSundialIndoors": {
     "English": "Unable to check the Sundial indoors",
     "German": "",
-    "Russian": "",
+    "Russian": "Невозможно использовать солнечные часы в помещении",
     "French (France)": "",
     "Japanese": "",
     "Korean": "",
@@ -254,7 +254,7 @@
   "GAMEPLAY_CheckingSundialNightTime": {
     "English": "Unable to check the Sundial during the night",
     "German": "",
-    "Russian": "",
+    "Russian": "Невозможно использовать солнечные часы после захода солнца",
     "French (France)": "",
     "Japanese": "",
     "Korean": "",
@@ -275,7 +275,7 @@
   "GAMEPLAY_CheckingSundialWeather": {
     "English": "Unable to check the Sundial during bad weather",
     "German": "",
-    "Russian": "",
+    "Russian": "Невозможно использовать солнечные часы в плохую погоду",
     "French (France)": "",
     "Japanese": "",
     "Korean": "",
