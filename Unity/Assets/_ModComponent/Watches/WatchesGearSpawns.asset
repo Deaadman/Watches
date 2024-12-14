@@ -12,7 +12,849 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c480e3286f502546b0668eba661fcbc, type: 3}
   m_Name: WatchesGearSpawns
   m_EditorClassIdentifier: 
-  sceneGearSpawnEntries: []
+  sceneGearSpawnEntries:
+  - sceneName: {fileID: 11400000, guid: a700845730c9b9b41abfee53fedfdec4, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 2.0137, y: 1.2185, z: 5.6637}
+      rotation: {x: 0, y: 0, z: 0}
+      spawnChance: 9
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 2.7882, y: 1.4444, z: 0.1182}
+      rotation: {x: 4.6592, y: 305.5439, z: 0.1591}
+      spawnChance: 5
+  - sceneName: {fileID: 11400000, guid: f611929c304e19b4584433acdc0bdd84, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 9.0149, y: 1.1856, z: 3.4819}
+      rotation: {x: 0, y: 150.5788, z: 0}
+      spawnChance: 8
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -7.2122, y: 1.9478, z: -1.5463}
+      rotation: {x: 0, y: 277.1117, z: 0}
+      spawnChance: 3
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -6.5165, y: 0.7114, z: 6.1217}
+      rotation: {x: 0, y: 6.5458, z: 0}
+      spawnChance: 12
+  - sceneName: {fileID: 11400000, guid: 4bb162c7429cd0a498f5b2987e7b547d, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 2.9451, y: 0.4326, z: 0.2933}
+      rotation: {x: 0, y: 296.6488, z: 0}
+      spawnChance: 6
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 1.2593, y: 1.0868, z: 1.1756}
+      rotation: {x: 0, y: 137.7323, z: 0}
+      spawnChance: 3
+  - sceneName: {fileID: 11400000, guid: 2dd7ffc9c1f81264ca1a4ec1112e5958, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 863.935, y: 46.4739, z: 1437.0017}
+      rotation: {x: 0.427, y: 340.3219, z: 4.8913}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 469.3052, y: 60.2574, z: 566.7118}
+      rotation: {x: 0, y: 164.9832, z: 0}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 2336.4954, y: 43.1476, z: 2316.0005}
+      rotation: {x: 0, y: 198.3377, z: 0}
+      spawnChance: 8
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 476.8257, y: 59.6981, z: 590.7489}
+      rotation: {x: 0, y: 60.5141, z: 0}
+      spawnChance: 7
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 850.424, y: 46.8621, z: 906.5808}
+      rotation: {x: 0, y: 163.5207, z: 0}
+      spawnChance: 3
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 2334.8364, y: 54.159, z: 2260.542}
+      rotation: {x: 0, y: 331.8314, z: 0}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 586.6694, y: 156.2127, z: 1799.3975}
+      rotation: {x: 0, y: 256.9684, z: 0}
+      spawnChance: 2
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 583.1369, y: 154.4045, z: 1783.6904}
+      rotation: {x: 329.9596, y: 72.0056, z: 12.7977}
+      spawnChance: 3
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 557.756, y: 149.9244, z: 1759.323}
+      rotation: {x: 0, y: 205.353, z: 0}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 451.0976, y: 179.1588, z: 1653.3289}
+      rotation: {x: 0, y: 210.1371, z: 0}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 2294.5137, y: 54.7573, z: 2257.8467}
+      rotation: {x: 355.891, y: 161.3072, z: 10.6508}
+      spawnChance: 2
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 551.1104, y: 150.0501, z: 1724.3468}
+      rotation: {x: 0, y: 133.2027, z: 0}
+      spawnChance: 2
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 445.8106, y: 180.8314, z: 1640.1633}
+      rotation: {x: 0, y: 34.7804, z: 0}
+      spawnChance: 3
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 584.7079, y: 151.0182, z: 1779.4108}
+      rotation: {x: 0, y: 131.7857, z: 0}
+      spawnChance: 2
+  - sceneName: {fileID: 11400000, guid: 59f3acd33bafb4b47a6d302ade29eaa7, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 1.289, y: 1.4279, z: 14.687}
+      rotation: {x: 0, y: 218.7213, z: 0}
+      spawnChance: 10
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 3.097, y: 4.4059, z: 10.3473}
+      rotation: {x: 0, y: 322.5446, z: 0}
+      spawnChance: 10
+  - sceneName: {fileID: 11400000, guid: f42eb17be2cfee8499077121bc3bf036, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 3.4709, y: 0.8721, z: 7.4607}
+      rotation: {x: 0, y: 236.1431, z: 0}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -4.3846, y: 1.2695, z: -3.6794}
+      rotation: {x: 0, y: 307.101, z: 0}
+      spawnChance: 2
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 6.5816, y: 1.5647, z: 0.6439}
+      rotation: {x: 359.5605, y: 163.8515, z: 0.5919}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 3.0513, y: 3.6558, z: 4.69}
+      rotation: {x: 359.8576, y: 260.9741, z: 358.8684}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -8.9364, y: 4.3595, z: -2.8672}
+      rotation: {x: 0, y: 150.9229, z: 0}
+      spawnChance: 3
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 1.496, y: 1.6257, z: 3.3821}
+      rotation: {x: 0, y: 152.5482, z: 0}
+      spawnChance: 3
+  - sceneName: {fileID: 11400000, guid: 8399a4a327ca8a34d958cbb521ac6a6f, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: -8.2453, y: 1.4093, z: -0.8402}
+      rotation: {x: 0, y: 336.145, z: 0}
+      spawnChance: 44
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -7.088, y: 2.0491, z: -3.5024}
+      rotation: {x: 0, y: 81.5463, z: 0}
+      spawnChance: 7
+  - sceneName: {fileID: 11400000, guid: 8d722a845561d404282af0b27a47376e, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -0.1566, y: 1.0335, z: 1.3839}
+      rotation: {x: 0, y: 146.8739, z: 0}
+      spawnChance: 7
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -3.1951, y: 1.0627, z: 3.0417}
+      rotation: {x: 0, y: 160.9485, z: 0}
+      spawnChance: 5
+  - sceneName: {fileID: 11400000, guid: 8d722a845561d404282af0b27a47376e, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -0.1566, y: 1.0335, z: 1.3839}
+      rotation: {x: 0, y: 146.8739, z: 0}
+      spawnChance: 7
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -3.1951, y: 1.0627, z: 3.0417}
+      rotation: {x: 0, y: 160.9485, z: 0}
+      spawnChance: 5
+  - sceneName: {fileID: 11400000, guid: d2462e49c8f7ca248bc355cd6fd41b6c, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 5.5508, y: 1.047, z: 2.0966}
+      rotation: {x: 0, y: 129.2716, z: 0}
+      spawnChance: 7
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 0.551, y: 1.1949, z: -1.9131}
+      rotation: {x: 0, y: 121.7353, z: 0}
+      spawnChance: 3
+  - sceneName: {fileID: 11400000, guid: 4d10c6b5ef2d32f40b39d34fba194169, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 4.9908, y: 0.0215, z: 3.457}
+      rotation: {x: 0, y: 322.9643, z: 0}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -1.273, y: 1.1755, z: -0.8165}
+      rotation: {x: 0.1391, y: 348.6997, z: 4.6011}
+      spawnChance: 3
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -1.3718, y: 4.6041, z: 3.3743}
+      rotation: {x: 0, y: 198.6938, z: 0}
+      spawnChance: 2
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 6.7356, y: 1.1512, z: -0.0077}
+      rotation: {x: 0, y: 232.0004, z: 0}
+      spawnChance: 2
+  - sceneName: {fileID: 11400000, guid: ebdc3174b5bfc74438b2341880ca8a46, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: -1.8324, y: 0.6989, z: 5.4088}
+      rotation: {x: 0, y: 139.5755, z: 0}
+      spawnChance: 25
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -3.8129, y: 0.555, z: 8.2658}
+      rotation: {x: 0, y: 133.4521, z: 0}
+      spawnChance: 5
+  - sceneName: {fileID: 11400000, guid: a110dfd2813cf3640821b2cc3728e81e, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 7.3066, y: 1.2004, z: -10.2438}
+      rotation: {x: 0, y: 324.4189, z: 0}
+      spawnChance: 8
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 11.4662, y: 1.2531, z: -20.9847}
+      rotation: {x: 0, y: 248.6, z: 0}
+      spawnChance: 2
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -8.9338, y: 5.8512, z: -10.1408}
+      rotation: {x: 0, y: 25.4767, z: 0}
+      spawnChance: 3
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -8.7402, y: 5.8512, z: -5.2413}
+      rotation: {x: 0, y: 221.4833, z: 0}
+      spawnChance: 3
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -12.7032, y: 5.64, z: -12.1029}
+      rotation: {x: 0, y: 239.7717, z: 0}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -12.2702, y: 5.65, z: -22.0556}
+      rotation: {x: 0, y: 26.3077, z: 0}
+      spawnChance: 3
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 12.8677, y: 5.6476, z: -19.0392}
+      rotation: {x: 0, y: 260.173, z: 0}
+      spawnChance: 2
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -1.1025, y: 1.0716, z: -2.1385}
+      rotation: {x: 0, y: 160.028, z: 0}
+      spawnChance: 2
+  - sceneName: {fileID: 11400000, guid: 03fdd95d36be537429f4bef0cc8128d3, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -81.2131, y: -4.7693, z: -15.7145}
+      rotation: {x: 0, y: 323.5229, z: 0}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -47.7388, y: -7.7609, z: -1.2561}
+      rotation: {x: 0, y: 275.34, z: 0}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -0.7487, y: 0.9843, z: -5.038}
+      rotation: {x: 0, y: 244.3902, z: 0}
+      spawnChance: 3
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -11.9602, y: 1.3721, z: -4.3709}
+      rotation: {x: 0, y: 199.2835, z: 0}
+      spawnChance: 2
+  - sceneName: {fileID: 11400000, guid: ac29ec158c4017b44980c251d396521c, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 0.2905, y: 1.7763, z: -3.2076}
+      rotation: {x: 0, y: 50.3031, z: 0}
+      spawnChance: 10
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 2.2093, y: 1.1513, z: 1.3927}
+      rotation: {x: 0, y: 283.0627, z: 0}
+      spawnChance: 5
+  - sceneName: {fileID: 11400000, guid: c8e3d97de2f6a3c4db8f884d369af0aa, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 2.1925, y: 1.1455, z: 0.4127}
+      rotation: {x: 0, y: 305.413, z: 0}
+      spawnChance: 6
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 1.4644, y: 0.0257, z: -2.5912}
+      rotation: {x: 0, y: 317.2231, z: 0}
+      spawnChance: 3
+  - sceneName: {fileID: 11400000, guid: 3b2e520d2f946d14c9ddec1733c5954b, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 2.4445, y: 0.8105, z: 2.1589}
+      rotation: {x: 0, y: 12.3803, z: 0}
+      spawnChance: 12
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -0.4122, y: 1.5567, z: 3.2645}
+      rotation: {x: 0, y: 189.132, z: 0}
+      spawnChance: 7
+  - sceneName: {fileID: 11400000, guid: 0d010496e3b90d64f839a94ce1620fcf, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: -0.6248, y: 0.1322, z: -1.7998}
+      rotation: {x: 0, y: 33.7425, z: 0}
+      spawnChance: 20
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 5.0748, y: 0.2536, z: 1.1981}
+      rotation: {x: 0, y: 141.4292, z: 0}
+      spawnChance: 5
+  - sceneName: {fileID: 11400000, guid: 911cda95ff4ec5844b00a6ebd2f4faab, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -6.9054, y: 1.5347, z: 1.2299}
+      rotation: {x: 0, y: 101.3534, z: 0}
+      spawnChance: 9
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 3.7666, y: 1.4673, z: -1.6364}
+      rotation: {x: 0, y: 20.1832, z: 0}
+      spawnChance: 2
+  - sceneName: {fileID: 11400000, guid: 6068f2faf6acb734793a436d4ebb4367, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: -0.5603, y: 1.138, z: -1.1889}
+      rotation: {x: 0, y: 293.9387, z: 0}
+      spawnChance: 7
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -1.5505, y: 0.6494, z: 1.2421}
+      rotation: {x: 0, y: 188.592, z: 0}
+      spawnChance: 6
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 6.3286, y: 1.4554, z: -0.4691}
+      rotation: {x: 0, y: 230.8098, z: 0}
+      spawnChance: 3
+  - sceneName: {fileID: 11400000, guid: 94dd2e158512df541ae125b854d26d18, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: -2.5787, y: 0.5761, z: -1.4706}
+      rotation: {x: 0, y: 220.2281, z: 0}
+      spawnChance: 12
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 2.4466, y: 1.7593, z: 1.5593}
+      rotation: {x: 0, y: 59.8998, z: 0}
+      spawnChance: 3
+  - sceneName: {fileID: 11400000, guid: 74ec69a35009a3249955b8c5acfcf356, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 899.1026, y: 232.5374, z: -100.4357}
+      rotation: {x: 0, y: 292.5894, z: 0}
+      spawnChance: 15
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -39.7118, y: 128.3342, z: -760.3228}
+      rotation: {x: 5.5712, y: 283.2064, z: 1.9008}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -75.1362, y: 185.0193, z: -327.2855}
+      rotation: {x: 2.2867, y: 117.4815, z: 358.4513}
+      spawnChance: 2
+  - sceneName: {fileID: 11400000, guid: 9d5e49801056ea941a7bf55e74d34bec, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 3.9156, y: 0.0255, z: 1.159}
+      rotation: {x: 0, y: 250.2549, z: 0}
+      spawnChance: 7
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -4.3615, y: 1.4884, z: 2.3307}
+      rotation: {x: 7.6384, y: 155.6097, z: 17.4066}
+      spawnChance: 3
+  - sceneName: {fileID: 11400000, guid: d9e3f9d56398b0d45b40b9492c318fa0, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -79.8581, y: 226.8231, z: 40.7937}
+      rotation: {x: 0, y: 245.5735, z: 0}
+      spawnChance: 14
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -83.8548, y: 226.295, z: 37.5078}
+      rotation: {x: 0, y: 273.4063, z: 0}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -155.696, y: 229.7741, z: 81.3943}
+      rotation: {x: 0, y: 116.3049, z: 0}
+      spawnChance: 12
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -223.9977, y: 224.8025, z: 55.4346}
+      rotation: {x: 0.2101, y: 313.5323, z: 1.5746}
+      spawnChance: 3
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -224.8899, y: 224.4236, z: 68.0911}
+      rotation: {x: 0, y: 17.3908, z: 0}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -107.7754, y: 226.397, z: 109.1756}
+      rotation: {x: 0, y: 127.9645, z: 0}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -229.8112, y: 235.1275, z: 156.72}
+      rotation: {x: 0, y: 79.576, z: 0}
+      spawnChance: 3
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -189.5121, y: 226.8135, z: 5.4838}
+      rotation: {x: 0, y: 137.4657, z: 0}
+      spawnChance: 3
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -126.5975, y: 226.5111, z: 64.9092}
+      rotation: {x: 353.9987, y: 208.6445, z: 357.8314}
+      spawnChance: 2
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -148.4392, y: 229.7926, z: 83.511}
+      rotation: {x: 0, y: 144.8189, z: 0}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -106.397, y: 226.6269, z: 98.964}
+      rotation: {x: 0, y: 349.2564, z: 0}
+      spawnChance: 2
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -237.7152, y: 235.0236, z: 163.0652}
+      rotation: {x: 4.2638, y: 89.8229, z: 3.7011}
+      spawnChance: 2
+  - sceneName: {fileID: 11400000, guid: a652d1de1b723644fbd18b2f7f2c600d, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 52.5197, y: 1.0985, z: 6.2686}
+      rotation: {x: 0, y: 34.344, z: 0}
+      spawnChance: 20
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 1.8651, y: 5.0451, z: -20.9153}
+      rotation: {x: 0, y: 341.3053, z: 0}
+      spawnChance: 10
+  - sceneName: {fileID: 11400000, guid: 2a1ee350b62785045a3cda6a5ef0f7c1, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 5.4405, y: 0.54, z: -0.341}
+      rotation: {x: 0, y: 306.4994, z: 0}
+      spawnChance: 6
+  - sceneName: {fileID: 11400000, guid: dc9c1667916050e4b9c570d7cc3d9924, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -1.0242, y: 1.1016, z: -1.0414}
+      rotation: {x: 359.6838, y: 242.2526, z: 1.012}
+      spawnChance: 14
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 2.7216, y: 0.6767, z: -1.1147}
+      rotation: {x: 0, y: 240.3249, z: 0}
+      spawnChance: 5
+  - sceneName: {fileID: 11400000, guid: b5f1232a238fad34f93446e2af06c9fb, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 613.884, y: 24.0815, z: 289.953}
+      rotation: {x: 0, y: 158.4549, z: 0}
+      spawnChance: 15
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 390.3462, y: 25.0556, z: 493.1793}
+      rotation: {x: 0, y: 168.266, z: 0}
+      spawnChance: 7
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: -413.9944, y: 23.2984, z: 594.7787}
+      rotation: {x: 0, y: 12.3267, z: 0}
+      spawnChance: 12
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: -749.8591, y: 28.8609, z: 656.9495}
+      rotation: {x: 0, y: 344.4616, z: 0}
+      spawnChance: 3
+  - sceneName: {fileID: 11400000, guid: 4b87fdf40a6098944a994deb3dd7705f, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 1.5474, y: 0.8118, z: -0.6348}
+      rotation: {x: 0.2904, y: 311.1072, z: 358.9675}
+      spawnChance: 6
+  - sceneName: {fileID: 11400000, guid: a55fe7b670a895c48bebe622e0750b5d, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 2.2572, y: 0.9843, z: -0.3457}
+      rotation: {x: 0, y: 302.3014, z: 0}
+      spawnChance: 9
+  - sceneName: {fileID: 11400000, guid: 5a1f3a47cf36b9e48ac327abf0f992eb, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 0.6491, y: 1.1309, z: 3.2473}
+      rotation: {x: 0, y: 202.5199, z: 0}
+      spawnChance: 2
+  - sceneName: {fileID: 11400000, guid: 1e4961baf97fbfb47ae9c12e2d059fa6, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -4.4727, y: 0.9718, z: 1.9071}
+      rotation: {x: 0, y: 134.7069, z: 0}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -4.1536, y: 0.0112, z: -8.0772}
+      rotation: {x: 0, y: 137.9346, z: 0}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 5.5602, y: 1.0413, z: 4.9369}
+      rotation: {x: 0, y: 296.199, z: 0}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -0.2003, y: 1.0431, z: -7.3081}
+      rotation: {x: 0, y: 51.6228, z: 0}
+      spawnChance: 1
+  - sceneName: {fileID: 11400000, guid: 0f1188fdf31989640bd9ea9a023bf85e, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 2.5285, y: 0.1181, z: -3.3657}
+      rotation: {x: 0, y: 43.3073, z: 0}
+      spawnChance: 6
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 0.355, y: 1.2533, z: 1.8653}
+      rotation: {x: 0, y: 87.8342, z: 0}
+      spawnChance: 5
+  - sceneName: {fileID: 11400000, guid: b76d06a57dc483346b1338da627a1ca0, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: -2.719, y: 0.6623, z: 0.6968}
+      rotation: {x: 0, y: 11.4058, z: 0}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -8.8792, y: 1.0724, z: -5.4823}
+      rotation: {x: 0, y: 89.9332, z: 0}
+      spawnChance: 7
+  - sceneName: {fileID: 11400000, guid: 47068241bb690524880c59f62e2c78d2, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 667.8896, y: 71.4685, z: 416.608}
+      rotation: {x: 10.1204, y: 223.615, z: 8.7781}
+      spawnChance: 25
+  - sceneName: {fileID: 11400000, guid: c04cc2379a16d2c42bcf9b5bc81484c3, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 566.7487, y: 63.2, z: 1102.8805}
+      rotation: {x: 0, y: 329.4947, z: 0}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 1022.9576, y: 16.1187, z: 993.4971}
+      rotation: {x: 0, y: 92.3275, z: 0}
+      spawnChance: 6
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 898.7858, y: 16.3881, z: 1632.7587}
+      rotation: {x: 0, y: 243.0289, z: 0}
+      spawnChance: 12
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 171.5563, y: 87.4329, z: 967.1229}
+      rotation: {x: 0, y: 88.937, z: 0}
+      spawnChance: 35
+  - sceneName: {fileID: 11400000, guid: 4d03e1aad6e6cab48b0d00005adb0f77, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 0.6906, y: 1.0208, z: -0.8689}
+      rotation: {x: 0, y: 38.3749, z: 0}
+      spawnChance: 6
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 2.3753, y: 5.2998, z: 1.5556}
+      rotation: {x: 0, y: 340.8786, z: 0}
+      spawnChance: 6
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 1.1871, y: 0.5027, z: 4.9632}
+      rotation: {x: 0, y: 3.5412, z: 0}
+      spawnChance: 12
+  - sceneName: {fileID: 11400000, guid: b422a26d6afaa3846aa22f551ef03a60, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -1.9457, y: 6.1059, z: -3.7122}
+      rotation: {x: 13.3104, y: 252.1116, z: 355.6206}
+      spawnChance: 15
+  - sceneName: {fileID: 11400000, guid: 5ef2a170b172e824a979ea0721e1348b, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 4.4435, y: 1.138, z: -9.1708}
+      rotation: {x: 0, y: 207.3797, z: 0}
+      spawnChance: 8
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -11.7376, y: 1.1371, z: 6.7384}
+      rotation: {x: 0, y: 227.7924, z: 0}
+      spawnChance: 15
+  - sceneName: {fileID: 11400000, guid: 30e23cbc5fe7984448862b15b81f8c8d, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: -13.483, y: 4.8628, z: 7.2891}
+      rotation: {x: 0, y: 89.2045, z: 0}
+      spawnChance: 10
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 1.9918, y: 5.1428, z: -23.7411}
+      rotation: {x: 0, y: 67.2582, z: 0}
+      spawnChance: 8
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 12.8872, y: 6.4063, z: 22.504}
+      rotation: {x: 345.0989, y: 93.3933, z: 358.252}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 2.9975, y: 4.946, z: -12.0707}
+      rotation: {x: 0, y: 45.72, z: 0}
+      spawnChance: 2
+  - sceneName: {fileID: 11400000, guid: 08fc97a658a51c746a2544e1de18026c, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 887.2139, y: 161.5079, z: 343.4978}
+      rotation: {x: 0, y: 160.695, z: 0}
+      spawnChance: 25
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 969.9809, y: 150.8176, z: 467.1222}
+      rotation: {x: 0, y: 141.0959, z: 0}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 970.4277, y: 149.1712, z: 465.3219}
+      rotation: {x: 0, y: 296.9463, z: 0}
+      spawnChance: 12
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 1328.7112, y: 50.4058, z: 878.486}
+      rotation: {x: 0.3216, y: 167.0294, z: 349.853}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 935.6434, y: 469.6169, z: 1156.471}
+      rotation: {x: 0, y: 274.0306, z: 0}
+      spawnChance: 15
+  - sceneName: {fileID: 11400000, guid: caf350fd9d63a49489b236460b4e92eb, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 919.0651, y: 315.1333, z: 1153.0459}
+      rotation: {x: 0, y: 45.7881, z: 0}
+      spawnChance: 6
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 1270.8079, y: 244.9374, z: 996.6057}
+      rotation: {x: 353.1585, y: 342.0559, z: 7.5184}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 443.0432, y: 7.5586, z: 705.2537}
+      rotation: {x: 16.8259, y: 314.3359, z: 3.6216}
+      spawnChance: 15
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 766.4348, y: 288.1745, z: 2086.528}
+      rotation: {x: 357.7645, y: 207.863, z: 2.3177}
+      spawnChance: 8
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 1000.4388, y: 357.541, z: 2293.727}
+      rotation: {x: 0, y: 283.9471, z: 0}
+      spawnChance: 15
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 1477.9779, y: 323.5527, z: 1531.7013}
+      rotation: {x: 0, y: 128.0609, z: 0}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 1982.5295, y: 383.4989, z: 1420.323}
+      rotation: {x: 356.5128, y: 163.2033, z: 8.3741}
+      spawnChance: 12
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 1140.7681, y: 267.8225, z: 1780.3365}
+      rotation: {x: 3.7846, y: 116.5491, z: 356.2071}
+      spawnChance: 10
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 592.8452, y: 221.2591, z: 1556.1688}
+      rotation: {x: 2.8102, y: 217.0773, z: 3.8849}
+      spawnChance: 7
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 963.248, y: 305.2463, z: 1235.1605}
+      rotation: {x: 0, y: 337.3957, z: 0}
+      spawnChance: 10
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 584.7349, y: 221.9186, z: 1492.2833}
+      rotation: {x: 4.2129, y: 12.862, z: 4.3933}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 1069.432, y: 262.5926, z: 1745.195}
+      rotation: {x: 352.1459, y: 217.1709, z: 352.2425}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 1066.0192, y: 261.6884, z: 1742.155}
+      rotation: {x: 0.6095, y: 284.6224, z: 8.1044}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 777.1904, y: 274.9315, z: 2013.0028}
+      rotation: {x: 350.9965, y: 34.6794, z: 354.0572}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 744.6376, y: 6.1654, z: 1135.8372}
+      rotation: {x: 30.0385, y: 103.7476, z: 4.6886}
+      spawnChance: 5
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 1098.2168, y: 262.6754, z: 1704.4731}
+      rotation: {x: 2.1179, y: 105.8544, z: 8.364}
+      spawnChance: 2
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 1991.812, y: 1991.812, z: 1484.5364}
+      rotation: {x: 0, y: 123.5442, z: 0}
+      spawnChance: 5
+  - sceneName: {fileID: 11400000, guid: e7ec68b4151898a48a1fc8bfe4aa20de, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -3.4252, y: 1.5163, z: 3.0378}
+      rotation: {x: 0, y: 37.9768, z: 0}
+      spawnChance: 8
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -2.9193, y: 0.5432, z: -3.3188}
+      rotation: {x: 0, y: 148.6773, z: 0}
+      spawnChance: 3
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 8.024, y: 1.2005, z: 0.2464}
+      rotation: {x: 0, y: 208.5686, z: 0}
+      spawnChance: 2
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -2.5275, y: 1.0248, z: -0.3272}
+      rotation: {x: 0, y: 191.9751, z: 0}
+      spawnChance: 1
+  - sceneName: {fileID: 11400000, guid: fe7da644ece1af641aa7870ba10c0a8b, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -2.3364, y: 0.3553, z: 0.8075}
+      rotation: {x: 0, y: 131.2329, z: 0}
+      spawnChance: 8
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -3.2034, y: 0.0012, z: -3.989}
+      rotation: {x: 355.7116, y: 47.4719, z: 354.3784}
+      spawnChance: 12
+  - sceneName: {fileID: 11400000, guid: ee60df1ed038e554497f1c16e77008ae, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 2.8917, y: 1.1715, z: -0.3559}
+      rotation: {x: 0, y: 116.0651, z: 0}
+      spawnChance: 4
+  - sceneName: {fileID: 11400000, guid: 87cf6c3f04813834b833eeab0c13f496, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -7.3451, y: 1.2004, z: -3.7948}
+      rotation: {x: 0, y: 204.7545, z: 0}
+      spawnChance: 9
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -5.3125, y: 1.0792, z: 6.5486}
+      rotation: {x: 0, y: 135.963, z: 0}
+      spawnChance: 10
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 2.3361, y: 1.038, z: 4.7978}
+      rotation: {x: 0, y: 300.9482, z: 0}
+      spawnChance: 6
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -2.6978, y: 1.1711, z: -5.2106}
+      rotation: {x: 0, y: 63.4859, z: 0}
+      spawnChance: 4
+  - sceneName: {fileID: 11400000, guid: 7482921284b0a4b4b99042ed8c9fbef3, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -4.4022, y: 0.2176, z: -1.2517}
+      rotation: {x: 0, y: 30.585, z: 0}
+      spawnChance: 8
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 3.9916, y: 0.5842, z: -1.5954}
+      rotation: {x: 4.025, y: 284.7546, z: 1.0619}
+      spawnChance: 5
+  - sceneName: {fileID: 11400000, guid: a1976f94ea491d246b5474da08e9ba64, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 6.1941, y: 4.6151, z: -2.2597}
+      rotation: {x: 1.4648, y: 206.5505, z: 359.1618}
+      spawnChance: 9
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 2.1934, y: 4.4625, z: 2.0107}
+      rotation: {x: 0, y: 2.0107, z: 0}
+      spawnChance: 4
+  - sceneName: {fileID: 11400000, guid: 1c7aaf77cc79d5c45babf0581af2a8a7, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -2.9677, y: 0.7848, z: -3.369}
+      rotation: {x: 0, y: 322.7379, z: 0}
+      spawnChance: 10
+  - sceneName: {fileID: 11400000, guid: 963142c185b22bd4c8136216bcc28216, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -1.3824, y: 0.7848, z: -0.5997}
+      rotation: {x: 0, y: 7.822, z: 0}
+      spawnChance: 10
+  - sceneName: {fileID: 11400000, guid: 45d8d9a7c80a4a64082ca94379833648, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: -4.6371, y: 1.0743, z: 2.3968}
+      rotation: {x: 0, y: 46.3056, z: 0}
+      spawnChance: 4
+  - sceneName: {fileID: 11400000, guid: 5a157948f0c2ecc4290009beed0cc6f0, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 5.0606, y: 0.8745, z: 0.1243}
+      rotation: {x: 0, y: 228.3923, z: 0}
+      spawnChance: 4
+  - sceneName: {fileID: 11400000, guid: 55baa80a22ae26845b0f4e3871cc24c5, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: -4.0297, y: 0.0146, z: -8.4183}
+      rotation: {x: 0, y: 168.228, z: 0}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 1.9972, y: 0.0012, z: -6.861}
+      rotation: {x: 0, y: 264.92, z: 0}
+      spawnChance: 10
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 0.2273, y: 1.039, z: 7.8789}
+      rotation: {x: 0, y: 301.6122, z: 0}
+      spawnChance: 3
+  - sceneName: {fileID: 11400000, guid: 32e7b171d30ea5d4a87b0dced979006b, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 2.9967, y: 0.028, z: -2.2414}
+      rotation: {x: 0, y: 34.5606, z: 0}
+      spawnChance: 15
+  - sceneName: {fileID: 11400000, guid: 799881dc077158443b6fb0709651f867, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 1179.4154, y: 196.623, z: 774.617}
+      rotation: {x: 0, y: 289.4784, z: 0}
+      spawnChance: 100
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 956.7347, y: 193.4122, z: 1278.7856}
+      rotation: {x: 0, y: 83.9779, z: 0}
+      spawnChance: 100
+  - sceneName: {fileID: 11400000, guid: f858276da1f30034ab0657ef5fb8a005, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 654.0352, y: 51.522, z: -418.2618}
+      rotation: {x: 0, y: 357.2507, z: 0}
+      spawnChance: 30
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 309.6106, y: 234.2545, z: 573.3348}
+      rotation: {x: 0, y: 163.0099, z: 0}
+      spawnChance: 30
+  - sceneName: {fileID: 11400000, guid: 25f9a05e080cef84681be49b33889c64, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 1.5025, y: 0.9095, z: 2.3566}
+      rotation: {x: 0, y: 227.0611, z: 0}
+      spawnChance: 15
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: -1.1313, y: 0.4999, z: -3.7775}
+      rotation: {x: 0.5991, y: 245.0342, z: 357.4518}
+      spawnChance: 2
+  - sceneName: {fileID: 11400000, guid: 1de1387c6f3d8ee41ba8356103f3961f, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: -1.7625, y: 0.8079, z: 2.3057}
+      rotation: {x: 0, y: 142.022, z: 0}
+      spawnChance: 40
+  - sceneName: {fileID: 11400000, guid: 33605f6957d023a4ebef2256ab2d1903, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 1.1435, y: 0.9488, z: 1.8431}
+      rotation: {x: 0, y: 288.029, z: 0}
+      spawnChance: 12
+  - sceneName: {fileID: 11400000, guid: c1ac0bb87546b9a4b9eb40bd4180b5c0, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 313.1369, y: 72.0173, z: 389.1876}
+      rotation: {x: 0, y: 84.6181, z: 0}
+      spawnChance: 8
+    - itemName: {fileID: 11400000, guid: 760c8cfa0583c284295612e4831da6e5, type: 2}
+      position: {x: 381.3565, y: 72.7327, z: 425.873}
+      rotation: {x: 0, y: 177.2565, z: 0}
+      spawnChance: 4
+    - itemName: {fileID: 11400000, guid: 2d6f10b3b916e9c4a8574dc186084856, type: 2}
+      position: {x: 338.8777, y: 73.5619, z: 388.9447}
+      rotation: {x: 0, y: 69.62, z: 0}
+      spawnChance: 3
+  - sceneName: {fileID: 11400000, guid: 553f3fa4764c2da459cc0da8f68f7be1, type: 2}
+    sceneItemSpawns:
+    - itemName: {fileID: 11400000, guid: 829e1f9297a7af041b6ff5504a05370b, type: 2}
+      position: {x: 762.4866, y: 244.3857, z: -148.4857}
+      rotation: {x: 11.5652, y: 178.8065, z: 347.2819}
+      spawnChance: 100
+    - itemName: {fileID: 11400000, guid: b42733a09da28f049b0f902f06102b75, type: 2}
+      position: {x: 759.3993, y: 244.5416, z: -164.4141}
+      rotation: {x: 0, y: 244.2027, z: 0}
+      spawnChance: 15
   lootTableGearSpawnEntries:
   - lootTableName: {fileID: 11400000, guid: 509f06a9cf0c0cb42a12d4400d163566, type: 2}
     lootTableSpawns:

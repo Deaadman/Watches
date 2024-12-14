@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Watches
   Author: Deadman
-  Version: 1.0.0
+  Version: 1.0.1
   RequiredMods:
   - AHandyToolbox
   RequiresDLC: 0

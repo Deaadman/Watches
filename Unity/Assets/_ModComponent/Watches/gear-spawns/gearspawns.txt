@@ -1,3 +1,244 @@
+scene=BarnHouseA
+item=GEAR_Stopwatch p=2.0137,1.2185,5.6637 c=9
+item=GEAR_AnalogWatch p=2.7882,1.4444,0.1182 r=4.6592,305.5439,0.1591 c=5
+scene=CommunityHallA
+item=GEAR_AnalogWatch p=9.0149,1.1856,3.4819 r=0,150.5788,0 c=8
+item=GEAR_AnalogWatch p=-7.2122,1.9478,-1.5463 r=0,277.1117,0 c=3
+item=GEAR_Stopwatch p=-6.5165,0.7114,6.1217 r=0,6.5458,0 c=12
+scene=RuralStoreA
+item=GEAR_AnalogWatch p=2.9451,0.4326,0.2933 r=0,296.6488,0 c=6
+item=GEAR_DigitalWatch p=1.2593,1.0868,1.1756 r=0,137.7323,0 c=3
+scene=RuralRegion
+item=GEAR_Sundial p=863.935,46.4739,1437.002 r=0.427,340.3219,4.8913 c=4
+item=GEAR_Sundial p=469.3052,60.2574,566.7118 r=0,164.9832,0 c=4
+item=GEAR_Sundial p=2336.495,43.1476,2316 r=0,198.3377,0 c=8
+item=GEAR_Sundial p=476.8257,59.6981,590.7489 r=0,60.5141,0 c=7
+item=GEAR_Sundial p=850.424,46.8621,906.5808 r=0,163.5207,0 c=3
+item=GEAR_Stopwatch p=2334.836,54.159,2260.542 r=0,331.8314,0 c=4
+item=GEAR_AnalogWatch p=586.6694,156.2127,1799.397 r=0,256.9684,0 c=2
+item=GEAR_AnalogWatch p=583.1369,154.4045,1783.69 r=329.9596,72.0056,12.7977 c=3
+item=GEAR_AnalogWatch p=557.756,149.9244,1759.323 r=0,205.353,0 c=4
+item=GEAR_AnalogWatch p=451.0976,179.1588,1653.329 r=0,210.1371,0 c=5
+item=GEAR_AnalogWatch p=2294.514,54.7573,2257.847 r=355.891,161.3072,10.6508 c=2
+item=GEAR_DigitalWatch p=551.1104,150.0501,1724.347 r=0,133.2027,0 c=2
+item=GEAR_DigitalWatch p=445.8106,180.8314,1640.163 r=0,34.7804,0 c=3
+item=GEAR_DigitalWatch p=584.7079,151.0182,1779.411 r=0,131.7857,0 c=2
+scene=BarnHouseB
+item=GEAR_Sundial p=1.289,1.4279,14.687 r=0,218.7213,0 c=10
+item=GEAR_Stopwatch p=3.097,4.4059,10.3473 r=0,322.5446,0 c=10
+scene=FarmHouseA
+item=GEAR_Stopwatch p=3.4709,0.8721,7.4607 r=0,236.1431,0 c=5
+item=GEAR_AnalogWatch p=-4.3846,1.2695,-3.6794 r=0,307.101,0 c=2
+item=GEAR_AnalogWatch p=6.5816,1.5647,0.6439 r=359.5605,163.8515,0.5919 c=5
+item=GEAR_AnalogWatch p=3.0513,3.6558,4.69 r=359.8576,260.9741,358.8684 c=4
+item=GEAR_AnalogWatch p=-8.9364,4.3595,-2.8672 r=0,150.9229,0 c=3
+item=GEAR_DigitalWatch p=1.496,1.6257,3.3821 r=0,152.5482,0 c=3
+scene=FarmHouseABasement
+item=GEAR_Sundial p=-8.2453,1.4093,-0.8402 r=0,336.145,0 c=44
+item=GEAR_Stopwatch p=-7.088,2.0491,-3.5024 r=0,81.5463,0 c=7
+scene=RadioControlHut
+item=GEAR_AnalogWatch p=-0.1566,1.0335,1.3839 r=0,146.8739,0 c=7
+item=GEAR_DigitalWatch p=-3.1951,1.0627,3.0417 r=0,160.9485,0 c=5
+scene=RadioControlHut
+item=GEAR_AnalogWatch p=-0.1566,1.0335,1.3839 r=0,146.8739,0 c=7
+item=GEAR_DigitalWatch p=-3.1951,1.0627,3.0417 r=0,160.9485,0 c=5
+scene=MiltonHouseA
+item=GEAR_Stopwatch p=5.5508,1.047,2.0966 r=0,129.2716,0 c=7
+item=GEAR_DigitalWatch p=0.551,1.1949,-1.9131 r=0,121.7353,0 c=3
+scene=CampOffice
+item=GEAR_Sundial p=4.9908,0.0215,3.457 r=0,322.9643,0 c=4
+item=GEAR_AnalogWatch p=-1.273,1.1755,-0.8165 r=0.1391,348.6997,4.6011 c=3
+item=GEAR_AnalogWatch p=-1.3718,4.6041,3.3743 r=0,198.6938,0 c=2
+item=GEAR_DigitalWatch p=6.7356,1.1512,-0.0077 r=0,232.0004,0 c=2
+scene=SafeHouseA
+item=GEAR_Sundial p=-1.8324,0.6989,5.4088 r=0,139.5755,0 c=25
+item=GEAR_Stopwatch p=-3.8129,0.555,8.2658 r=0,133.4521,0 c=5
+scene=Dam
+item=GEAR_Stopwatch p=7.3066,1.2004,-10.2438 r=0,324.4189,0 c=8
+item=GEAR_AnalogWatch p=11.4662,1.2531,-20.9847 r=0,248.6,0 c=2
+item=GEAR_AnalogWatch p=-8.9338,5.8512,-10.1408 r=0,25.4767,0 c=3
+item=GEAR_AnalogWatch p=-8.7402,5.8512,-5.2413 r=0,221.4833,0 c=3
+item=GEAR_AnalogWatch p=-12.7032,5.64,-12.1029 r=0,239.7717,0 c=4
+item=GEAR_AnalogWatch p=-12.2702,5.65,-22.0556 r=0,26.3077,0 c=3
+item=GEAR_DigitalWatch p=12.8677,5.6476,-19.0392 r=0,260.173,0 c=2
+item=GEAR_DigitalWatch p=-1.1025,1.0716,-2.1385 r=0,160.028,0 c=2
+scene=DamTransitionZone
+item=GEAR_Stopwatch p=-81.2131,-4.7693,-15.7145 r=0,323.5229,0 c=4
+item=GEAR_Stopwatch p=-47.7388,-7.7609,-1.2561 r=0,275.34,0 c=4
+item=GEAR_AnalogWatch p=-0.7487,0.9843,-5.038 r=0,244.3902,0 c=3
+item=GEAR_DigitalWatch p=-11.9602,1.3721,-4.3709 r=0,199.2835,0 c=2
+scene=LakeCabinE
+item=GEAR_Sundial p=0.2905,1.7763,-3.2076 r=0,50.3031,0 c=10
+item=GEAR_AnalogWatch p=2.2093,1.1513,1.3927 r=0,283.0627,0 c=5
+scene=LakeCabinA
+item=GEAR_Stopwatch p=2.1925,1.1455,0.4127 r=0,305.413,0 c=6
+item=GEAR_AnalogWatch p=1.4644,0.0257,-2.5912 r=0,317.2231,0 c=3
+scene=LakeCabinF
+item=GEAR_Stopwatch p=2.4445,0.8105,2.1589 r=0,12.3803,0 c=12
+item=GEAR_AnalogWatch p=-0.4122,1.5567,3.2645 r=0,189.132,0 c=7
+scene=TrailerA
+item=GEAR_Sundial p=-0.6248,0.1322,-1.7998 r=0,33.7425,0 c=20
+item=GEAR_Stopwatch p=5.0748,0.2536,1.1981 r=0,141.4292,0 c=5
+scene=TrailerB
+item=GEAR_Stopwatch p=-6.9054,1.5347,1.2299 r=0,101.3534,0 c=9
+item=GEAR_DigitalWatch p=3.7666,1.4673,-1.6364 r=0,20.1832,0 c=2
+scene=TrailerC
+item=GEAR_Sundial p=-0.5603,1.138,-1.1889 r=0,293.9387,0 c=7
+item=GEAR_Stopwatch p=-1.5505,0.6494,1.2421 r=0,188.592,0 c=6
+item=GEAR_AnalogWatch p=6.3286,1.4554,-0.4691 r=0,230.8098,0 c=3
+scene=TrailerE
+item=GEAR_Sundial p=-2.5787,0.5761,-1.4706 r=0,220.2281,0 c=12
+item=GEAR_Stopwatch p=2.4466,1.7593,1.5593 r=0,59.8998,0 c=3
+scene=BlackrockRegion
+item=GEAR_Sundial p=899.1026,232.5374,-100.4357 r=0,292.5894,0 c=15
+item=GEAR_DigitalWatch p=-39.7118,128.3342,-760.3228 r=5.5712,283.2064,1.9008 c=5
+item=GEAR_DigitalWatch p=-75.1362,185.0193,-327.2855 r=2.2867,117.4815,358.4513 c=2
+scene=RadioControlHutC
+item=GEAR_AnalogWatch p=3.9156,0.0255,1.159 r=0,250.2549,0 c=7
+item=GEAR_DigitalWatch p=-4.3615,1.4884,2.3307 r=7.6384,155.6097,17.4066 c=3
+scene=BlackrockPrisonSurvivalZone
+item=GEAR_Stopwatch p=-79.8581,226.8231,40.7937 r=0,245.5735,0 c=14
+item=GEAR_Stopwatch p=-83.8548,226.295,37.5078 r=0,273.4063,0 c=5
+item=GEAR_Stopwatch p=-155.696,229.7741,81.3943 r=0,116.3049,0 c=12
+item=GEAR_AnalogWatch p=-223.9977,224.8025,55.4346 r=0.2101,313.5323,1.5746 c=3
+item=GEAR_AnalogWatch p=-224.8899,224.4236,68.0911 r=0,17.3908,0 c=4
+item=GEAR_AnalogWatch p=-107.7754,226.397,109.1756 r=0,127.9645,0 c=5
+item=GEAR_AnalogWatch p=-229.8112,235.1275,156.72 r=0,79.576,0 c=3
+item=GEAR_DigitalWatch p=-189.5121,226.8135,5.4838 r=0,137.4657,0 c=3
+item=GEAR_DigitalWatch p=-126.5975,226.5111,64.9092 r=353.9987,208.6445,357.8314 c=2
+item=GEAR_DigitalWatch p=-148.4392,229.7926,83.511 r=0,144.8189,0 c=4
+item=GEAR_DigitalWatch p=-106.397,226.6269,98.964 r=0,349.2564,0 c=2
+item=GEAR_DigitalWatch p=-237.7152,235.0236,163.0652 r=4.2638,89.8229,3.7011 c=2
+scene=BlackrockInteriorASurvival
+item=GEAR_Stopwatch p=52.5197,1.0985,6.2686 r=0,34.344,0 c=20
+item=GEAR_AnalogWatch p=1.8651,5.0451,-20.9153 r=0,341.3053,0 c=10
+scene=CoastalHouseD
+item=GEAR_AnalogWatch p=5.4405,0.54,-0.341 r=0,306.4994,0 c=6
+scene=CoastalHouseE
+item=GEAR_Stopwatch p=-1.0242,1.1016,-1.0414 r=359.6838,242.2526,1.012 c=14
+item=GEAR_AnalogWatch p=2.7216,0.6767,-1.1147 r=0,240.3249,0 c=5
+scene=CoastalRegion
+item=GEAR_Sundial p=613.884,24.0815,289.953 r=0,158.4549,0 c=15
+item=GEAR_Sundial p=390.3462,25.0556,493.1793 r=0,168.266,0 c=7
+item=GEAR_Sundial p=-413.9944,23.2984,594.7787 r=0,12.3267,0 c=12
+item=GEAR_Sundial p=-749.8591,28.8609,656.9495 r=0,344.4616,0 c=3
+scene=FishingCabinD
+item=GEAR_AnalogWatch p=1.5474,0.8118,-0.6348 r=0.2904,311.1072,358.9675 c=6
+scene=FishingCabinC
+item=GEAR_Stopwatch p=2.2572,0.9843,-0.3457 r=0,302.3014,0 c=9
+scene=LakeCabinB
+item=GEAR_DigitalWatch p=0.6491,1.1309,3.2473 r=0,202.5199,0 c=2
+scene=QuonsetGasStation
+item=GEAR_Stopwatch p=-4.4727,0.9718,1.9071 r=0,134.7069,0 c=5
+item=GEAR_Stopwatch p=-4.1536,0.0112,-8.0772 r=0,137.9346,0 c=5
+item=GEAR_AnalogWatch p=5.5602,1.0413,4.9369 r=0,296.199,0 c=4
+item=GEAR_DigitalWatch p=-0.2003,1.0431,-7.3081 r=0,51.6228,0 c=1
+scene=CoastalHouseB
+item=GEAR_Stopwatch p=2.5285,0.1181,-3.3657 r=0,43.3073,0 c=6
+item=GEAR_AnalogWatch p=0.355,1.2533,1.8653 r=0,87.8342,0 c=5
+scene=CoastalHouseC
+item=GEAR_Sundial p=-2.719,0.6623,0.6968 r=0,11.4058,0 c=5
+item=GEAR_Stopwatch p=-8.8792,1.0724,-5.4823 r=0,89.9332,0 c=7
+scene=HighwayTransitionZone
+item=GEAR_Sundial p=667.8896,71.4685,416.608 r=10.1204,223.615,8.7781 c=25
+scene=WhalingStationRegion
+item=GEAR_Sundial p=566.7487,63.2,1102.88 r=0,329.4947,0 c=5
+item=GEAR_Sundial p=1022.958,16.1187,993.4971 r=0,92.3275,0 c=6
+item=GEAR_Sundial p=898.7858,16.3881,1632.759 r=0,243.0289,0 c=12
+item=GEAR_Sundial p=171.5563,87.4329,967.1229 r=0,88.937,0 c=35
+scene=LighthouseA
+item=GEAR_Sundial p=0.6906,1.0208,-0.8689 r=0,38.3749,0 c=6
+item=GEAR_Sundial p=2.3753,5.2998,1.5556 r=0,340.8786,0 c=6
+item=GEAR_Stopwatch p=1.1871,0.5027,4.9632 r=0,3.5412,0 c=12
+scene=WhalingShipA
+item=GEAR_Stopwatch p=-1.9457,6.1059,-3.7122 r=13.3104,252.1116,355.6206 c=15
+scene=TrailerSShape
+item=GEAR_Sundial p=4.4435,1.138,-9.1708 r=0,207.3797,0 c=8
+item=GEAR_Stopwatch p=-11.7376,1.1371,6.7384 r=0,227.7924,0 c=15
+scene=WhalingWarehouseA
+item=GEAR_Sundial p=-13.483,4.8628,7.2891 r=0,89.2045,0 c=10
+item=GEAR_Stopwatch p=1.9918,5.1428,-23.7411 r=0,67.2582,0 c=8
+item=GEAR_AnalogWatch p=12.8872,6.4063,22.504 r=345.0989,93.3933,358.252 c=5
+item=GEAR_DigitalWatch p=2.9975,4.946,-12.0707 r=0,45.72,0 c=2
+scene=CrashMountainRegion
+item=GEAR_Sundial p=887.2139,161.5079,343.4978 r=0,160.695,0 c=25
+item=GEAR_Sundial p=969.9809,150.8176,467.1222 r=0,141.0959,0 c=5
+item=GEAR_Stopwatch p=970.4277,149.1712,465.3219 r=0,296.9463,0 c=12
+item=GEAR_AnalogWatch p=1328.711,50.4058,878.486 r=0.3216,167.0294,349.853 c=5
+item=GEAR_DigitalWatch p=935.6434,469.6169,1156.471 r=0,274.0306,0 c=15
+scene=MountainTownRegion
+item=GEAR_Sundial p=919.0651,315.1333,1153.046 r=0,45.7881,0 c=6
+item=GEAR_Sundial p=1270.808,244.9374,996.6057 r=353.1585,342.0559,7.5184 c=5
+item=GEAR_Sundial p=443.0432,7.5586,705.2537 r=16.8259,314.3359,3.6216 c=15
+item=GEAR_Sundial p=766.4348,288.1745,2086.528 r=357.7645,207.863,2.3177 c=8
+item=GEAR_Sundial p=1000.439,357.541,2293.727 r=0,283.9471,0 c=15
+item=GEAR_Sundial p=1477.978,323.5527,1531.701 r=0,128.0609,0 c=5
+item=GEAR_Sundial p=1982.53,383.4989,1420.323 r=356.5128,163.2033,8.3741 c=12
+item=GEAR_Sundial p=1140.768,267.8225,1780.337 r=3.7846,116.5491,356.2071 c=10
+item=GEAR_Stopwatch p=592.8452,221.2591,1556.169 r=2.8102,217.0773,3.8849 c=7
+item=GEAR_Stopwatch p=963.248,305.2463,1235.161 r=0,337.3957,0 c=10
+item=GEAR_AnalogWatch p=584.7349,221.9186,1492.283 r=4.2129,12.862,4.3933 c=4
+item=GEAR_AnalogWatch p=1069.432,262.5926,1745.195 r=352.1459,217.1709,352.2425 c=4
+item=GEAR_AnalogWatch p=1066.019,261.6884,1742.155 r=0.6095,284.6224,8.1044 c=4
+item=GEAR_AnalogWatch p=777.1904,274.9315,2013.003 r=350.9965,34.6794,354.0572 c=4
+item=GEAR_DigitalWatch p=744.6376,6.1654,1135.837 r=30.0385,103.7476,4.6886 c=5
+item=GEAR_DigitalWatch p=1098.217,262.6754,1704.473 r=2.1179,105.8544,8.364 c=2
+item=GEAR_DigitalWatch p=1991.812,1991.812,1484.536 r=0,123.5442,0 c=5
+scene=FarmHouseB
+item=GEAR_Stopwatch p=-3.4252,1.5163,3.0378 r=0,37.9768,0 c=8
+item=GEAR_AnalogWatch p=-2.9193,0.5432,-3.3188 r=0,148.6773,0 c=3
+item=GEAR_AnalogWatch p=8.024,1.2005,0.2464 r=0,208.5686,0 c=2
+item=GEAR_DigitalWatch p=-2.5275,1.0248,-0.3272 r=0,191.9751,0 c=1
+scene=ChurchB
+item=GEAR_Stopwatch p=-2.3364,0.3553,0.8075 r=0,131.2329,0 c=8
+item=GEAR_Stopwatch p=-3.2034,0.0012,-3.989 r=355.7116,47.4719,354.3784 c=12
+scene=PostOfficeA
+item=GEAR_AnalogWatch p=2.8917,1.1715,-0.3559 r=0,116.0651,0 c=4
+scene=BankA
+item=GEAR_Stopwatch p=-7.3451,1.2004,-3.7948 r=0,204.7545,0 c=9
+item=GEAR_Stopwatch p=-5.3125,1.0792,6.5486 r=0,135.963,0 c=10
+item=GEAR_AnalogWatch p=2.3361,1.038,4.7978 r=0,300.9482,0 c=6
+item=GEAR_AnalogWatch p=-2.6978,1.1711,-5.2106 r=0,63.4859,0 c=4
+scene=MiltonHouseF3
+item=GEAR_Stopwatch p=-4.4022,0.2176,-1.2517 r=0,30.585,0 c=8
+item=GEAR_AnalogWatch p=3.9916,0.5842,-1.5954 r=4.025,284.7546,1.0619 c=5
+scene=GreyMothersHouseA
+item=GEAR_Stopwatch p=6.1941,4.6151,-2.2597 r=1.4648,206.5505,359.1618 c=9
+item=GEAR_AnalogWatch p=2.1934,4.4625,2.0107 r=0,2.0107,0 c=4
+scene=MiltonHouseH2
+item=GEAR_Stopwatch p=-2.9677,0.7848,-3.369 r=0,322.7379,0 c=10
+scene=MiltonHouseH1
+item=GEAR_Stopwatch p=-1.3824,0.7848,-0.5997 r=0,7.822,0 c=10
+scene=MiltonHouseF2
+item=GEAR_AnalogWatch p=-4.6371,1.0743,2.3968 r=0,46.3056,0 c=4
+scene=MiltonHouseC
+item=GEAR_AnalogWatch p=5.0606,0.8745,0.1243 r=0,228.3923,0 c=4
+scene=ConvenienceStoreA
+item=GEAR_Sundial p=-4.0297,0.0146,-8.4183 r=0,168.228,0 c=4
+item=GEAR_Stopwatch p=1.9972,0.0012,-6.861 r=0,264.92,0 c=10
+item=GEAR_DigitalWatch p=0.2273,1.039,7.8789 r=0,301.6122,0 c=3
+scene=MiltonHouseF1
+item=GEAR_Sundial p=2.9967,0.028,-2.2414 r=0,34.5606,0 c=15
+scene=RiverValleyRegion
+item=GEAR_Sundial p=1179.415,196.623,774.617 r=0,289.4784,0 c=100
+item=GEAR_Sundial p=956.7347,193.4122,1278.786 r=0,83.9779,0 c=100
+scene=AshCanyonRegion
+item=GEAR_Sundial p=654.0352,51.522,-418.2618 r=0,357.2507,0 c=30
+item=GEAR_Sundial p=309.6106,234.2545,573.3348 r=0,163.0099,0 c=30
+scene=AshWoodCabinA
+item=GEAR_AnalogWatch p=1.5025,0.9095,2.3566 r=0,227.0611,0 c=15
+item=GEAR_DigitalWatch p=-1.1313,0.4999,-3.7775 r=0.5991,245.0342,357.4518 c=2
+scene=AshCabinD
+item=GEAR_Stopwatch p=-1.7625,0.8079,2.3057 r=0,142.022,0 c=40
+scene=WoodCabinB
+item=GEAR_Stopwatch p=1.1435,0.9488,1.8431 r=0,288.029,0 c=12
+scene=CanyonRoadTransitionZone
+item=GEAR_AnalogWatch p=313.1369,72.0173,389.1876 r=0,84.6181,0 c=8
+item=GEAR_AnalogWatch p=381.3565,72.7327,425.873 r=0,177.2565,0 c=4
+item=GEAR_DigitalWatch p=338.8777,73.5619,388.9447 r=0,69.62,0 c=3
+scene=BlackrockTransitionZone
+item=GEAR_Sundial p=762.4866,244.3857,-148.4857 r=11.5652,178.8065,347.2819 c=100
+item=GEAR_Stopwatch p=759.3993,244.5416,-164.4141 r=0,244.2027,0 c=15
 
 loottable=LootTableLocker
 item=GEAR_AnalogWatch w=3

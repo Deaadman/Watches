@@ -95,9 +95,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
-  - component: {fileID: -1415684022074088458}
-  - component: {fileID: -8298599234376182330}
-  - component: {fileID: 352959618463446433}
+  - component: {fileID: -4180443833147412617}
+  - component: {fileID: 4620293570474186471}
+  - component: {fileID: -1569884085364487616}
   m_Layer: 0
   m_Name: GEAR_Stopwatch
   m_TagString: Untagged
@@ -134,7 +134,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.12151576, y: 0.019084165, z: 0.1215578}
   m_Center: {x: 0.000043209642, y: 0.008333103, z: 0.00016278774}
---- !u!114 &-1415684022074088458
+--- !u!114 &-4180443833147412617
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,7 +165,7 @@ MonoBehaviour:
   InspectScale: {x: 1, y: 1, z: 1}
   NormalModel: {fileID: 0}
   InspectModel: {fileID: 0}
---- !u!114 &-8298599234376182330
+--- !u!114 &4620293570474186471
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -185,7 +185,7 @@ MonoBehaviour:
   Materials:
   - MaterialNames: {fileID: 11400000, guid: 976187b6a5913ae4c92c7a7ea830330c, type: 2}
     MaterialCounts: 1
---- !u!114 &352959618463446433
+--- !u!114 &-1569884085364487616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

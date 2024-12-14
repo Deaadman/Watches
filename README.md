@@ -35,11 +35,6 @@ Watches is a modification which alters how time is told within [**The Long Dark*
 - **Vanilla TimeWidget Overhaul:** This is now disabled by default, and is only shown whenever a sundial is used.
 - **Responds to Mechanics** There are different mechanics that can influence how the time is displayed throughout the game.
 
-> [!NOTE]
-> Each item was only added via loot tables, you will not find them anywhere in scenes as I am too lazy to go through each and every scene.
-> 
-> If you'd like to contribute to this mod by adding spawn locations for them, please contact me in my `#deadman` channel in [this](https://discord.gg/2mnXAZfGXQ) discord server.
-
 ---
 
 ## COMPATIBILITY:
@@ -47,8 +42,8 @@ Watches is a modification which alters how time is told within [**The Long Dark*
 ### Required Dependencies:
 For optimal functionality of this modification, ensure you have the following versions or newer for the latest version of **Universal Tweaks**:
 
-- [**The Long Dark**](https://store.steampowered.com/news/app/305620) - Version: **v2.32**
-- [**MelonLoader**](https://github.com/LavaGang/MelonLoader/releases) - Version: **v0.6.1**
+- [**The Long Dark**](https://store.steampowered.com/news/app/305620) - Version: **v2.35**
+- [**MelonLoader**](https://github.com/LavaGang/MelonLoader/releases) - Version: **v0.6.6**
 - [**ModComponent**](https://github.com/dommrogers/ModComponent) - Version: **v6.3.1**
 - [**ModData**](https://github.com/dommrogers/ModData) - Version: **v1.5.4**
 - [**Modders' Gear Toolbox**](https://github.com/Jods-Its/Modders-Gear-Toolbox) - Version: **v1.0.3**
@@ -71,7 +66,12 @@ Currently, no mods are incompatible, but when there are some, avoid using the fo
 
 ## **CONTRIBUTIONS**:
 
-A massive thank you to [**Marcy**](https://github.com/DemonBunnyBon) for the models and texture of each watch item. This mod would not be possible with them, so I am forever grateful <3.
+A massive thank you to [**Marcy**](https://github.com/DemonBunnyBon) for the models and textures of each watch item, also for providing the physical spawn locations within the world. This mod would not be possible with them, so I am forever grateful <3.
+
+### Translations:
+- [**Elderly-Emre**](https://github.com/Elderly-Emre) - For providing Turkish translations.
+- [**LettereUniche**](https://github.com/LettereUniche) - For providing Italian translations.
+- [**Pavlenzio**](https://github.com/Pavlenzio) - For providing Russian translations.
 
 > [!NOTE]
 > This modification is not officially a part of The Long Dark and is not affiliated with Hinterland Studio Inc or its affiliates.

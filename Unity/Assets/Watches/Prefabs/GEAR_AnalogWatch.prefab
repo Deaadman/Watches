@@ -95,9 +95,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
-  - component: {fileID: -3920395680281142520}
-  - component: {fileID: 4620326513462209370}
-  - component: {fileID: 1000558560133853580}
+  - component: {fileID: -6704780071441410719}
+  - component: {fileID: 1214656548633517995}
+  - component: {fileID: -2441975091681567228}
   m_Layer: 0
   m_Name: GEAR_AnalogWatch
   m_TagString: Untagged
@@ -134,7 +134,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.080405325, y: 0.06245754, z: 0.075107865}
   m_Center: {x: -0.000030487776, y: 0.027618613, z: -0.0024257712}
---- !u!114 &-3920395680281142520
+--- !u!114 &-6704780071441410719
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,7 +190,7 @@ MonoBehaviour:
   PreventAllDamageFromSource: 0
   FirstPersonPrefabMale: 
   FirstPersonPrefabFemale: 
---- !u!114 &4620326513462209370
+--- !u!114 &1214656548633517995
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,7 +213,7 @@ MonoBehaviour:
     MaterialCounts: 1
   - MaterialNames: {fileID: 11400000, guid: 0577e16999b040a4bace7014962bf3ba, type: 2}
     MaterialCounts: 1
---- !u!114 &1000558560133853580
+--- !u!114 &-2441975091681567228
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

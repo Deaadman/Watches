@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8290909207173746470}
   - component: {fileID: 5681830129957687278}
-  - component: {fileID: 5296959002945554340}
+  - component: {fileID: 8060890973129197001}
   m_Layer: 0
   m_Name: GEAR_Sundial
   m_TagString: Untagged
@@ -47,7 +47,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.11939216, y: 0.022388756, z: 0.12065078}
   m_Center: {x: 0.0002258718, y: 0.00916788, z: 0.00028070062}
---- !u!114 &5296959002945554340
+--- !u!114 &8060890973129197001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

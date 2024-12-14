@@ -17,189 +17,202 @@ MonoBehaviour:
     languages:
       English: Sundial
       German: 
-      Russian: 
+      Russian: "\u0421\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0435 \u0447\u0430\u0441\u044B"
       French: 
       Japanese: 
       Korean: 
       SimplifiedChinese: 
       Swedish: 
       TraditionalChinese: 
-      Turkish: 
+      Turkish: "G\xFCne\u015F Saati"
       Norwegian: 
       Spanish: 
       PortuguesePortugal: 
       PortugueseBrazil: 
       Dutch: 
       Finnish: 
-      Italian: 
+      Italian: Meridiana
       Polish: 
       Ukrainian: 
   - localizationKey: GAMEPLAY_SundialDescription
     languages:
       English: A simple sundial. Useful during the day... that's about it.
       German: 
-      Russian: 
+      Russian: "\u041F\u0440\u043E\u0441\u0442\u044B\u0435 \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0435
+        \u0447\u0430\u0441\u044B. \u041F\u043E\u043B\u0435\u0437\u043D\u044B, \u043F\u043E\u043A\u0430
+        \u0441\u0432\u0435\u0442\u0438\u0442 \u0441\u043E\u043B\u043D\u0446\u0435."
       French: 
       Japanese: 
       Korean: 
       SimplifiedChinese: 
       Swedish: 
       TraditionalChinese: 
-      Turkish: 
+      Turkish: "Basit bir g\xFCne\u015F saati. G\xFCnd\xFCzleri i\u015Fe yarar...
+        hepsi bu."
       Norwegian: 
       Spanish: 
       PortuguesePortugal: 
       PortugueseBrazil: 
       Dutch: 
       Finnish: 
-      Italian: 
+      Italian: "Una semplice meridiana. Utile durante il giorno... ma questo \xE8
+        tutto."
       Polish: 
       Ukrainian: 
   - localizationKey: GAMEPLAY_SundialAction
     languages:
       English: Check Time
       German: 
-      Russian: 
+      Russian: "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0432\u0440\u0435\u043C\u044F"
       French: 
       Japanese: 
       Korean: 
       SimplifiedChinese: 
       Swedish: 
       TraditionalChinese: 
-      Turkish: 
+      Turkish: Saate Bak
       Norwegian: 
       Spanish: 
       PortuguesePortugal: 
       PortugueseBrazil: 
       Dutch: 
       Finnish: 
-      Italian: 
+      Italian: Controlla l'Ora
       Polish: 
       Ukrainian: 
   - localizationKey: GAMEPLAY_Stopwatch
     languages:
       English: Stopwatch
       German: 
-      Russian: 
+      Russian: "\u0421\u0435\u043A\u0443\u043D\u0434\u043E\u043C\u0435\u0440"
       French: 
       Japanese: 
       Korean: 
       SimplifiedChinese: 
       Swedish: 
       TraditionalChinese: 
-      Turkish: 
+      Turkish: Kronometre
       Norwegian: 
       Spanish: 
       PortuguesePortugal: 
       PortugueseBrazil: 
       Dutch: 
       Finnish: 
-      Italian: 
+      Italian: Cronometro
       Polish: 
       Ukrainian: 
   - localizationKey: GAMEPLAY_StopwatchDescription
     languages:
       English: A sturdy stopwatch. Will face the fiercest conditions alongside you.
       German: 
-      Russian: 
+      Russian: "\u041F\u0440\u043E\u0447\u043D\u044B\u0439 \u0441\u0435\u043A\u0443\u043D\u0434\u043E\u043C\u0435\u0440.
+        \u0412\u044B\u0434\u0435\u0440\u0436\u0438\u0442 \u0441 \u0432\u0430\u043C\u0438
+        \u0441\u0430\u043C\u044B\u0435 \u0436\u0435\u0441\u0442\u043A\u0438\u0435
+        \u0443\u0441\u043B\u043E\u0432\u0438\u044F."
       French: 
       Japanese: 
       Korean: 
       SimplifiedChinese: 
       Swedish: 
       TraditionalChinese: 
-      Turkish: 
+      Turkish: "Sa\u011Flam bir kronometre. Sizinle birlikte en zorlu ko\u015Fullarla
+        y\xFCzle\u015Fecek."
       Norwegian: 
       Spanish: 
       PortuguesePortugal: 
       PortugueseBrazil: 
       Dutch: 
       Finnish: 
-      Italian: 
+      Italian: "Un cronometro robusto. Affronter\xE0 le condizioni pi\xF9 feroci
+        insieme a te."
       Polish: 
       Ukrainian: 
   - localizationKey: GAMEPLAY_StopwatchAction
     languages:
       English: Check Time
       German: 
-      Russian: 
+      Russian: "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C \u0432\u0440\u0435\u043C\u044F"
       French: 
       Japanese: 
       Korean: 
       SimplifiedChinese: 
       Swedish: 
       TraditionalChinese: 
-      Turkish: 
+      Turkish: "Zaman\u0131 Kontrol Et"
       Norwegian: 
       Spanish: 
       PortuguesePortugal: 
       PortugueseBrazil: 
       Dutch: 
       Finnish: 
-      Italian: 
+      Italian: Controlla l'Ora
       Polish: 
       Ukrainian: 
   - localizationKey: GAMEPLAY_AnalogWatch
     languages:
       English: Analog Watch
       German: 
-      Russian: 
+      Russian: "\u041C\u0435\u0445\u0430\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0435
+        \u0447\u0430\u0441\u044B"
       French: 
       Japanese: 
       Korean: 
       SimplifiedChinese: 
       Swedish: 
       TraditionalChinese: 
-      Turkish: 
+      Turkish: Analog Saat
       Norwegian: 
       Spanish: 
       PortuguesePortugal: 
       PortugueseBrazil: 
       Dutch: 
       Finnish: 
-      Italian: 
+      Italian: Orologio Analogico
       Polish: 
       Ukrainian: 
   - localizationKey: GAMEPLAY_AnalogWatchDescription
     languages:
       English: A classic analog wristwatch. Perfect for the apocalypse.
       German: 
-      Russian: 
+      Russian: "\u041A\u043B\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043A\u0438\u0435
+        \u043D\u0430\u0440\u0443\u0447\u043D\u044B\u0435 \u0447\u0430\u0441\u044B.
+        \u0418\u0434\u0435\u0430\u043B\u044C\u043D\u044B \u0434\u043B\u044F \u0430\u043F\u043E\u043A\u0430\u043B\u0438\u043F\u0441\u0438\u0441\u0430."
       French: 
       Japanese: 
       Korean: 
       SimplifiedChinese: 
       Swedish: 
       TraditionalChinese: 
-      Turkish: 
+      Turkish: "Klasik analog kol saati. K\u0131yamet i\xE7in m\xFCkemmel."
       Norwegian: 
       Spanish: 
       PortuguesePortugal: 
       PortugueseBrazil: 
       Dutch: 
       Finnish: 
-      Italian: 
+      Italian: Un classico orologio analogico. Perfetto per l'apocalisse.
       Polish: 
       Ukrainian: 
   - localizationKey: GAMEPLAY_DigitalWatch
     languages:
       English: Digital Watch
       German: 
-      Russian: 
+      Russian: "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u044B\u0435
+        \u0447\u0430\u0441\u044B"
       French: 
       Japanese: 
       Korean: 
       SimplifiedChinese: 
       Swedish: 
       TraditionalChinese: 
-      Turkish: 
+      Turkish: Dijital Saat
       Norwegian: 
       Spanish: 
       PortuguesePortugal: 
       PortugueseBrazil: 
       Dutch: 
       Finnish: 
-      Italian: 
+      Italian: Orologio Digitale
       Polish: 
       Ukrainian: 
   - localizationKey: GAMEPLAY_DigitalWatchDescription
@@ -207,104 +220,117 @@ MonoBehaviour:
       English: An average-looking digital wristwatch. Tells the time to the exact
         minute.
       German: 
-      Russian: 
+      Russian: "\u041E\u0431\u044B\u0447\u043D\u044B\u0435 \u0446\u0438\u0444\u0440\u043E\u0432\u044B\u0435
+        \u043D\u0430\u0440\u0443\u0447\u043D\u044B\u0435 \u0447\u0430\u0441\u044B.
+        \u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u044E\u0442 \u0432\u0440\u0435\u043C\u044F
+        \u0441 \u0442\u043E\u0447\u043D\u043E\u0441\u0442\u044C\u044E \u0434\u043E
+        \u043C\u0438\u043D\u0443\u0442\u044B."
       French: 
       Japanese: 
       Korean: 
       SimplifiedChinese: 
       Swedish: 
       TraditionalChinese: 
-      Turkish: 
+      Turkish: "Ortalama g\xF6r\xFCn\xFCml\xFC dijital bir kol saati. Saati tam dakikas\u0131na
+        kadar s\xF6yler."
       Norwegian: 
       Spanish: 
       PortuguesePortugal: 
       PortugueseBrazil: 
       Dutch: 
       Finnish: 
-      Italian: 
+      Italian: Un orologio da polso digitale di aspetto medio. Indica l'ora al minuto
+        esatto.
       Polish: 
       Ukrainian: 
   - localizationKey: GAMEPLAY_CheckingTime
     languages:
       English: Checking the time...
       German: 
-      Russian: 
+      Russian: "\u041F\u0440\u043E\u0432\u0435\u0440\u044F\u044E \u0432\u0440\u0435\u043C\u044F..."
       French: 
       Japanese: 
       Korean: 
       SimplifiedChinese: 
       Swedish: 
       TraditionalChinese: 
-      Turkish: 
+      Turkish: "Saate bak\u0131yorum..."
       Norwegian: 
       Spanish: 
       PortuguesePortugal: 
       PortugueseBrazil: 
       Dutch: 
       Finnish: 
-      Italian: 
+      Italian: Controllando l'Ora...
       Polish: 
       Ukrainian: 
   - localizationKey: GAMEPLAY_CheckingSundialIndoors
     languages:
       English: Unable to check the Sundial indoors
       German: 
-      Russian: 
+      Russian: "\u041D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C
+        \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0435 \u0447\u0430\u0441\u044B
+        \u0432 \u043F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u0438"
       French: 
       Japanese: 
       Korean: 
       SimplifiedChinese: 
       Swedish: 
       TraditionalChinese: 
-      Turkish: 
+      Turkish: "G\xFCne\u015F saatini i\xE7eride kontrol edemiyorum"
       Norwegian: 
       Spanish: 
       PortuguesePortugal: 
       PortugueseBrazil: 
       Dutch: 
       Finnish: 
-      Italian: 
+      Italian: Impossibile controllare l'ora con la Meridiana all'interno
       Polish: 
       Ukrainian: 
   - localizationKey: GAMEPLAY_CheckingSundialNightTime
     languages:
       English: Unable to check the Sundial during the night
       German: 
-      Russian: 
+      Russian: "\u041D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C
+        \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0435 \u0447\u0430\u0441\u044B
+        \u043F\u043E\u0441\u043B\u0435 \u0437\u0430\u0445\u043E\u0434\u0430 \u0441\u043E\u043B\u043D\u0446\u0430"
       French: 
       Japanese: 
       Korean: 
       SimplifiedChinese: 
       Swedish: 
       TraditionalChinese: 
-      Turkish: 
+      Turkish: "Gece G\xFCne\u015F Saatini kontrol edemiyorum"
       Norwegian: 
       Spanish: 
       PortuguesePortugal: 
       PortugueseBrazil: 
       Dutch: 
       Finnish: 
-      Italian: 
+      Italian: Impossibile controllare l'ora con la Meridiana durante la notte
       Polish: 
       Ukrainian: 
   - localizationKey: GAMEPLAY_CheckingSundialWeather
     languages:
       English: Unable to check the Sundial during bad weather
       German: 
-      Russian: 
+      Russian: "\u041D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C
+        \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0435 \u0447\u0430\u0441\u044B
+        \u0432 \u043F\u043B\u043E\u0445\u0443\u044E \u043F\u043E\u0433\u043E\u0434\u0443"
       French: 
       Japanese: 
       Korean: 
       SimplifiedChinese: 
       Swedish: 
       TraditionalChinese: 
-      Turkish: 
+      Turkish: "K\xF6t\xFC hava ko\u015Fullar\u0131nda G\xFCne\u015F Saati'ni kontrol
+        edemiyorum"
       Norwegian: 
       Spanish: 
       PortuguesePortugal: 
       PortugueseBrazil: 
       Dutch: 
       Finnish: 
-      Italian: 
+      Italian: Impossibile controllare l'ora con la Meridiana durante il maltempo
       Polish: 
       Ukrainian: 
