@@ -42,7 +42,7 @@ Watches is a modification which alters how time is told within [**The Long Dark*
 ### Required Dependencies:
 For optimal functionality of this modification, ensure you have the following versions or newer for the latest version of **Universal Tweaks**:
 
-- [**The Long Dark**](https://store.steampowered.com/news/app/305620) - Version: **v2.35**
+- [**The Long Dark**](https://store.steampowered.com/news/app/305620) - Version: **v2.36**
 - [**MelonLoader**](https://github.com/LavaGang/MelonLoader/releases) - Version: **v0.6.6**
 - [**ModComponent**](https://github.com/dommrogers/ModComponent) - Version: **v6.3.1**
 - [**ModData**](https://github.com/dommrogers/ModData) - Version: **v1.5.4**
